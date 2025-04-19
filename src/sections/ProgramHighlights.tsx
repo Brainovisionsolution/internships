@@ -109,12 +109,12 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
               </p>
             </div>
             <a 
-              href="https://rzp.io/rzp/Yf9F3tm"
+              href="https://rzp.io/rzp/q7TKH2NL"
               className={`bg-${themeColor}-600 hover:bg-${themeColor}-700 text-white rounded-lg px-8 py-4 font-medium transition-colors duration-300 text-center`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register with ₹999 Only
+              Register Now
             </a>
           </div>
         </div>
