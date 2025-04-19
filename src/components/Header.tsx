@@ -26,9 +26,9 @@ const Header: React.FC = () => {
 
   const handleModeChange = (mode: string) => {
     if (mode === 'online') {
-      window.location.href = '/online';
+      window.location.href = 'https://internships.brainovision.in/online';
     } else if (mode === 'offline') {
-      window.location.href = '/';
+      window.location.href = 'https://internships.brainovision.in';
     } else if (mode === 'hybrid') {
       window.location.href = 'https://wa.me/917207775039?text=Hi,%20I%20am%20interested%20in%20the%20Hybrid%20Internship%20Program';
     }

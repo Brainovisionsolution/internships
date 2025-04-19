@@ -74,49 +74,18 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
           </div>
           
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Select
-                  </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Batch Timing
-                  </th>
-                  {isOnline && (
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Technologies
-                    </th>
-                  )}
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Fee
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+            <div className="min-w-full p-6">
+              <div className="grid grid-cols-1 gap-4">
                 {timings.map((timing, index) => (
-                  <tr 
+                  <div 
                     key={index}
-                    className={`hover:bg-gray-50 cursor-pointer transition-colors ${
-                      selectedTiming === timing.time ? `bg-${themeColor}-50` : ''
+                    className={`border rounded-lg p-4 cursor-pointer transition-colors ${
+                      selectedTiming === timing.time ? `bg-${themeColor}-50 border-${themeColor}-500` : 'border-gray-200 hover:border-gray-300'
                     }`}
                     onClick={() => setSelectedTiming(timing.time)}
                   >
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <div className={`h-5 w-5 rounded-full border ${
-                          selectedTiming === timing.time 
-                            ? `border-${themeColor}-600 bg-${themeColor}-600` 
-                            : 'border-gray-300'
-                        }`}>
-                          {selectedTiming === timing.time && (
-                            <CheckCircle size={20} className="text-white" />
-                          )}
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                      <div className="flex items-center mb-3 md:mb-0">
                         <Clock size={18} className={`mr-2 ${selectedTiming === timing.time ? `text-${themeColor}-600` : 'text-gray-500'}`} />
                         <span className={`font-medium ${
                           selectedTiming === timing.time ? `text-${themeColor}-800` : 'text-gray-900'
@@ -124,29 +93,34 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                           {timing.time}
                         </span>
                       </div>
-                    </td>
-                    {isOnline && (
-                      <td className="px-6 py-4">
-                        <div className="flex flex-wrap gap-2">
+                      
+                      {isOnline && (
+                        <div className="flex flex-wrap gap-2 mb-3 md:mb-0">
                           {(timing as any).technologies.map((tech: string, idx: number) => (
                             <span key={idx} className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-${themeColor}-100 text-${themeColor}-800`}>
                               {tech}
                             </span>
                           ))}
                         </div>
-                      </td>
-                    )}
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className={`text-lg font-semibold ${
-                        selectedTiming === timing.time ? `text-${themeColor}-600` : 'text-gray-900'
-                      }`}>
-                        {timing.fee}
-                      </span>
-                    </td>
-                  </tr>
+                      )}
+                      
+                      <div className="flex items-center justify-between md:justify-end">
+                        <span className={`text-lg font-semibold ${
+                          selectedTiming === timing.time ? `text-${themeColor}-600` : 'text-gray-900'
+                        }`}>
+                          {timing.fee}
+                        </span>
+                        {selectedTiming === timing.time && (
+                          <div className="ml-4 h-6 w-6 bg-green-500 rounded-full flex items-center justify-center">
+                            <CheckCircle size={16} className="text-white" />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 ))}
-              </tbody>
-            </table>
+              </div>
+            </div>
           </div>
           
           <div className="p-6 md:p-8 bg-gray-50 border-t border-gray-200">
@@ -161,7 +135,7 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
               </div>
               <a 
                 href="https://rzp.io/rzp/q7TKH2NL"
-                className={`bg-${themeColor}-600 hover:bg-${themeColor}-700 text-white font-medium rounded-lg px-6 py-3 transition-colors duration-300`}
+                className={`bg-${themeColor}-600 hover:bg-${themeColor}-700 text-white font-medium rounded-lg px-6 py-3 transition-colors duration-300 w-full sm:w-auto text-center`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

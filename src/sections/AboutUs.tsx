@@ -65,21 +65,15 @@ const AboutUs: React.FC = () => {
             <div className="p-6">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
-                  <div className="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                    <span className="text-blue-800 font-bold">AICTE</span>
-                  </div>
+                  <img src="/logos/aicte.png" alt="AICTE" className="h-16 w-auto mb-3" />
                   <span className="text-sm text-gray-600 text-center">All India Council for Technical Education</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
-                  <div className="h-16 w-16 bg-purple-100 rounded-full flex items-center justify-center mb-3">
-                    <span className="text-purple-800 font-bold">NASSCOM</span>
-                  </div>
+                  <img src="/logos/nasscom.png" alt="NASSCOM" className="h-16 w-auto mb-3" />
                   <span className="text-sm text-gray-600 text-center">National Association of Software & Service Companies</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
-                  <div className="h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mb-3">
-                    <span className="text-green-800 font-bold">APSCHE</span>
-                  </div>
+                  <img src="/logos/apsche.png" alt="APSCHE" className="h-16 w-auto mb-3" />
                   <span className="text-sm text-gray-600 text-center">Andhra Pradesh State Council of Higher Education</span>
                 </div>
               </div>
@@ -87,14 +81,14 @@ const AboutUs: React.FC = () => {
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h4 className="font-semibold text-gray-900 mb-3">Industry Partners</h4>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="h-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <span className="font-bold text-gray-700">TCS</span>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/tcs.png" alt="TCS" className="h-10 w-auto" />
                   </div>
-                  <div className="h-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <span className="font-bold text-gray-700">Infosys</span>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/infosys.png" alt="Infosys" className="h-10 w-auto" />
                   </div>
-                  <div className="h-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <span className="font-bold text-gray-700">Wipro</span>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/wipro.png" alt="Wipro" className="h-10 w-auto" />
                   </div>
                 </div>
               </div>

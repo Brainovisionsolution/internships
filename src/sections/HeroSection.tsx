@@ -54,10 +54,10 @@ const HeroSection: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-6 items-center">
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center">
-                  <span className="text-indigo-800 font-bold text-sm">AICTE</span>
+                  <img src="/logos/aicte.png" alt="AICTE" className="h-8 w-auto" />
                 </div>
                 <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center -ml-2">
-                  <span className="text-indigo-800 font-bold text-sm">APSCHE</span>
+                  <img src="/logos/apsche.png" alt="APSCHE" className="h-8 w-auto" />
                 </div>
                 <span className="ml-3 text-indigo-200 text-sm">AICTE & APSCHE Approved</span>
               </div>
