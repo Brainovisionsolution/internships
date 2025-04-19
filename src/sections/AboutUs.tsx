@@ -78,7 +78,7 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
               
-           <!--   <div className="mt-6 pt-6 border-t border-gray-200">
+           <div className="mt-6 pt-6 border-t border-gray-200">
                 <h4 className="font-semibold text-gray-900 mb-3">Industry Partners</h4>
                 <div className="grid grid-cols-3 gap-4">
                   <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
@@ -91,7 +91,7 @@ const AboutUs: React.FC = () => {
                     <img src="/logos/infosys.png" alt="infosys" className="h-10 w-auto" />
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
