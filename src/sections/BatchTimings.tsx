@@ -11,28 +11,28 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
   const onlineTimings = [
     { 
       time: "06:30 AM - 07:45 AM",
-      technologies: ["MERN STACK", "DIGITAL MARKETING"],
-      fee: "₹4,000"
+      technologies: ["JAVA FULL STACK", "DIGITAL MARKETING"],
+      fee: "₹999"
     },
     { 
       time: "09:00 AM – 10:30 AM",
-      technologies: ["JAVA FULL STACK"],
-      fee: "₹5,000"
+      technologies: ["MERN STACK"],
+      fee: "₹1999"
     },
     { 
       time: "11:00 AM – 12:30 PM",
-      technologies: ["SERVICE NOW"],
-      fee: "₹6,000"
+      technologies: ["GENERATIVE AI"],
+      fee: "₹1999"
     },
     { 
       time: "02:30 PM – 04:00 PM",
-      technologies: ["GENERATIVE AI"],
-      fee: "₹8,000"
+      technologies: ["MERN STACK"],
+      fee: "₹1999"
     },
     { 
       time: "06:30 PM – 08:00 PM",
-      technologies: ["JAVA FULL STACK"],
-      fee: "₹4,000"
+      technologies: ["SERVICE NOW"],
+      fee: "₹2999"
     }
   ];
 
@@ -139,7 +139,7 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Register with ₹999 Only
+                Book Your slot with ₹999 Only
               </a>
             </div>
           </div>

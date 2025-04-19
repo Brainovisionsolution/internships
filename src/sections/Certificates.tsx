@@ -7,18 +7,18 @@ const Certificates: React.FC = () => {
   const certificates = [
     {
       title: "Internship Completion Certificate",
-      description: "Official AICTE & APSCHE approved certificate awarded upon successful completion of the internship program.",
-      image: "https://images.pexels.com/photos/6256254/pexels-photo-6256254.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      description: "Official AICTE & NASSCOM approved certificate awarded upon successful completion of the internship program.",
+      image: "https://brainovision.in/assets/img/certification1.jpg",
     },
     {
       title: "Training Completion Certificate",
       description: "Certificate recognizing completion of specialized AI training modules and theoretical components.",
-      image: "https://images.pexels.com/photos/5428833/pexels-photo-5428833.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      image: "https://brainovision.in/assets/img/certification3.jpg",
     },
     {
       title: "Letter of Recommendation (LOR)",
       description: "Personalized recommendation letter highlighting your skills, projects, and achievements during the program.",
-      image: "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      image: "https://brainovision.in/assets/img/certification2.jpg",
     }
   ];
 

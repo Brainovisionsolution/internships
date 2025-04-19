@@ -20,7 +20,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
     {
       icon: <Award size={36} className="text-purple-500" />,
       title: "Certification",
-      description: "AICTE & APSCHE approved certification & Letter of Recommendation"
+      description: "AICTE & NASSCOM approved certification & Letter of Recommendation"
     },
     {
       icon: <BookOpen size={36} className="text-purple-500" />,
@@ -51,7 +51,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
     {
       icon: <Award size={36} className="text-indigo-500" />,
       title: "Certification",
-      description: "AICTE & APSCHE approved certification & Letter of Recommendation"
+      description: "AICTE & NASSCOM approved certification & Letter of Recommendation"
     },
     {
       icon: <BookOpen size={36} className="text-indigo-500" />,

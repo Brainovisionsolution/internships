@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 <span className="text-gray-800 font-bold text-sm">NASSCOM</span>
               </div>
               <div className="bg-white rounded-md p-2 flex items-center justify-center">
-                <span className="text-gray-800 font-bold text-sm">APSCHE</span>
+                <span className="text-gray-800 font-bold text-sm">NASSCOM</span>
               </div>
             </div>
           </div>
