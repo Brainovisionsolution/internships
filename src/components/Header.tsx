@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center">
             <img 
               src="/logos/bovyellow.png" 
-              alt="Brainovisiono" 
+              alt="Brainovision Logo" 
               className="h-12 w-auto"
             />
           </Link>
