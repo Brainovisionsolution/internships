@@ -40,8 +40,8 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="\public\logos\bovyellow.png" 
-              alt="Brainovision Logo" 
+              src="/logos/bovyellow.png" 
+              alt="Brainovisiono" 
               className="h-12 w-auto"
             />
           </Link>
