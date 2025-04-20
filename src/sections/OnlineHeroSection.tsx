@@ -8,6 +8,13 @@ const OnlineHeroSection: React.FC = () => {
     setIsVisible(true);
   }, []);
 
+  const scrollToRegistration = () => {
+    const registrationSection = document.getElementById('register');
+    if (registrationSection) {
+      registrationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative bg-gradient-to-r from-purple-900 via-indigo-800 to-purple-900 text-white pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background grid pattern */}
@@ -37,13 +44,13 @@ const OnlineHeroSection: React.FC = () => {
               Experience World-Class Technology Training from Anywhere — Live Virtual Classes with Industry Experts!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#register" 
+              <button 
+                onClick={scrollToRegistration}
                 className="bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center"
               >
-                Register Now
+                View Programs & Register
                 <ChevronRight size={20} className="ml-2" />
-              </a>
+              </button>
               <a 
                 href="#program" 
                 className="bg-transparent hover:bg-white/10 border border-purple-400 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center"
@@ -110,20 +117,18 @@ const OnlineHeroSection: React.FC = () => {
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-purple-200 border-opacity-20">
-                  <div className="text-sm mb-2">Reserve your spot for just</div>
+                  <div className="text-sm mb-2">Starting from just</div>
                   <div className="flex items-baseline">
                     <span className="text-3xl font-bold">₹999</span>
                     <span className="ml-2 text-sm line-through opacity-70">₹1999</span>
                     <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded">50% OFF</span>
                   </div>
-                  <a 
-                    href="https://rzp.io/rzp/q7TKH2NL" 
+                  <button 
+                    onClick={scrollToRegistration}
                     className="mt-3 block w-full bg-white text-purple-800 text-center font-medium rounded-lg px-6 py-3 transition-all duration-300 hover:bg-opacity-90"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
-                    Book Now
-                  </a>
+                    View Programs & Register
+                  </button>
                 </div>
               </div>
             </div>

@@ -2,6 +2,14 @@ import React from 'react';
 import { Building, CheckCircle } from 'lucide-react';
 
 const AboutUs: React.FC = () => {
+  const stats = [
+    { label: "TOTAL GLOBAL ALUMNI", value: "60,000+" },
+    { label: "TECHNOLOGIES", value: "8+" },
+    { label: "HACKATHONS & WORKSHOPS", value: "950+" },
+    { label: "COLLEGE/UNIVERSITY COLLABORATIONS", value: "650+" },
+    { label: "INTERNSHIPS", value: "1,60,000+" }
+  ];
+
   return (
     <section id="about" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
@@ -16,6 +24,16 @@ const AboutUs: React.FC = () => {
             We are Brainovision Solutions India Pvt Ltd, a leading provider of specialized 
             technology training and internship programs in Hyderabad.
           </p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+          {stats.map((stat, index) => (
+            <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-200">
+              <div className="text-2xl md:text-3xl font-bold text-indigo-600 mb-2">{stat.value}</div>
+              <div className="text-sm text-gray-600">{stat.label}</div>
+            </div>
+          ))}
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -75,24 +93,6 @@ const AboutUs: React.FC = () => {
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
                   <img src="/logos/apsche.png" alt="APSCHE" className="h-16 w-auto mb-3" />
                   <span className="text-sm text-gray-600 text-center">Andhra Pradesh State Council of Higher Education</span>
-                </div>
-              </div>
-              
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-3">Company Experience</h4>
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <span className="text-gray-800 font-medium text-sm">VIRTUSA</span>
-                  </div>
-                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <span className="text-gray-800 font-medium text-sm">Broadridge</span>
-                  </div>
-                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <span className="text-gray-800 font-medium text-sm">ValueMomentum</span>
-                  </div>
-                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <span className="text-gray-800 font-medium text-sm">Tech Startups</span>
-                  </div>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ const TechnologyOverview: React.FC = () => {
       icon: <Code className="text-blue-500" size={36} />,
       title: "MERN STACK",
       description: "Master modern web development with MongoDB, Express.js, React, and Node.js",
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       features: [
         "Frontend Development with React",
         "Backend Development with Node.js & Express",
@@ -20,6 +21,7 @@ const TechnologyOverview: React.FC = () => {
       icon: <Globe className="text-green-500" size={36} />,
       title: "DIGITAL MARKETING",
       description: "Learn comprehensive digital marketing strategies and tools",
+      syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus",
       features: [
         "Search Engine Optimization (SEO)",
         "Social Media Marketing",
@@ -33,6 +35,7 @@ const TechnologyOverview: React.FC = () => {
       icon: <Laptop className="text-orange-500" size={36} />,
       title: "JAVA FULL STACK",
       description: "Build enterprise-level applications with Java and modern frameworks",
+      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
       features: [
         "Core Java Programming",
         "Spring Boot Framework",
@@ -46,6 +49,7 @@ const TechnologyOverview: React.FC = () => {
       icon: <Cloud className="text-purple-500" size={36} />,
       title: "SERVICE NOW",
       description: "Develop expertise in ServiceNow platform and ITSM",
+      syllabus: "https://brainovision.in/ai-internship-servicenow-syllabus",
       features: [
         "ServiceNow Administration",
         "ITSM Implementation",
@@ -59,6 +63,7 @@ const TechnologyOverview: React.FC = () => {
       icon: <BrainCircuit className="text-indigo-500" size={36} />,
       title: "GENERATIVE AI",
       description: "Explore the cutting-edge world of generative artificial intelligence",
+      syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
       features: [
         "Large Language Models",
         "Prompt Engineering",
@@ -111,7 +116,7 @@ const TechnologyOverview: React.FC = () => {
               </div>
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
                 <a 
-                  href="https://rzp.io/rzp/q7TKH2NL"
+                  href={tech.syllabus}
                   className="text-purple-600 hover:text-purple-700 font-medium flex items-center justify-center"
                   target="_blank"
                   rel="noopener noreferrer"
