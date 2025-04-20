@@ -69,7 +69,7 @@ const AboutUs: React.FC = () => {
                   <span className="text-sm text-gray-600 text-center">All India Council for Technical Education</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
-                  <img src="/logos/Nasscom.png" alt="NASSCOM" className="h-16 w-auto mb-3" />
+                  <img src="/logos/nasscom.png" alt="NASSCOM" className="h-16 w-auto mb-3" />
                   <span className="text-sm text-gray-600 text-center">National Association of Software & Service Companies</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg">
@@ -78,7 +78,20 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
               
-              
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4 className="font-semibold text-gray-900 mb-3">Industry Partners</h4>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/tcs.png" alt="TCS" className="h-10 w-auto" />
+                  </div>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/infosys.png" alt="Infosys" className="h-10 w-auto" />
+                  </div>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <img src="/logos/wipro.png" alt="Wipro" className="h-10 w-auto" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

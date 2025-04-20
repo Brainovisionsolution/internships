@@ -103,21 +103,21 @@ const Trainers: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">V</span>
+                  <span className="font-bold text-blue-600 text-sm">G</span>
                 </div>
-                <span className="font-medium text-gray-800">VIRTUSA</span>
+                <span className="font-medium text-gray-800">Google</span>
               </div>
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">B</span>
+                  <span className="font-bold text-blue-600 text-sm">T</span>
                 </div>
-                <span className="font-medium text-gray-800">Broadridge</span>
+                <span className="font-medium text-gray-800">TCS</span>
               </div>
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">V</span>
+                  <span className="font-bold text-blue-600 text-sm">I</span>
                 </div>
-                <span className="font-medium text-gray-800">ValueMomentum</span>
+                <span className="font-medium text-gray-800">Infosys</span>
               </div>
               <div className="flex items-center py-2">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">

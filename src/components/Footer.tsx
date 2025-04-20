@@ -16,19 +16,16 @@ const Footer: React.FC = () => {
               Brainovision Solutions India Pvt Ltd is a leading provider of specialized technology training and internship programs.
             </p>
             <div className="flex space-x-4">
-            <a href="https://www.facebook.com/Brainovisions/" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.instagram.com/brainovision/" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://in.linkedin.com/company/brainovision" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.youtube.com/@brainovision" className="text-gray-400 hover:text-white transition-colors">
-                <YouTube size={20} />
-              </a>
-              <a href="https://x.com/mybrainovision" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
             </div>
