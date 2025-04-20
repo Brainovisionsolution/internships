@@ -103,25 +103,25 @@ const Trainers: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">G</span>
+                  <span className="font-bold text-blue-600 text-sm">V</span>
                 </div>
-                <span className="font-medium text-gray-800">Google</span>
+                <span className="font-medium text-gray-800">VIRTUSA</span>
               </div>
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">T</span>
+                  <span className="font-bold text-blue-600 text-sm">B</span>
                 </div>
-                <span className="font-medium text-gray-800">TCS</span>
+                <span className="font-medium text-gray-800">Broadridge</span>
               </div>
               <div className="flex items-center py-2 border-b border-gray-200">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">I</span>
+                  <span className="font-bold text-blue-600 text-sm">V</span>
                 </div>
-                <span className="font-medium text-gray-800">Infosys</span>
+                <span className="font-medium text-gray-800">ValueMomentum</span>
               </div>
               <div className="flex items-center py-2">
                 <div className="h-8 w-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="font-bold text-blue-600 text-sm">S</span>
+                  <span className="font-bold text-blue-600 text-sm">T</span>
                 </div>
                 <span className="font-medium text-gray-800">Tech Startups</span>
               </div>

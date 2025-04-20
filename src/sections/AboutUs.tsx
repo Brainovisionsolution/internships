@@ -79,16 +79,19 @@ const AboutUs: React.FC = () => {
               </div>
               
               <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-3">Industry Partners</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">Company Experience</h4>
                 <div className="grid grid-cols-3 gap-4">
                   <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <img src="/logos/tcs.png" alt="TCS" className="h-10 w-auto" />
+                    <span className="text-gray-800 font-medium text-sm">VIRTUSA</span>
                   </div>
                   <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <img src="/logos/infosys.png" alt="Infosys" className="h-10 w-auto" />
+                    <span className="text-gray-800 font-medium text-sm">Broadridge</span>
                   </div>
                   <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
-                    <img src="/logos/wipro.png" alt="Wipro" className="h-10 w-auto" />
+                    <span className="text-gray-800 font-medium text-sm">ValueMomentum</span>
+                  </div>
+                  <div className="h-16 bg-gray-50 rounded-lg flex items-center justify-center p-2">
+                    <span className="text-gray-800 font-medium text-sm">Tech Startups</span>
                   </div>
                 </div>
               </div>
