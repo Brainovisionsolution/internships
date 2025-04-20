@@ -7,7 +7,7 @@ const Certificates: React.FC = () => {
   const certificates = [
     {
       title: "Internship Completion Certificate",
-      description: "Official AICTE & NASSCOM approved certificate awarded upon successful completion of the internship program.",
+      description: "Official AICTE & APSCHE approved certificate awarded upon successful completion of the internship program.",
       image: "https://brainovision.in/assets/img/certification1.jpg",
     },
     {

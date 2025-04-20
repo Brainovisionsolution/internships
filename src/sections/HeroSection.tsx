@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
                   <img src="/logos/aicte.png" alt="AICTE" className="h-8 w-auto" />
                 </div>
                 <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center -ml-2">
-                  <img src="/logos/nasscom.png" alt="NASSCOM" className="h-8 w-auto" />
+                  <img src="/logos/Nasscom.png" alt="NASSCOME" className="h-8 w-auto" />
                 </div>
                 <span className="ml-3 text-indigo-200 text-sm">AICTE & NASSCOM Approved</span>
               </div>

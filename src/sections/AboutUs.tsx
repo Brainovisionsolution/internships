@@ -78,7 +78,7 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
               
-          
+              
             </div>
           </div>
         </div>

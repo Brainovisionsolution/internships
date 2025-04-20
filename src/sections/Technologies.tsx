@@ -15,7 +15,7 @@ const Technologies: React.FC = () => {
     {
       title: "MERN STACK",
       description: "Master MongoDB, Express, React, and Node.js to build full-stack web applications",
-      link: "https://rzp.io/rzp/q7TKH2NL",
+      link: "https://internships.brainovision.in/online",
       icon: <Code size={24} className="text-white" />,
       type: "offline",
       bgColor: "bg-blue-600"
@@ -23,7 +23,7 @@ const Technologies: React.FC = () => {
     {
       title: "DIGITAL MARKETING",
       description: "Learn digital marketing strategies, SEO, social media marketing, and analytics",
-      link: "https://rzp.io/rzp/q7TKH2NL",
+      link: "https://internships.brainovision.in/online",
       icon: <Globe size={24} className="text-white" />,
       type: "offline",
       bgColor: "bg-green-600"
@@ -31,7 +31,7 @@ const Technologies: React.FC = () => {
     {
       title: "JAVA FULL STACK",
       description: "Comprehensive training in Java, Spring Boot, Hibernate, and frontend technologies",
-      link: "https://rzp.io/rzp/q7TKH2NL",
+      link: "https://internships.brainovision.in/online",
       icon: <JavaIcon className="text-white" />,
       type: "both",
       bgColor: "bg-orange-600"
@@ -39,7 +39,7 @@ const Technologies: React.FC = () => {
     {
       title: "SERVICE NOW",
       description: "Learn to implement, configure, and administer ServiceNow platform",
-      link: "https://rzp.io/rzp/q7TKH2NL",
+      link: "https://internships.brainovision.in/online",
       icon: <CloudIcon className="text-white" />,
       type: "offline",
       bgColor: "bg-purple-600"
@@ -47,7 +47,7 @@ const Technologies: React.FC = () => {
     {
       title: "GENERATIVE AI",
       description: "Master generative models like GANs, transformers, and diffusion models",
-      link: "https://rzp.io/rzp/q7TKH2NL",
+      link: "https://internships.brainovision.in/online",
       icon: <BrainIcon className="text-white" />,
       type: "both",
       bgColor: "bg-indigo-600"

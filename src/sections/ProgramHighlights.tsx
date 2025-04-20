@@ -20,7 +20,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
     {
       icon: <Award size={36} className="text-purple-500" />,
       title: "Certification",
-      description: "AICTE & NASSCOM approved certification & Letter of Recommendation"
+      description: "AICTE & APSCHE approved certification & Letter of Recommendation"
     },
     {
       icon: <BookOpen size={36} className="text-purple-500" />,
@@ -51,7 +51,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
     {
       icon: <Award size={36} className="text-indigo-500" />,
       title: "Certification",
-      description: "AICTE & NASSCOM approved certification & Letter of Recommendation"
+      description: "AICTE & APSCHE approved certification & Letter of Recommendation"
     },
     {
       icon: <BookOpen size={36} className="text-indigo-500" />,
@@ -109,12 +109,12 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline }) => {
               </p>
             </div>
             <a 
-              href="https://rzp.io/rzp/q7TKH2NL"
+              href="https://rzp.io/rzp/Yf9F3tm"
               className={`bg-${themeColor}-600 hover:bg-${themeColor}-700 text-white rounded-lg px-8 py-4 font-medium transition-colors duration-300 text-center`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register Now
+              Register with ₹999 Only
             </a>
           </div>
         </div>

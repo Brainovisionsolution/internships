@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Clock, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface BatchTimingProps {
   isOnline: boolean;
@@ -11,40 +12,83 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
   const onlineTimings = [
     { 
       time: "06:30 AM - 07:45 AM",
-      technologies: ["JAVA FULL STACK", "DIGITAL MARKETING"],
-      fee: "₹999"
+      technologies: ["Java Full Stack"],
+      fee: "₹999",
+      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus"
     },
     { 
-      time: "09:00 AM – 10:30 AM",
-      technologies: ["MERN STACK"],
-      fee: "₹1999"
+      time: "06:30 AM - 07:45 AM",
+      technologies: ["Digital Marketing"],
+      fee: "₹1,999",
+      syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus"
     },
     { 
-      time: "11:00 AM – 12:30 PM",
-      technologies: ["GENERATIVE AI"],
-      fee: "₹1999"
+      time: "09:00 AM - 10:30 AM",
+      technologies: ["MERN Stack"],
+      fee: "₹1,999",
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus"
     },
     { 
-      time: "02:30 PM – 04:00 PM",
-      technologies: ["MERN STACK"],
-      fee: "₹1999"
+      time: "11:00 AM - 12:30 PM",
+      technologies: ["Generative AI"],
+      fee: "₹1,999",
+      syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus"
     },
     { 
-      time: "06:30 PM – 08:00 PM",
-      technologies: ["SERVICE NOW"],
-      fee: "₹2999"
+      time: "02:30 PM - 04:00 PM",
+      technologies: ["MERN Stack"],
+      fee: "₹1,999",
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus"
+    },
+    { 
+      time: "06:30 PM - 08:00 PM",
+      technologies: ["ServiceNow (L1)"],
+      fee: "₹2,999",
+      syllabus: "https://brainovision.in/ai-internship-servicenow-syllabus"
     }
   ];
 
   const offlineTimings = [
-    { time: "06:00 AM to 07:00 AM", fee: "₹4,000" },
-    { time: "07:30 AM to 09:00 AM", fee: "₹5,000" },
-    { time: "09:30 AM to 11:00 AM", fee: "₹6,000" },
-    { time: "11:30 AM to 01:30 PM", fee: "₹8,000" },
-    { time: "02:00 PM to 04:00 PM", fee: "₹8,000" },
-    { time: "04:30 PM to 06:00 PM", fee: "₹5,000" },
-    { time: "06:30 PM to 08:00 PM", fee: "₹4,000" },
-    { time: "08:00 PM to 09:00 PM", fee: "₹3,000" }
+    { 
+      time: "06:00 AM to 07:00 AM", 
+      fee: "₹4,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "07:30 AM to 09:00 AM", 
+      fee: "₹5,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "09:30 AM to 11:00 AM", 
+      fee: "₹6,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "11:30 AM to 01:30 PM", 
+      fee: "₹8,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "02:00 PM to 04:00 PM", 
+      fee: "₹8,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "04:30 PM to 06:00 PM", 
+      fee: "₹5,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "06:30 PM to 08:00 PM", 
+      fee: "₹4,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+    { 
+      time: "08:00 PM to 09:00 PM", 
+      fee: "₹3,000",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    }
   ];
 
   const timings = isOnline ? onlineTimings : offlineTimings;
@@ -63,7 +107,7 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
           <p className="text-lg text-gray-700">
             {isOnline 
               ? 'Choose your preferred technology and time slot for virtual training'
-              : 'Choose from 8 different time slots that best suit your schedule'}
+              : 'Choose from multiple time slots that best suit your schedule'}
           </p>
         </div>
         
@@ -104,17 +148,28 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                         </div>
                       )}
                       
-                      <div className="flex items-center justify-between md:justify-end">
+                      <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4">
                         <span className={`text-lg font-semibold ${
                           selectedTiming === timing.time ? `text-${themeColor}-600` : 'text-gray-900'
                         }`}>
                           {timing.fee}
                         </span>
-                        {selectedTiming === timing.time && (
-                          <div className="ml-4 h-6 w-6 bg-green-500 rounded-full flex items-center justify-center">
-                            <CheckCircle size={16} className="text-white" />
-                          </div>
-                        )}
+                        <div className="flex gap-2">
+                          <a 
+                            href={timing.syllabus}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`text-sm text-${themeColor}-600 hover:text-${themeColor}-700 underline`}
+                          >
+                            View Syllabus
+                          </a>
+                          <Link 
+                            to="/register"
+                            className={`text-sm text-${themeColor}-600 hover:text-${themeColor}-700 underline`}
+                          >
+                            Register Now
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -129,18 +184,21 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                 <p className="text-gray-600 mb-1">
                   Registration Fee: <span className="font-semibold">₹999</span>
                 </p>
+                {!isOnline && (
+                  <p className="text-gray-600 text-sm">
+                    Full payment option available with additional 20% off
+                  </p>
+                )}
                 <p className="text-gray-600 text-sm">
-                  Remaining fee to be paid on day 1 of the internship
+                  {isOnline ? 'One-time payment only' : 'Remaining fee to be paid on day 1 of the internship'}
                 </p>
               </div>
-              <a 
-                href="https://rzp.io/rzp/q7TKH2NL"
-                className={`bg-${themeColor}-600 hover:bg-${themeColor}-700 text-white font-medium rounded-lg px-6 py-3 transition-colors duration-300 w-full sm:w-auto text-center`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link 
+                to="/register"
+                className={`bg-${themeColor}-600 text-white px-6 py-2 rounded-lg hover:bg-${themeColor}-700 transition-colors duration-300`}
               >
-                Book Your slot with ₹999 Only
-              </a>
+                Register Now
+              </Link>
             </div>
           </div>
         </div>

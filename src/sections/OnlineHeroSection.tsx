@@ -57,9 +57,9 @@ const OnlineHeroSection: React.FC = () => {
                   <span className="text-purple-800 font-bold text-sm">AICTE</span>
                 </div>
                 <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center -ml-2">
-                  <span className="text-purple-800 font-bold text-sm">NASSCOM</span>
+                  <span className="text-purple-800 font-bold text-sm">APSCHE</span>
                 </div>
-                <span className="ml-3 text-purple-200 text-sm">AICTE & NASSCOM Approved</span>
+                <span className="ml-3 text-purple-200 text-sm">AICTE & APSCHE Approved</span>
               </div>
               <div className="flex items-center">
                 <span className="text-yellow-300 text-lg font-medium">★★★★★</span>
