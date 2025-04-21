@@ -13,7 +13,7 @@ const Curriculum: React.FC = () => {
   
   const modules: Module[] = [
     {
-      title: "Week 1: Foundations of AI & Python Basics",
+      title: "Foundations of AI & Python Basics",
       description: "Understanding AI fundamentals and learning Python programming basics.",
       topics: [
         "What is AI? Applications, Branches, Goals",
@@ -26,7 +26,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 1"
     },
     {
-      title: "Week 2: Search & Problem Spaces",
+      title: "Search & Problem Spaces",
       description: "Exploring AI search techniques and problem spaces.",
       topics: [
         "Problem Spaces, State Space Search",
@@ -39,7 +39,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 2"
     },
     {
-      title: "Week 3: Knowledge Representation",
+      title: "Knowledge Representation",
       description: "Learning about logical reasoning and expert systems.",
       topics: [
         "Semantic Nets, Frames, Predicate Logic",
@@ -52,7 +52,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 3"
     },
     {
-      title: "Week 4: Core ML Concepts",
+      title: "Core ML Concepts",
       description: "Introduction to Machine Learning (ML) and core algorithms.",
       topics: [
         "What is ML? Types: Supervised/Unsupervised",
@@ -65,7 +65,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 4"
     },
     {
-      title: "Week 5: Advanced ML Techniques",
+      title: "Advanced ML Techniques",
       description: "Diving into advanced machine learning techniques.",
       topics: [
         "Feature Selection & Engineering",
@@ -78,7 +78,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 5"
     },
     {
-      title: "Week 6: Neural Networks (Deep Learning)",
+      title: "Neural Networks (Deep Learning)",
       description: "Learn to build and evaluate neural networks.",
       topics: [
         "What is a Neural Network? Perceptron & ANN",
@@ -91,7 +91,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 6"
     },
     {
-      title: "Week 7: Computer Vision + NLP",
+      title: "Computer Vision + NLP",
       description: "Hands-on experience with CNNs for image classification and NLP techniques.",
       topics: [
         "CNN Basics + Image Classification",
@@ -104,7 +104,7 @@ const Curriculum: React.FC = () => {
       weeks: "Week 7"
     },
     {
-      title: "Week 8: Deployment, Portfolio & Capstone",
+      title: "Deployment, Portfolio & Capstone",
       description: "Deploy models, build portfolios, and present the capstone project.",
       topics: [
         "Streamlit for AI Apps",
