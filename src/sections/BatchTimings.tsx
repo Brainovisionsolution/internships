@@ -163,12 +163,12 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                           >
                             View Syllabus
                           </a>
-                          <Link 
-                            to="/register"
+                          <a 
+                            href="#register"
                             className={`text-sm text-${themeColor}-600 hover:text-${themeColor}-700 underline`}
                           >
                             Register Now
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -193,12 +193,12 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                   {isOnline ? 'One-time payment only' : 'Remaining fee to be paid on day 1 of the internship'}
                 </p>
               </div>
-              <Link 
-                to="/register"
+              <a 
+                    href="#register"
                 className={`bg-${themeColor}-600 text-white px-6 py-2 rounded-lg hover:bg-${themeColor}-700 transition-colors duration-300`}
               >
                 Register Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>
