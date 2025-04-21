@@ -70,7 +70,7 @@ const OnlineHeroSection: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <span className="text-yellow-300 text-lg font-medium">★★★★★</span>
-                <span className="ml-2 text-purple-200 text-sm">Rated 4.9/5 by 2000+ students</span>
+                <span className="ml-2 text-purple-200 text-sm">Rated 4.7/5 by 2140+ students</span>
               </div>
             </div>
           </div>
