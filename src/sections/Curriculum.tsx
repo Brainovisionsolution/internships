@@ -13,102 +13,111 @@ const Curriculum: React.FC = () => {
   
   const modules: Module[] = [
     {
-      title: "AI & Data Science Foundations",
-      description: "Build strong fundamentals in AI concepts and data handling",
+      title: "Week 1: Foundations of AI & Python Basics",
+      description: "Understanding AI fundamentals and learning Python programming basics.",
       topics: [
-        "Introduction to AI & Machine Learning",
-        "Python Programming for AI",
-        "Data Types and Structures",
-        "Data Collection and Preprocessing",
-        "Exploratory Data Analysis"
+        "What is AI? Applications, Branches, Goals",
+        "AI Techniques, Problem Solving Overview",
+        "Python Basics: Variables, Data types, Input/Output",
+        "Python Control Flow: If-else, Loops",
+        "Python Functions & Data Structures",
+        "Git & GitHub Basics"
       ],
       weeks: "Week 1"
     },
     {
-      title: "Data Handling & Pandas",
-      description: "Master data manipulation and analysis with Pandas",
+      title: "Week 2: Search & Problem Spaces",
+      description: "Exploring AI search techniques and problem spaces.",
       topics: [
-        "Pandas DataFrames and Series",
-        "Data Cleaning and Transformation",
-        "Data Visualization with Matplotlib and Seaborn",
-        "Statistical Analysis",
-        "Feature Engineering"
+        "Problem Spaces, State Space Search",
+        "Production Systems & 8 Puzzle",
+        "Control Strategies: DFS, BFS",
+        "Heuristic Search: Hill Climbing, A*",
+        "Water Jug Problem",
+        "Tic-Tac-Toe using AI logic"
       ],
       weeks: "Week 2"
     },
     {
-      title: "Mathematics for AI",
-      description: "Learn essential mathematical concepts for AI algorithms",
+      title: "Week 3: Knowledge Representation",
+      description: "Learning about logical reasoning and expert systems.",
       topics: [
-        "Linear Algebra for Machine Learning",
-        "Calculus and Optimization",
-        "Probability and Statistics",
-        "Dimensionality Reduction",
-        "Principal Component Analysis"
+        "Semantic Nets, Frames, Predicate Logic",
+        "Inference: Forward & Backward Chaining",
+        "Rule-based Systems, Symbolic Reasoning",
+        "Uncertainty & Non-monotonic Reasoning",
+        "Expert System Components",
+        "Case Study: ELIZA Logic"
       ],
       weeks: "Week 3"
     },
     {
-      title: "Machine Learning Essentials",
-      description: "Master core machine learning algorithms and techniques",
+      title: "Week 4: Core ML Concepts",
+      description: "Introduction to Machine Learning (ML) and core algorithms.",
       topics: [
-        "Supervised vs Unsupervised Learning",
-        "Regression Algorithms",
-        "Classification Algorithms",
-        "Clustering and Dimensionality Reduction",
-        "Model Evaluation and Validation"
+        "What is ML? Types: Supervised/Unsupervised",
+        "Linear Regression & Cost Function",
+        "Classification: KNN, Decision Trees",
+        "Evaluation: Accuracy, Precision, Recall",
+        "Data Preprocessing with Pandas",
+        "Build End-to-End ML Project"
       ],
       weeks: "Week 4"
     },
     {
-      title: "Neural Networks & Deep Learning",
-      description: "Build and train deep neural networks for complex tasks",
+      title: "Week 5: Advanced ML Techniques",
+      description: "Diving into advanced machine learning techniques.",
       topics: [
-        "Neural Network Architecture",
-        "Activation Functions",
-        "Backpropagation",
-        "Deep Learning Frameworks (TensorFlow/PyTorch)",
-        "Convolutional Neural Networks (CNNs)"
+        "Feature Selection & Engineering",
+        "Random Forest, SVM",
+        "Clustering: K-Means, PCA",
+        "Cross Validation, GridSearchCV",
+        "Real-World ML Use Cases",
+        "Kaggle Mini-Comp"
       ],
       weeks: "Week 5"
     },
     {
-      title: "Natural Language Processing & Transformers",
-      description: "Work with text data and state-of-the-art NLP models",
+      title: "Week 6: Neural Networks (Deep Learning)",
+      description: "Learn to build and evaluate neural networks.",
       topics: [
-        "Text Preprocessing and Tokenization",
-        "Word Embeddings",
-        "Transformer Architecture",
-        "BERT and GPT Models",
-        "Text Classification and Generation"
+        "What is a Neural Network? Perceptron & ANN",
+        "Activation Functions, Optimizers",
+        "Build First ANN with Keras",
+        "Model Evaluation, Loss Functions",
+        "Overfitting, Dropout, Regularization",
+        "Project: Digit Recognition App"
       ],
       weeks: "Week 6"
     },
     {
-      title: "Model Deployment Techniques",
-      description: "Learn to deploy AI models to production environments",
+      title: "Week 7: Computer Vision + NLP",
+      description: "Hands-on experience with CNNs for image classification and NLP techniques.",
       topics: [
-        "Model Serialization",
-        "RESTful API Development",
-        "Containerization with Docker",
-        "Cloud Deployment (AWS/Azure/GCP)",
-        "Monitoring and Maintenance"
+        "CNN Basics + Image Classification",
+        "Transfer Learning (MobileNet, VGG)",
+        "NLP: Tokenization, Stopwords, Lemmatization",
+        "Sentiment Analysis",
+        "Build a Rule-based Chatbot",
+        "DL-powered Chatbot (optional)"
       ],
       weeks: "Week 7"
     },
     {
-      title: "Capstone Project",
-      description: "Apply your skills to build a complete AI solution",
+      title: "Week 8: Deployment, Portfolio & Capstone",
+      description: "Deploy models, build portfolios, and present the capstone project.",
       topics: [
-        "Project Planning and Requirement Analysis",
-        "Dataset Selection and Preparation",
-        "Model Development and Training",
-        "Evaluation and Optimization",
-        "Final Presentation and Documentation"
+        "Streamlit for AI Apps",
+        "Deploy Models (Render/HuggingFace)",
+        "Resume + LinkedIn Optimization",
+        "Final Capstone Build (Part 1)",
+        "Final Capstone Build (Part 2)",
+        "Project Presentations + Certificates"
       ],
       weeks: "Week 8"
     }
   ];
+
 
   const toggleModule = (index: number) => {
     if (activeModule === index) {
