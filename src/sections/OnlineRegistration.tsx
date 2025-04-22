@@ -190,11 +190,11 @@ const OnlineRegistration: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 text-purple-600 mr-3" />
-                    <span className="text-gray-700">+91 7207775039</span>
+                    <span className="text-gray-700">+91 8125579489</span>
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 text-purple-600 mr-3" />
-                    <span className="text-gray-700">+91 7416935039</span>
+                    <span className="text-gray-700">+91 7416422509</span>  
                   </div>
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-purple-600 mr-3" />
