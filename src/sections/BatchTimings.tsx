@@ -50,42 +50,42 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
 
   const offlineTimings = [
     { 
-      time: "06:00 AM to 07:00 AM", 
+      time: "06:00 AM to 07:00 AM - AI using Python", 
       fee: "₹4,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "07:30 AM to 09:00 AM", 
+      time: "07:30 AM to 09:00 AM - AI with Cloud (AWS)", 
       fee: "₹5,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "09:30 AM to 11:00 AM", 
-      fee: "₹6,000",
+      time: "09:30 AM to 11:00 AM - AI with MERN Stack (WEB)", 
+      fee: "₹7,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "11:30 AM to 01:30 PM", 
+      time: "11:30 AM to 01:30 PM - Advanced AI using Python", 
       fee: "₹8,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "02:00 PM to 04:00 PM", 
-      fee: "₹8,000",
+      time: "02:00 PM to 04:00 PM - AI with Cybersecurity", 
+      fee: "₹7,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "04:30 PM to 06:00 PM", 
+      time: "04:30 PM to 06:00 PM - AI with Python", 
       fee: "₹5,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "06:30 PM to 08:00 PM", 
-      fee: "₹4,000",
+      time: "06:15 PM to 07:30 PM - AI with Python", 
+      fee: "₹5,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "08:00 PM to 09:00 PM", 
+      time: "07:45 PM to 08:30 PM - Python with AI", 
       fee: "₹4,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     }
