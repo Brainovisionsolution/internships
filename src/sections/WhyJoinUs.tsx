@@ -39,12 +39,12 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline }) => {
             <div className="col-span-4"></div>
             <div className="col-span-4">
               <div className={`bg-${themeColor}-600 text-white rounded-t-lg p-4 text-center`}>
-                <h3 className="text-xl font-bold">Intensive 3.0</h3>
+                <h3 className="text-xl font-bold">Brainovision Internship Program</h3>
               </div>
             </div>
             <div className="col-span-4">
               <div className="bg-gray-200 rounded-t-lg p-4 text-center">
-                <h3 className="text-xl font-bold text-gray-700">Other Coaching Institutes</h3>
+                <h3 className="text-xl font-bold text-gray-700">Other Internship Programs</h3>
               </div>
             </div>
 
