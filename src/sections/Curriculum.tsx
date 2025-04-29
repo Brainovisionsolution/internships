@@ -9,10 +9,7 @@ interface Module {
 }
 
 const Curriculum: React.FC = () => {
-  const [activeModule, setActiveModule] = useState<number | null>(null);
   
-
-  };
 
 };
 
