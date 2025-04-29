@@ -1,23 +1,18 @@
 import React from 'react';
-import { Clock, Calendar, Users, FileText } from 'lucide-react';
+import { Clock, Calendar, Users, FileText, Timer, Code2, Cloud, BrainCircuit, Shield, Cpu } from 'lucide-react';
 
 interface TechnologyCardsProps {
   isOnline?: boolean;
 }
 
 const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
-  const registrationLinks = [
-    offline: {
-      advance: "https://brainovision.in/offline-internship-advancepay",
-      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
-    },
-  ]
   const technologies = [
     {
       title: "AI using Python",
       time: "06:00 AM to 07:00 AM",
       fee: "₹4,000/-",
       gradient: "from-blue-600 to-blue-400",
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-syllabus",
       dates: [
         { date: "5th May 2025", seats: 35 },
@@ -31,6 +26,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "07:30 AM to 09:00 AM",
       fee: "₹5,000/-",
       gradient: "from-purple-600 to-indigo-400",
+      icon: <Cloud size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
         { date: "5th May 2025", seats: 30 },
@@ -44,6 +40,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "09:30 AM to 11:00 AM",
       fee: "₹7,000/-",
       gradient: "from-indigo-600 to-blue-400",
+      icon: <Code2 size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       dates: [
         { date: "5th May 2025", seats: 25 },
@@ -57,6 +54,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "11:30 AM to 01:30 PM",
       fee: "₹8,000/-",
       gradient: "from-green-600 to-emerald-400",
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-advanced-python-syllabus",
       dates: [
         { date: "5th May 2025", seats: 20 },
@@ -70,6 +68,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "02:00 PM to 04:00 PM",
       fee: "₹7,000/-",
       gradient: "from-red-600 to-rose-400",
+      icon: <Shield size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-cybersecurity-syllabus",
       dates: [
         { date: "5th May 2025", seats: 28 },
@@ -83,6 +82,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "04:30 PM to 06:00 PM",
       fee: "₹7,000/-",
       gradient: "from-orange-600 to-amber-400",
+      icon: <Cpu size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-iot-syllabus",
       dates: [
         { date: "5th May 2025", seats: 33 },
@@ -96,6 +96,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "06:15 PM to 07:30 PM",
       fee: "₹5,000/-",
       gradient: "from-teal-600 to-emerald-400",
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-evening-syllabus",
       dates: [
         { date: "5th May 2025", seats: 31 },
@@ -109,6 +110,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "07:45 PM to 08:30 PM",
       fee: "₹4,000/-",
       gradient: "from-cyan-600 to-blue-400",
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-night-syllabus",
       dates: [
         { date: "5th May 2025", seats: 34 },
@@ -118,6 +120,14 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       ]
     }
   ];
+
+  const scrollToRegistration = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const registrationSection = document.getElementById('register');
+    if (registrationSection) {
+      registrationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -135,10 +145,19 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
           {technologies.map((tech, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className={`bg-gradient-to-r ${tech.gradient} p-6`}>
-                <h3 className="text-xl font-bold text-white mb-2">{tech.title}</h3>
-                <div className="flex items-center text-white/90">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mr-3">
+                    {tech.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-white">{tech.title}</h3>
+                </div>
+                <div className="flex items-center text-white/90 mb-2">
                   <Clock size={16} className="mr-2" />
                   <span>{tech.time}</span>
+                </div>
+                <div className="flex items-center text-white/90">
+                  <Timer size={16} className="mr-2" />
+                  <span>2 Months Duration</span>
                 </div>
               </div>
               
@@ -163,10 +182,16 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
                       {tech.dates.map((batch, idx) => (
                         <div 
                           key={idx}
-                          className="bg-gray-50 rounded-lg p-2 text-center"
+                          className={`rounded-lg p-2 text-center ${
+                            batch.seats < 10 
+                              ? 'bg-red-50 text-red-700' 
+                              : batch.seats < 20 
+                              ? 'bg-yellow-50 text-yellow-700'
+                              : 'bg-gray-50 text-gray-900'
+                          }`}
                         >
-                          <div className="text-sm font-medium text-gray-900">{batch.date}</div>
-                          <div className="text-xs text-gray-600">{batch.seats} seats left</div>
+                          <div className="text-sm font-medium">{batch.date}</div>
+                          <div className="text-xs">{batch.seats} seats left</div>
                         </div>
                       ))}
                     </div>
@@ -183,14 +208,12 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
                     <FileText size={16} className="mr-2" />
                     View Syllabus
                   </a>
-                  <a
-                  href={registrationLinks.offline.advance}
-                    target="_blank"
-                    rel="noopener noreferrer"></a>
-                  <button className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90`}>
+                  <button 
+                    onClick={scrollToRegistration}
+                    className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
+                  >
                     Register Now
                   </button>
-                    </a>
                 </div>
               </div>
             </div>
