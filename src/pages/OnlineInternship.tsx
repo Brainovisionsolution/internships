@@ -8,7 +8,6 @@ import BatchTimings from '../sections/BatchTimings';
 import Projects from '../sections/Projects';
 import Trainers from '../sections/Trainers';
 import PlacementAssistance from '../sections/PlacementAssistance';
-import Technologies from '../sections/Technologies';
 import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
 import OnlineRegistration from '../sections/OnlineRegistration';
@@ -28,7 +27,6 @@ const OnlineInternship: React.FC = () => {
       <Projects isOnline={true} />
       <Trainers isOnline={true} />
       <PlacementAssistance isOnline={true} />
-      <Technologies isOnline={true} />
       <Certificates />
       <AboutUs />
       <OnlineRegistration />
