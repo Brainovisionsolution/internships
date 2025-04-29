@@ -6,6 +6,12 @@ interface TechnologyCardsProps {
 }
 
 const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
+  const registrationLinks = [
+    offline: {
+      advance: "https://brainovision.in/offline-internship-advancepay",
+      syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
+    },
+  ]
   const technologies = [
     {
       title: "AI using Python",
@@ -177,7 +183,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
                     <FileText size={16} className="mr-2" />
                     View Syllabus
                   </a>
-                  href={registrationLinks.offline.syllabus}
+                  href={registrationLinks.offline.advance}
                     target="_blank"
                     rel="noopener noreferrer"
                   <button className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90`}>
