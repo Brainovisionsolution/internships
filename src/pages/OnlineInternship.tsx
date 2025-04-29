@@ -13,7 +13,7 @@ import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
 import OnlineRegistration from '../sections/OnlineRegistration';
 import WhyJoinUs from '../sections/WhyJoinUs';
-import TechnologyCards from '../sections/TechnologyCards';
+import OnlineTechnologyCards from '../sections/OnlineTechnologyCards';
 
 
 const OnlineInternship: React.FC = () => {
@@ -22,7 +22,7 @@ const OnlineInternship: React.FC = () => {
       <OnlineHeroSection />
       <ProgramHighlights isOnline={true} />
       <WhyJoinUs isOnline={true} />
-      <TechnologyCards isOnline={false} />
+      <OnlineTechnologyCards isOnline={true} />
       <TechnologyOverview />
       <BatchDates isOnline={true} />
       <BatchTimings isOnline={true} />
