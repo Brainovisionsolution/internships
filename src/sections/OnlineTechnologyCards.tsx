@@ -36,7 +36,7 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       ]
     },
     {
-      title: "MERN Stack Development",
+      title: "MERN Stack",
       time: "11:00 AM - 12:30 PM",
       fee: "₹1,999/-",
       gradient: "from-indigo-600 to-blue-400",
@@ -78,6 +78,13 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       ]
     }
   ];
+
+  const scrollToRegistration = () => {
+    const registrationSection = document.getElementById('register');
+    if (registrationSection) {
+      registrationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -128,7 +135,7 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
                       <Calendar size={16} className="mr-2" />
                       Batch Starting Dates:
                     </div>
-                    <div className="grid grid-cols-3 gap-2">
+                    <div className="grid grid-cols-2 gap-2">
                       {tech.dates.map((batch, idx) => (
                         <div 
                           key={idx}
@@ -158,14 +165,12 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
                     <FileText size={16} className="mr-2" />
                     View Syllabus
                   </a>
-                  <a 
-                    href={tech.registration}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button 
+                    onClick={scrollToRegistration}
                     className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
                   >
                     Register Now
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

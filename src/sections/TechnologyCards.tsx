@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Calendar, Users, FileText, Timer, Code2, Cloud, BrainCircuit, Shield, Cpu } from 'lucide-react';
+import { Clock, Calendar, Users, FileText, Timer, Code2, Globe, BrainCircuit, Shield, Cpu, Cloud } from 'lucide-react';
 
 interface TechnologyCardsProps {
   isOnline?: boolean;
@@ -121,8 +121,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
     }
   ];
 
-  const scrollToRegistration = (e: React.MouseEvent) => {
-    e.preventDefault();
+  const scrollToRegistration = () => {
     const registrationSection = document.getElementById('register');
     if (registrationSection) {
       registrationSection.scrollIntoView({ behavior: 'smooth' });
