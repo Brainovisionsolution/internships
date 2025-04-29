@@ -14,13 +14,17 @@ import Registration from '../sections/Registration';
 import Technologies from '../sections/Technologies';
 import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
+import WhyJoinUs from '../sections/WhyJoinUs';
+import TechnologyCards from '../sections/TechnologyCards';
 
 const HomePage: React.FC = () => {
   return (
     <Layout>
       <HeroSection />
       <ProgramHighlights isOnline={false} />
+      <WhyJoinUs isOnline={false} />
       <AboutAI />
+      <TechnologyCards isOnline={false} />
       <BatchDates isOnline={false} />
       <BatchTimings isOnline={false} />
       <Curriculum />
