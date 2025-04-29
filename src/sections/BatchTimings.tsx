@@ -75,8 +75,8 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
-      time: "04:30 PM to 06:00 PM - AI with Python", 
-      fee: "₹5,000",
+      time: "04:30 PM to 06:00 PM - AI with IOT", 
+      fee: "₹7,000",
       syllabus: "https://brainovision.in/offline-internship-ai-syllabus"
     },
     { 
