@@ -131,22 +131,6 @@ const TechnologyOverview: React.FC = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Tech Journey?</h3>
-            <p className="text-purple-100 mb-8">
-              Choose your preferred technology track and join our virtual internship program. 
-              Limited seats available for each technology batch.
-            </p>
-            <a 
-              href="#register" 
-              className="inline-block bg-white text-purple-600 font-medium rounded-lg px-8 py-3 hover:bg-purple-50 transition-colors duration-300"
-            >
-              Secure Your Spot Now
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
