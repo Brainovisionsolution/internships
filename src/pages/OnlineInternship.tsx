@@ -22,7 +22,7 @@ const OnlineInternship: React.FC = () => {
       <OnlineHeroSection />
       <ProgramHighlights isOnline={true} />
       <WhyJoinUs isOnline={true} />
-      <TechnologyCards isOnline={true} />
+      <TechnologyCards isOnline={false} />
       <TechnologyOverview />
       <BatchDates isOnline={true} />
       <BatchTimings isOnline={true} />
