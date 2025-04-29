@@ -10,7 +10,7 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline }) => {
     { name: 'Certification', intensive: 'Provided by Brainovision Pvt. Ltd, an ISO Certified and MSME Registered company', others: 'Often not ISO certified or government registered' },
     { name: 'Curriculum', intensive: 'Cutting-edge, AI-Integrated in every technology, with a project-based learning model', others: 'Generic curriculum with outdated content and minimal real-world applications' },
     { name: 'Projects', intensive: 'AI-powered projects aligned with UN Sustainable Development Goals (SDGs)', others: 'Basic mini-projects with no global relevance or real-time tech integration' },    
-    { name: 'Mentor Team', intensive: 'Mentored by alumni from IITs, IIITs, and NITs', others: 'Inexperienced or generic trainers' }, { name: 'Program Fees', intensive: 'Training starts from just ₹999, internship is unpaid to encourage genuine learning', others: 'Often charge high fees without justified value' }, 
+    { name: 'Mentor Team', intensive: 'Mentored by alumni from IITs, IIITs, and NITs', others: 'Inexperienced or generic trainers' }, 
     { name: 'Program Fees', intensive: 'Training starts from just ₹999, internship is unpaid to encourage genuine learning', others: 'Often charge high fees without justified value' },
     { name: 'Learning Environment', intensive: 'Fully air-conditioned classrooms, equipped with projectors and screen setups', others: 'Basic classrooms without professional infrastructure' }, 
     { name: 'Official Partnerships', intensive: 'In association with AICTE, Government of Andhra Pradesh, and NASSCOM', others: 'Usually no official affiliations' }, 
