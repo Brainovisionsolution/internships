@@ -7,19 +7,16 @@ interface WhyJoinUsProps {
 
 const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline }) => {
   const features = [
-    { name: 'Curriculum', intensive: 'Designed as per companies\' current requirements', others: 'Not industry-aligned' },
-    { name: 'Doubts Clarification', intensive: '9AM - 9PM Doubt Clarification.\n1500+ Mentors to help you.', others: 'Only 1-2 hours per day' },
-    { name: 'Trainers', intensive: 'Alumni of IIT & Top MNCs like\nAmazon, Microsoft.\nBuilt world-class products', others: 'No real world project experience' },
-    { name: 'Placements Record', intensive: 'Proven results for every branch,\ndegree, CGPA', others: 'For only select branches, degrees' },
-    { name: 'Placements Opportunities', intensive: 'Unlimited from a pool of\n3000+ companies', others: 'Limited (15-20)' },
-    { name: 'Institute Recognised by', intensive: 'AICTE & NASSCOM Approved', others: 'No recognition' },
-    { name: 'Projects', intensive: '10+ Real-time Projects that makes\nyour resume strong', others: '~1-2 real time projects' },
-    { name: 'Access to Labs', intensive: '24x7 Online State-of-the-art Labs.\nNo installation/setup needed.', others: 'Only 2 hours/day' },
-    { name: 'AI Mock Interviews', intensive: 'with NxtMock', others: '', hasX: true },
-    { name: 'Expert Mock Interviews', intensive: 'with Dedicated Tech & HR Panels', others: '', hasX: true },
-    { name: "Seniors' Interview Experiences", intensive: 'Access to 300+ Sessions', others: '', hasX: true },
-    { name: 'Scheduling Interviews', intensive: '', others: '', hasCheck: true, hasX: true },
-    { name: 'Salary Negotiation with Companies', intensive: 'For higher salaries', others: '', hasCheck: true, hasX: true }
+    { name: 'Certification', intensive: 'Provided by Brainovision Pvt. Ltd, an ISO Certified and MSME Registered company', others: 'Often not ISO certified or government registered' },
+    { name: 'Curriculum', intensive: 'Cutting-edge, AI-Integrated in every technology, with a project-based learning model', others: 'Generic curriculum with outdated content and minimal real-world applications' },
+    { name: 'Projects', intensive: 'AI-powered projects aligned with UN Sustainable Development Goals (SDGs)', others: 'Basic mini-projects with no global relevance or real-time tech integration' },    
+    { name: 'Mentor Team', intensive: 'Mentored by alumni from IITs, IIITs, and NITs', others: 'Inexperienced or generic trainers' }, { name: 'Program Fees', intensive: 'Training starts from just ₹999, internship is unpaid to encourage genuine learning', others: 'Often charge high fees without justified value' }, 
+    { name: 'Program Fees', intensive: 'Training starts from just ₹999, internship is unpaid to encourage genuine learning', others: 'Often charge high fees without justified value' },
+    { name: 'Learning Environment', intensive: 'Fully air-conditioned classrooms, equipped with projectors and screen setups', others: 'Basic classrooms without professional infrastructure' }, 
+    { name: 'Official Partnerships', intensive: 'In association with AICTE, Government of Andhra Pradesh, and NASSCOM', others: 'Usually no official affiliations' }, 
+    { name: 'Tasks & Assessments', intensive: 'Access to LMS for 1 year, regular assessments, and AI Interview Preparation Portal', others: 'Limited or no post-session access, lacks assessment structure' }, 
+    { name: 'Certification Value', intensive: 'Government-approved certificates with Letter of Recommendation (LoR)', others: 'Private certifications with limited industry recognition' },
+    { name: 'Placement Assistance', intensive: 'Internship completion leads to job opportunities shared from MNCs and startups, domain-specific', others: 'No or vague placement guidance' }  
   ];
 
   const themeColor = isOnline ? 'purple' : 'indigo';
