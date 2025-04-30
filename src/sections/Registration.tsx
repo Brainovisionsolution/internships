@@ -24,9 +24,9 @@ const Registration: React.FC = () => {
         registration: "https://brainovision.in/online-internship-registration",
         syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus"
       },
-      servicenow: {
-        registration: "https://brainovision.in/online-internship-servicenow-registration",
-        syllabus: "https://brainovision.in/ai-internship-servicenow-syllabus"
+      java1: {
+        registration: "https://brainovision.in/online-internship-registration",
+        syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus"
       }
     }
   };
@@ -184,10 +184,10 @@ const Registration: React.FC = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 mb-2">ServiceNow</p>
+                    <p className="font-medium text-gray-900 mb-2">Java Full Stack</p>
                     <div className="flex gap-2">
                       <a 
-                        href={registrationLinks.online.servicenow.syllabus}
+                        href={registrationLinks.online.java1.syllabus}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-purple-600 hover:text-purple-700"
@@ -201,7 +201,7 @@ const Registration: React.FC = () => {
                         rel="noopener noreferrer"
                         className="text-sm text-purple-600 hover:text-purple-700"
                       >
-                        Register (₹2,999)
+                        Register (₹1,999)
                       </a>
                     </div>
                   </div>
