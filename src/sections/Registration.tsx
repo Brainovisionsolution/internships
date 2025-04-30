@@ -196,7 +196,7 @@ const Registration: React.FC = () => {
                       </a>
                       <span className="text-gray-300">|</span>
                       <a 
-                        href={registrationLinks.online.servicenow.registration}
+                        href={registrationLinks.online.java1.registration}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-purple-600 hover:text-purple-700"
