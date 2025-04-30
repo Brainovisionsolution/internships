@@ -23,10 +23,10 @@ const OnlineRegistration: React.FC = () => {
       syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
       fee: "₹1,999"
     },
-    servicenow: {
-      registration: "https://brainovision.in/online-internship-servicenow-registration",
-      syllabus: "https://brainovision.in/ai-internship-servicenow-syllabus",
-      fee: "₹2,999"
+   java: {
+      registration: "https://brainovision.in/online-internship-registration",
+      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
+      fee: "₹1,999"
     }
   };
 
