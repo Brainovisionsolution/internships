@@ -52,7 +52,7 @@ const OnlineRegistration: React.FC = () => {
                     {key === 'digital' && 'Digital Marketing'}
                     {key === 'mern' && 'MERN Stack'}
                     {key === 'genai' && 'Generative AI'}
-                    {key === 'java1' && 'JAVA1'}
+                    {key === 'java1' && 'Java Full Stack'}
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center text-gray-600">
