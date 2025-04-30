@@ -23,7 +23,7 @@ const OnlineRegistration: React.FC = () => {
       syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
       fee: "₹1,999"
     },
-   java: {
+   java1: {
       registration: "https://brainovision.in/online-internship-registration",
       syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
       fee: "₹1,999"
@@ -52,7 +52,7 @@ const OnlineRegistration: React.FC = () => {
                     {key === 'digital' && 'Digital Marketing'}
                     {key === 'mern' && 'MERN Stack'}
                     {key === 'genai' && 'Generative AI'}
-                    {key === 'servicenow' && 'ServiceNow'}
+                    {key === 'java1' && 'JAVA1'}
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center text-gray-600">
