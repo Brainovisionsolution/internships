@@ -18,9 +18,11 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Program', href: '#program' },
-    { name: 'Curriculum', href: '#curriculum' },
     { name: 'Trainers', href: '#trainers' },
-    { name: 'Technologies', href: '#technologies' },
+   {
+    name: 'Technologies',
+    href: location.pathname === '/online' ? '#technologies-online' : '#technologies-offline',
+  },
     { name: 'About Us', href: '#about' },
   ];
 
