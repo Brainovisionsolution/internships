@@ -32,7 +32,6 @@ const HomePage: React.FC = () => {
       <Trainers isOnline={false} />
       <PlacementAssistance isOnline={false} />
       <Facilities />
-      <Technologies isOnline={false} />
       <Certificates />
       <AboutUs />
       <Registration />
