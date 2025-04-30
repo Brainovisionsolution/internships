@@ -64,13 +64,13 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       ]
     },
     {
-      title: "ServiceNow Development",
+      title: "Java Full Stack Development",
       time: "06:30 PM - 08:00 PM",
-      fee: "₹2,999/-",
+      fee: "₹1,999/-",
       gradient: "from-orange-600 to-amber-400",
-      icon: <Cloud size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-servicenow-syllabus",
-      registration: "https://brainovision.in/online-internship-servicenow-registration",
+      icon: <Laptop size={32} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
+      registration: "https://brainovision.in/online-internship-registration",
       dates: [
         { date: "5th May 2025", seats: 28 },
         { date: "12th May 2025", seats: 36 },
