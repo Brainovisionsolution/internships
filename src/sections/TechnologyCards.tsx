@@ -14,11 +14,13 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       gradient: "from-blue-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-syllabus",
+      isFull: true,
+      nextBatch: "June 2025",
       dates: [
-        { date: "5th May 2025", seats: 35 },
-        { date: "12th May 2025", seats: 40 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "5th May 2025", seats: 0 },
+        { date: "12th May 2025", seats: 0 },
+        { date: "19th May 2025", seats: 0 },
+        { date: "26th May 2025", seats: 0 }
       ]
     },
     {
@@ -112,11 +114,13 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-night-syllabus",
+       isFull: true,
+      nextBatch: "June 2025",
       dates: [
-        { date: "5th May 2025", seats: 34 },
-        { date: "12th May 2025", seats: 39 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "5th May 2025", seats: 0 },
+        { date: "12th May 2025", seats: 0 },
+        { date: "19th May 2025", seats: 0 },
+        { date: "26th May 2025", seats: 0 }
       ]
     }
   ];
@@ -171,30 +175,37 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <div className="text-sm font-medium text-gray-700 mb-2 flex items-center">
-                      <Calendar size={16} className="mr-2" />
-                      Batch Starting Dates:
+                 <div className="space-y-4">
+                  {tech.isFull ? (
+                    <div className="bg-red-50 rounded-lg p-4 text-center">
+                      <p className="text-red-700 font-medium mb-1">All Slots Full</p>
+                      <p className="text-red-600 text-sm">Next batch starts in {tech.nextBatch}</p>
                     </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      {tech.dates.map((batch, idx) => (
-                        <div 
-                          key={idx}
-                          className={`rounded-lg p-2 text-center ${
-                            batch.seats < 10 
-                              ? 'bg-red-50 text-red-700' 
-                              : batch.seats < 20 
-                              ? 'bg-yellow-50 text-yellow-700'
-                              : 'bg-gray-50 text-gray-900'
-                          }`}
-                        >
-                          <div className="text-sm font-medium">{batch.date}</div>
-                          <div className="text-xs">{batch.seats} seats left</div>
-                        </div>
-                      ))}
+                  ) : (
+                    <div>
+                      <div className="text-sm font-medium text-gray-700 mb-2 flex items-center">
+                        <Calendar size={16} className="mr-2" />
+                        Batch Starting Dates:
+                      </div>
+                      <div className="grid grid-cols-2 gap-2">
+                        {tech.dates.map((batch, idx) => (
+                          <div 
+                            key={idx}
+                            className={`rounded-lg p-2 text-center ${
+                              batch.seats < 10 
+                                ? 'bg-red-50 text-red-700' 
+                                : batch.seats < 20 
+                                ? 'bg-yellow-50 text-yellow-700'
+                                : 'bg-gray-50 text-gray-900'
+                            }`}
+                          >
+                            <div className="text-sm font-medium">{batch.date}</div>
+                            <div className="text-xs">{batch.seats} seats left</div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 <div className="mt-6 space-y-3">
@@ -207,12 +218,14 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
                     <FileText size={16} className="mr-2" />
                     View Syllabus
                   </a>
-                  <button 
-                    onClick={scrollToRegistration}
-                    className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
-                  >
-                    Register Now
-                  </button>
+                  {!tech.isFull && (
+                    <button 
+                      onClick={scrollToRegistration}
+                      className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
+                    >
+                      Register Now
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
