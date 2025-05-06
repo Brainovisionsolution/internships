@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, BrainCircuit } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,21 +19,19 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Program', href: '#program' },
+    { name: 'Curriculum', href: '#curriculum' },
     { name: 'Trainers', href: '#trainers' },
-   {
-    name: 'Technologies',
-    href: location.pathname === '/online' ? '#technologies-online' : '#technologies-offline',
-  },
+    { name: 'Technologies', href: '#technologies' },
     { name: 'About Us', href: '#about' },
   ];
 
   const handleModeChange = (mode: string) => {
     if (mode === 'online') {
-      window.location.href = 'https://internships.brainovision.in/online';
+      navigate('/online');
     } else if (mode === 'offline') {
-      window.location.href = 'https://internships.brainovision.in';
+      navigate('/');
     } else if (mode === 'hybrid') {
-      window.location.href = 'https://wa.me/917207775039?text=Hi,%20I%20am%20interested%20in%20the%20Hybrid%20Internship%20Program';
+      navigate('/hybrid');
     }
   };
 
@@ -42,7 +41,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/logos/bovyellow.png" 
+              src="https://brainovision.in/assets/images/logo.png" 
               alt="Brainovision Logo" 
               className="h-12 w-auto"
             />
@@ -73,7 +72,11 @@ const Header: React.FC = () => {
               </button>
               <button
                 onClick={() => handleModeChange('hybrid')}
-                className="px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 transition-colors"
+                className={`px-4 py-2 rounded-md transition-colors ${
+                  location.pathname === '/hybrid' 
+                    ? 'bg-indigo-600 text-white' 
+                    : 'text-gray-700 hover:bg-gray-200'
+                }`}
               >
                 Hybrid
               </button>
@@ -137,7 +140,11 @@ const Header: React.FC = () => {
                 </button>
                 <button
                   onClick={() => handleModeChange('hybrid')}
-                  className="w-full px-4 py-2 rounded-md text-gray-700 hover:bg-gray-200 transition-colors"
+                  className={`w-full px-4 py-2 rounded-md transition-colors ${
+                    location.pathname === '/hybrid' 
+                      ? 'bg-indigo-600 text-white' 
+                      : 'text-gray-700 hover:bg-gray-200'
+                  }`}
                 >
                   Hybrid Mode
                 </button>
