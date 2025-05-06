@@ -6,27 +6,37 @@ const HybridRegistration: React.FC = () => {
     ai: {
       registration: "https://brainovision.in/hybrid-internship-ai-registration",
       syllabus: "https://brainovision.in/hybrid-internship-ai-syllabus",
-      fee: "₹1,499"
+      fee: "₹4,000"
+    },
+    aiml: {
+      registration: "https://brainovision.in/hybrid-internship-aiml-registration",
+      syllabus: "https://brainovision.in/hybrid-internship-aiml-syllabus",
+      fee: "₹6,000"
+    },
+    advanced: {
+      registration: "https://brainovision.in/hybrid-internship-advanced-registration",
+      syllabus: "https://brainovision.in/hybrid-internship-advanced-syllabus",
+      fee: "₹8,000"
+    },
+    cyber: {
+      registration: "https://brainovision.in/hybrid-internship-cybersecurity-registration",
+      syllabus: "https://brainovision.in/hybrid-internship-cybersecurity-syllabus",
+      fee: "₹6,000"
     },
     cloud: {
       registration: "https://brainovision.in/hybrid-internship-cloud-registration",
       syllabus: "https://brainovision.in/hybrid-internship-cloud-syllabus",
-      fee: "₹1,999"
+      fee: "₹6,000"
     },
     mern: {
       registration: "https://brainovision.in/hybrid-internship-mern-registration",
       syllabus: "https://brainovision.in/hybrid-internship-mern-syllabus",
-      fee: "₹2,499"
+      fee: "₹7,000"
     },
-    cybersecurity: {
-      registration: "https://brainovision.in/hybrid-internship-cybersecurity-registration",
-      syllabus: "https://brainovision.in/hybrid-internship-cybersecurity-syllabus",
-      fee: "₹2,499"
-    },
-    iot: {
-      registration: "https://brainovision.in/hybrid-internship-iot-registration",
-      syllabus: "https://brainovision.in/hybrid-internship-iot-syllabus",
-      fee: "₹2,499"
+    fullstack: {
+      registration: "https://brainovision.in/hybrid-internship-fullstack-registration",
+      syllabus: "https://brainovision.in/hybrid-internship-fullstack-syllabus",
+      fee: "₹6,000"
     }
   };
 
@@ -48,11 +58,13 @@ const HybridRegistration: React.FC = () => {
               <div key={key} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
                 <div className="p-6 bg-green-600">
                   <h3 className="text-xl font-bold text-white mb-2">
-                    {key === 'ai' && 'AI with Python'}
-                    {key === 'cloud' && 'AI with Cloud'}
+                    {key === 'ai' && 'AI using Python'}
+                    {key === 'aiml' && 'AI with Python, DS & ML'}
+                    {key === 'advanced' && 'Advanced AI using Python'}
+                    {key === 'cyber' && 'AI with CyberSecurity'}
+                    {key === 'cloud' && 'AI with Cloud (AWS)'}
                     {key === 'mern' && 'AI with MERN Stack'}
-                    {key === 'cybersecurity' && 'AI with Cybersecurity'}
-                    {key === 'iot' && 'Internet of Things'}
+                    {key === 'fullstack' && 'Python Full Stack with AI'}
                   </h3>
                   <p className="text-green-100">1 Month Offline + 1 Month Online</p>
                 </div>

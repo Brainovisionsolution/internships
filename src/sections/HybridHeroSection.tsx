@@ -8,10 +8,11 @@ const HybridHeroSection: React.FC = () => {
     setIsVisible(true);
   }, []);
 
-  const scrollToRegistration = () => {
-    const registrationSection = document.getElementById('register');
-    if (registrationSection) {
-      registrationSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToCourses = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const coursesSection = document.querySelector('.py-16.md\\:py-24.bg-gray-50');
+    if (coursesSection) {
+      coursesSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -45,7 +46,7 @@ const HybridHeroSection: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={scrollToRegistration}
+                onClick={scrollToCourses}
                 className="bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center"
               >
                 View Programs & Register
@@ -75,7 +76,7 @@ const HybridHeroSection: React.FC = () => {
             </div>
           </div>
           
-          {/* Hybrid Learning Card */}
+          {/* Virtual Learning Card */}
           <div className={`flex justify-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative w-full max-w-md">
               <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-green-500 to-teal-500 opacity-75 blur-xl"></div>
@@ -119,12 +120,12 @@ const HybridHeroSection: React.FC = () => {
                 <div className="mt-6 pt-6 border-t border-green-200 border-opacity-20">
                   <div className="text-sm mb-2">Starting from just</div>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">₹1,499</span>
-                    <span className="ml-2 text-sm line-through opacity-70">₹2,999</span>
+                    <span className="text-3xl font-bold">₹4,000</span>
+                    <span className="ml-2 text-sm line-through opacity-70">₹8,000</span>
                     <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded">50% OFF</span>
                   </div>
                   <button 
-                    onClick={scrollToRegistration}
+                    onClick={scrollToCourses}
                     className="mt-3 block w-full bg-white text-green-800 text-center font-medium rounded-lg px-6 py-3 transition-all duration-300 hover:bg-opacity-90"
                   >
                     View Programs & Register
