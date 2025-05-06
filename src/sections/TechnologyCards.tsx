@@ -28,7 +28,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "07:30 AM to 09:00 AM",
       fee: "₹6,000/-",
       gradient: "from-purple-600 to-indigo-400",
-      icon: <Cloud size={32} className="text-white" />,
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
         { date: "12th May 2025", seats: 36 },
@@ -42,7 +42,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "09:30 AM to 11:00 AM",
       fee: "₹7,000/-",
       gradient: "from-indigo-600 to-blue-400",
-      icon: <Code2 size={32} className="text-white" />,
+      icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
         { date: "12th May 2025", seats: 12 },
@@ -84,7 +84,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "02:00 PM to 04:00 PM",
       fee: "₹6,000/-",
       gradient: "from-orange-600 to-amber-400",
-      icon: <Cpu size={32} className="text-white" />,
+      icon: <Cloud size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
         { date: "12th May 2025", seats: 28 },
@@ -98,7 +98,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       time: "04:30 PM to 06:00 PM",
       fee: "₹7,000/-",
       gradient: "from-teal-600 to-emerald-400",
-      icon: <BrainCircuit size={32} className="text-white" />,
+     icon: <Code2 size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       dates: [
         { date: "12th May 2025", seats: 24 },
