@@ -17,110 +17,108 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       isFull: true,
       nextBatch: "June 2025",
       dates: [
-        { date: "5th May 2025", seats: 0 },
         { date: "12th May 2025", seats: 0 },
         { date: "19th May 2025", seats: 0 },
-        { date: "26th May 2025", seats: 0 }
+        { date: "26th May 2025", seats: 0 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "AI with Cloud (AWS)",
+      title: "AI with Python, DS & ML",
       time: "07:30 AM to 09:00 AM",
-      fee: "₹5,000/-",
+      fee: "₹6,000/-",
       gradient: "from-purple-600 to-indigo-400",
       icon: <Cloud size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 30 },
-        { date: "12th May 2025", seats: 38 },
+        { date: "12th May 2025", seats: 36 },
         { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "26th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "AI with MERN Stack (WEB)",
+      title: "AI with Python, DS & ML",
       time: "09:30 AM to 11:00 AM",
       fee: "₹7,000/-",
       gradient: "from-indigo-600 to-blue-400",
       icon: <Code2 size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
+      syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 25 },
-        { date: "12th May 2025", seats: 35 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "12th May 2025", seats: 12 },
+        { date: "19th May 2025", seats: 29 },
+        { date: "26th May 2025", seats: 32 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "Advanced AI using Python",
+      title: "Advanced AI using Python, DS & ML",
       time: "11:30 AM to 01:30 PM",
       fee: "₹8,000/-",
       gradient: "from-green-600 to-emerald-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-advanced-python-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 20 },
-        { date: "12th May 2025", seats: 32 },
-        { date: "19th May 2025", seats: 38 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "12th May 2025", seats: 21 },
+        { date: "19th May 2025", seats: 30 },
+        { date: "26th May 2025", seats: 33 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "AI with Cybersecurity",
+      title: "AI with CyberSecurity",
       time: "02:00 PM to 04:00 PM",
-      fee: "₹7,000/-",
+      fee: "₹6,000/-",
       gradient: "from-red-600 to-rose-400",
       icon: <Shield size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-cybersecurity-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 28 },
-        { date: "12th May 2025", seats: 36 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "12th May 2025", seats: 18 },
+        { date: "19th May 2025", seats: 36 },
+        { date: "26th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "Internet Of Things - IOT",
-      time: "04:30 PM to 06:00 PM",
-      fee: "₹7,000/-",
+      title: "AI with Cloud (AWS)",
+      time: "02:00 PM to 04:00 PM",
+      fee: "₹6,000/-",
       gradient: "from-orange-600 to-amber-400",
       icon: <Cpu size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-iot-syllabus",
+      syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 33 },
-        { date: "12th May 2025", seats: 37 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "12th May 2025", seats: 28 },
+        { date: "19th May 2025", seats: 35 },
+        { date: "26th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "AI with Python",
-      time: "06:15 PM to 07:30 PM",
-      fee: "₹5,000/-",
+      title: "AI with MERN Stack",
+      time: "04:30 PM to 06:00 PM",
+      fee: "₹7,000/-",
       gradient: "from-teal-600 to-emerald-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-python-evening-syllabus",
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       dates: [
-        { date: "5th May 2025", seats: 31 },
-        { date: "12th May 2025", seats: 38 },
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 }
+        { date: "12th May 2025", seats: 24 },
+        { date: "19th May 2025", seats: 31 },
+        { date: "26th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 }
       ]
     },
     {
-      title: "Python with AI",
-      time: "07:45 PM to 08:30 PM",
-      fee: "₹4,000/-",
+      title: "Python Full Stack with AI",
+      time: "06:15 PM to 07:30 PM",
+      fee: "₹6,000/-",
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internship-python-night-syllabus",
-       isFull: true,
-      nextBatch: "June 2025",
-      dates: [
-        { date: "5th May 2025", seats: 0 },
-        { date: "12th May 2025", seats: 0 },
-        { date: "19th May 2025", seats: 0 },
-        { date: "26th May 2025", seats: 0 }
+       dates: [
+        { date: "5th May 2025", seats: 37 },
+        { date: "12th May 2025", seats: 40 },
+        { date: "19th May 2025", seats: 40 },
+        { date: "26th May 2025", seats: 40 }
       ]
     }
   ];
