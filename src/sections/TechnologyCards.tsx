@@ -124,7 +124,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
   ];
 
   const scrollToRegistration = () => {
-    const registrationSection = document.getElementById('register');
+    const registrationSection = document.getElementById('technologies');
     if (registrationSection) {
       registrationSection.scrollIntoView({ behavior: 'smooth' });
     }
