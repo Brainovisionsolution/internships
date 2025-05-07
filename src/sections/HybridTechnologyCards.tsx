@@ -9,7 +9,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹4,000/-",
       gradient: "from-blue-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-python-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       isFull: true,
       nextBatch: "June 2025",
       dates: [
@@ -25,7 +25,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹5,500/-",
       gradient: "from-purple-600 to-indigo-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-python-ds-ml-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-mls",
       dates: [
         { date: "12th May 2025", seats: 36 },
         { date: "19th May 2025", seats: 40 },
@@ -39,7 +39,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹6,500/-",
       gradient: "from-indigo-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-python-ds-ml-morning-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
         { date: "12th May 2025", seats: 12 },
         { date: "19th May 2025", seats: 29 },
@@ -53,7 +53,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹7,500/-",
       gradient: "from-green-600 to-emerald-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-advanced-python-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
         { date: "12th May 2025", seats: 21 },
         { date: "19th May 2025", seats: 30 },
@@ -67,7 +67,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹5,500/-",
       gradient: "from-red-600 to-rose-400",
       icon: <Shield size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-cybersecurity-syllabus",
+      syllabus: "https://brainovision.in/ai-with-cybersecurity",
       dates: [
         { date: "12th May 2025", seats: 18 },
         { date: "19th May 2025", seats: 36 },
@@ -81,7 +81,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹5,500/-",
       gradient: "from-orange-600 to-amber-400",
       icon: <Cloud size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-cloud-syllabus",
+      syllabus: "https://brainovision.in/ai-with-aws",
       dates: [
         { date: "12th May 2025", seats: 28 },
         { date: "19th May 2025", seats: 35 },
@@ -95,7 +95,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹6,500/-",
       gradient: "from-teal-600 to-emerald-400",
       icon: <Code2 size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-mern-syllabus",
+      syllabus: "https://brainovision.in/ai-with-mern",
       dates: [
         { date: "12th May 2025", seats: 24 },
         { date: "19th May 2025", seats: 31 },
@@ -109,7 +109,7 @@ const HybridTechnologyCards: React.FC = () => {
       fee: "₹5,500/-",
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/hybrid-internship-python-fullstack-syllabus",
+      syllabus: "https://brainovision.in/python-full-stack-with-ai",
       dates: [
         { date: "5th May 2025", seats: 37 },
         { date: "12th May 2025", seats: 40 },
