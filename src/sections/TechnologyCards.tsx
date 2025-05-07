@@ -113,7 +113,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹6,000/-",
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/python-full-stack-with-ai"
+      syllabus: "https://brainovision.in/python-full-stack-with-ai",
        dates: [
         { date: "5th May 2025", seats: 37 },
         { date: "12th May 2025", seats: 40 },
