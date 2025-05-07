@@ -9,12 +9,12 @@ const HybridHeroSection: React.FC = () => {
   }, []);
 
   const scrollToCourses = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const coursesSection = document.querySelector('.py-16.md\\:py-24.bg-gray-50');
-    if (coursesSection) {
-      coursesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  e.preventDefault();
+  const coursesSection = document.getElementById('hybridregister');
+  if (coursesSection) {
+    coursesSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
   return (
     <section className="relative bg-gradient-to-r from-green-900 via-teal-800 to-green-900 text-white pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
