@@ -13,7 +13,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹4,000/-",
       gradient: "from-blue-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-python-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       isFull: true,
       nextBatch: "June 2025",
       dates: [
@@ -29,7 +29,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹6,000/-",
       gradient: "from-purple-600 to-indigo-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
         { date: "12th May 2025", seats: 36 },
         { date: "19th May 2025", seats: 40 },
@@ -43,7 +43,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹7,000/-",
       gradient: "from-indigo-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-aws-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
         { date: "12th May 2025", seats: 12 },
         { date: "19th May 2025", seats: 29 },
@@ -57,7 +57,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹8,000/-",
       gradient: "from-green-600 to-emerald-400",
       icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-internship-advanced-python-syllabus",
+      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
         { date: "12th May 2025", seats: 21 },
         { date: "19th May 2025", seats: 30 },
