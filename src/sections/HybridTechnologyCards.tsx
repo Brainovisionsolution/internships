@@ -22,7 +22,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "AI with Python, DS & ML",
       time: "07:30 AM to 09:00 AM",
-      fee: "₹6,000/-",
+      fee: "₹5,500/-",
       gradient: "from-purple-600 to-indigo-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-python-ds-ml-syllabus",
@@ -36,7 +36,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "AI with Python, DS & ML",
       time: "09:30 AM to 11:00 AM",
-      fee: "₹7,000/-",
+      fee: "₹6,500/-",
       gradient: "from-indigo-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-python-ds-ml-morning-syllabus",
@@ -50,7 +50,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "Advanced AI using Python, DS & ML",
       time: "11:30 AM to 01:30 PM",
-      fee: "₹8,000/-",
+      fee: "₹7,500/-",
       gradient: "from-green-600 to-emerald-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-advanced-python-syllabus",
@@ -64,7 +64,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "AI with CyberSecurity",
       time: "02:00 PM to 04:00 PM",
-      fee: "₹6,000/-",
+      fee: "₹5,500/-",
       gradient: "from-red-600 to-rose-400",
       icon: <Shield size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-cybersecurity-syllabus",
@@ -78,7 +78,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "AI with Cloud (AWS)",
       time: "02:00 PM to 04:00 PM",
-      fee: "₹6,000/-",
+      fee: "₹5,500/-",
       gradient: "from-orange-600 to-amber-400",
       icon: <Cloud size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-cloud-syllabus",
@@ -92,7 +92,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "AI with MERN Stack",
       time: "04:30 PM to 06:00 PM",
-      fee: "₹7,000/-",
+      fee: "₹6,500/-",
       gradient: "from-teal-600 to-emerald-400",
       icon: <Code2 size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-mern-syllabus",
@@ -106,7 +106,7 @@ const HybridTechnologyCards: React.FC = () => {
     {
       title: "Python Full Stack with AI",
       time: "06:15 PM to 07:30 PM",
-      fee: "₹6,000/-",
+      fee: "₹5,500/-",
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/hybrid-internship-python-fullstack-syllabus",
@@ -120,7 +120,7 @@ const HybridTechnologyCards: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id = "hybridregister" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
