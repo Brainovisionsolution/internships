@@ -71,7 +71,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹6,000/-",
       gradient: "from-red-600 to-rose-400",
       icon: <Shield size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-with-cybersecurity",
+      syllabus: "https://brainovision.in/ai-internships-cybersecurity",
       dates: [
         { date: "12th May 2025", seats: 18 },
         { date: "19th May 2025", seats: 36 },
