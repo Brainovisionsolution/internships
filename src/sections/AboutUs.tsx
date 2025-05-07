@@ -107,7 +107,7 @@ const AboutUs: React.FC = () => {
               needed to thrive in the competitive tech industry.
             </p>
             <a 
-              href="#register" 
+              href="#technologies" 
               className="inline-block bg-white text-indigo-600 font-medium rounded-lg px-8 py-4 hover:bg-indigo-50 transition-colors duration-300"
             >
               Register Now
