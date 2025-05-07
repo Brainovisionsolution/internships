@@ -21,7 +21,6 @@ const HybridInternship: React.FC = () => {
       <Projects isOnline={false} isHybrid={true} />
       <Trainers isOnline={false} isHybrid={true} />
       <PlacementAssistance isOnline={false} isHybrid={true} />
-      <Technologies isOnline={false} isHybrid={true} />
       <Certificates />
       <AboutUs />
     </Layout>
