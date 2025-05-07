@@ -29,7 +29,7 @@ const Certificates: React.FC = () => {
               <img 
                 src={certificate.image} 
                 alt={certificate.title}
-                className="w-full h-[350px] object-cover"
+                className="w-full h-[550px] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
