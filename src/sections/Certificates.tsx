@@ -25,11 +25,11 @@ const Certificates: React.FC = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Program Certificates</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((certificate, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden h-[450px] flex flex-col">
               <img 
                 src={certificate.image} 
                 alt={certificate.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-[250px] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{certificate.title}</h3>
