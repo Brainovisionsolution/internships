@@ -10,7 +10,7 @@ const HybridHeroSection: React.FC = () => {
 
   const scrollToCourses = (e: React.MouseEvent) => {
   e.preventDefault();
-  const coursesSection = document.getElementById('hybridregister');
+  const coursesSection = document.getElementById('technologies');
   if (coursesSection) {
     coursesSection.scrollIntoView({ behavior: 'smooth' });
   }
