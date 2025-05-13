@@ -20,7 +20,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
         { date: "19th May 2025", seats: 0 },
         { date: "26th May 2025", seats: 0 },
         { date: "2nd June 2025", seats: 40 },
-        { date: "9th June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
@@ -48,7 +48,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
         { date: "19th May 2025", seats: 29 },
         { date: "26th May 2025", seats: 32 },
         { date: "2nd June 2025", seats: 40 },
-        { date: "9th June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
