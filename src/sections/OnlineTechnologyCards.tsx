@@ -16,9 +16,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
       registration: "https://brainovision.in/online-internship-jfs-registration",
       dates: [
-        { date: "5th May 2025", seats: 35 },
         { date: "12th May 2025", seats: 40 },
-        { date: "19th May 2025", seats: 40 }
+        { date: "19th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
@@ -30,9 +31,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "5th May 2025", seats: 30 },
         { date: "12th May 2025", seats: 38 },
-        { date: "19th May 2025", seats: 40 }
+        { date: "19th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
@@ -44,9 +46,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "5th May 2025", seats: 25 },
         { date: "12th May 2025", seats: 35 },
-        { date: "19th May 2025", seats: 40 }
+        { date: "19th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
@@ -58,9 +61,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "5th May 2025", seats: 20 },
         { date: "12th May 2025", seats: 32 },
-        { date: "19th May 2025", seats: 38 }
+        { date: "19th May 2025", seats: 38 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     },
     {
@@ -72,9 +76,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "5th May 2025", seats: 28 },
         { date: "12th May 2025", seats: 36 },
-        { date: "19th May 2025", seats: 40 }
+        { date: "19th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
       ]
     }
   ];
