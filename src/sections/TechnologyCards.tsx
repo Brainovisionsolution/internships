@@ -8,22 +8,6 @@ interface TechnologyCardsProps {
 const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
   const technologies = [
     {
-      title: "AI using Python",
-      time: "06:00 AM to 07:00 AM",
-      fee: "₹4,000/-",
-      gradient: "from-blue-600 to-blue-400",
-      icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
-      isFull: true,
-      nextBatch: "June 2025",
-      dates: [
-        { date: "19th May 2025", seats: 0 },
-        { date: "26th May 2025", seats: 0 },
-        { date: "2nd June 2025", seats: 40 },
-        { date: "9th June 2025", seats: 40 }
-      ]
-    },
-    {
       title: "AI with Python, DS & ML",
       time: "07:30 AM to 09:00 AM",
       fee: "₹6,000/-",
@@ -47,6 +31,20 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       dates: [
         { date: "19th May 2025", seats: 29 },
         { date: "26th May 2025", seats: 32 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
+      ]
+    },
+    {
+      title: "AI with MERN Stack",
+      time: "9:30 AM to 11:00 AM",
+      fee: "₹7,000/-",
+      gradient: "from-teal-600 to-emerald-400",
+     icon: <Code2 size={32} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-with-mern",
+      dates: [
+        { date: "19th May 2025", seats: 31 },
+        { date: "26th May 2025", seats: 40 },
         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 }
       ]
@@ -94,12 +92,12 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       ]
     },
     {
-      title: "AI with MERN Stack",
+      title: "AI with IOT",
       time: "04:30 PM to 06:00 PM",
       fee: "₹7,000/-",
       gradient: "from-teal-600 to-emerald-400",
      icon: <Code2 size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-with-mern",
+      syllabus: "",
       dates: [
         { date: "19th May 2025", seats: 31 },
         { date: "26th May 2025", seats: 40 },
