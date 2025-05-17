@@ -171,11 +171,15 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
                     <FileText size={16} className="mr-2" />
                     View Syllabus
                   </a>
-                  <button 
-                    onClick={scrollToRegistration}
-                    className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
+                  <a 
+                   href={tech.registration}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className={`w-full bg-gradient-to-r ${tech.gradient} text-white py-2 rounded-lg transition-all duration-300 hover:opacity-90 flex items-center justify-center`}
                   >
-                    Register Now
+                     Register Now
+                  </a>
+
                   </button>
                 </div>
               </div>
