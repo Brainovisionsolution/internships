@@ -97,7 +97,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       fee: "₹7,000/-",
       gradient: "from-teal-600 to-emerald-400",
      icon: <Code2 size={32} className="text-white" />,
-      syllabus: "",
+      syllabus: "https://brainovision.in/ai-iot",
       dates: [
         { date: "19th May 2025", seats: 31 },
         { date: "26th May 2025", seats: 40 },
