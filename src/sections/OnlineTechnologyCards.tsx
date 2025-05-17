@@ -179,8 +179,6 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
                   >
                      Register Now
                   </a>
-
-                  </button>
                 </div>
               </div>
             </div>
