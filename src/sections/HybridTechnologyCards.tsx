@@ -105,7 +105,7 @@ const HybridTechnologyCards: React.FC = () => {
     },
     {
       title: "Python Full Stack with AI",
-      time: "06:15 PM to 07:30 PM",
+      time: "04:30 PM to 06:00 PM",
       fee: "₹5,500/-",
       gradient: "from-cyan-600 to-blue-400",
       icon: <BrainCircuit size={32} className="text-white" />,
