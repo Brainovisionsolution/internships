@@ -4,22 +4,6 @@ import { Clock, Calendar, Users, FileText, Timer, Code2, Globe, BrainCircuit, Sh
 const HybridTechnologyCards: React.FC = () => {
   const technologies = [
     {
-      title: "AI using Python",
-      time: "06:00 AM to 07:00 AM",
-      fee: "₹4,000/-",
-      gradient: "from-blue-600 to-blue-400",
-      icon: <BrainCircuit size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/aiwithpython-ds-ml",
-      isFull: true,
-      nextBatch: "June 2025",
-      dates: [
-        { date: "19th May 2025", seats: 0 },
-        { date: "26th May 2025", seats: 0 },
-        { date: "2nd June 2025", seats: 0 },
-        { date: "9th June 2025", seats: 40 }
-      ]
-    },
-    {
       title: "AI with Python, DS & ML",
       time: "07:30 AM to 09:00 AM",
       fee: "₹5,500/-",
@@ -43,6 +27,21 @@ const HybridTechnologyCards: React.FC = () => {
       dates: [
         { date: "19th May 2025", seats: 29 },
         { date: "26th May 2025", seats: 32 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
+      ]
+    },
+    
+    {
+      title: "AI with MERN Stack",
+      time: "09:30 AM to 11:00 AM",
+      fee: "₹6,500/-",
+      gradient: "from-teal-600 to-emerald-400",
+      icon: <Code2 size={32} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-with-mern",
+      dates: [
+        { date: "19th May 2025", seats: 31 },
+        { date: "26th May 2025", seats: 40 },
         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 }
       ]
@@ -84,20 +83,6 @@ const HybridTechnologyCards: React.FC = () => {
       syllabus: "https://brainovision.in/ai-with-aws",
       dates: [
         { date: "19th May 2025", seats: 35 },
-        { date: "26th May 2025", seats: 40 },
-        { date: "2nd June 2025", seats: 40 },
-        { date: "9th June 2025", seats: 40 }
-      ]
-    },
-    {
-      title: "AI with MERN Stack",
-      time: "04:30 PM to 06:00 PM",
-      fee: "₹6,500/-",
-      gradient: "from-teal-600 to-emerald-400",
-      icon: <Code2 size={32} className="text-white" />,
-      syllabus: "https://brainovision.in/ai-with-mern",
-      dates: [
-        { date: "19th May 2025", seats: 31 },
         { date: "26th May 2025", seats: 40 },
         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 }
