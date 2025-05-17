@@ -88,6 +88,20 @@ const HybridTechnologyCards: React.FC = () => {
         { date: "9th June 2025", seats: 40 }
       ]
     },
+        {
+      title: "AI with IOT",
+      time: "04:30 PM to 06:00 PM",
+      fee: "₹6,500/-",
+      gradient: "from-teal-600 to-emerald-400",
+     icon: <Code2 size={32} className="text-white" />,
+      syllabus: "",
+      dates: [
+        { date: "19th May 2025", seats: 31 },
+        { date: "26th May 2025", seats: 40 },
+        { date: "2nd June 2025", seats: 40 },
+        { date: "9th June 2025", seats: 40 }
+      ]
+    },
     {
       title: "Python Full Stack with AI",
       time: "06:15 PM to 07:30 PM",
