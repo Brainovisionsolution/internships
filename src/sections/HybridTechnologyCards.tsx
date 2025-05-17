@@ -93,7 +93,8 @@ const HybridTechnologyCards: React.FC = () => {
       time: "04:30 PM to 06:00 PM",
       fee: "₹6,500/-",
       gradient: "from-teal-600 to-emerald-400",
-     icon: <Code2 size={32} className="text-white" />,
+      icon: <Code2 size={32} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-iot",
       syllabus: "",
       dates: [
         { date: "19th May 2025", seats: 31 },
