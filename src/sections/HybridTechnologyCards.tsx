@@ -11,10 +11,10 @@ const HybridTechnologyCards: React.FC = () => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/aiwithpython-ds-mls",
       dates: [
-        { date: "19th May 2025", seats: 40 },
-        { date: "26th May 2025", seats: 40 },
-        { date: "2nd June 2025", seats: 40 },
-        { date: "9th June 2025", seats: 40 }
+         { date: "2nd June 2025", seats: 0 },
+        { date: "9th June 2025", seats: 40 },
+        { date: "16th June 2025", seats: 40 },
+        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
