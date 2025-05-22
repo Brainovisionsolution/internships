@@ -15,7 +15,7 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
-        { date: "19th May 2025", seats: 18 },
+        { date: "2nd June 2025", seats: 40 },
         { date: "26th May 2025", seats: 40 },
         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 38 }
