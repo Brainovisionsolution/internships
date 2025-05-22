@@ -9,7 +9,7 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
   const technologies = [
     {
       title: "Java Full Stack Development",
-      time: "06:30 AM - 07:45 AM",
+      time: "06:00 PM - 07:00 PM",
       fee: "₹999/-",
       gradient: "from-blue-600 to-blue-400",
       icon: <Laptop size={32} className="text-white" />,
@@ -55,7 +55,7 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
     },
     {
       title: "Generative AI",
-      time: "02:30 PM - 04:00 PM",
+      time: "07:00 PM - 08:00 PM",
       fee: "₹1,999/-",
       gradient: "from-purple-600 to-indigo-400",
       icon: <BrainCircuit size={32} className="text-white" />,
