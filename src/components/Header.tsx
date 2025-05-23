@@ -100,7 +100,16 @@ const Header: React.FC = () => {
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-md font-medium transition-colors duration-200"
             >
               Register Now
-            </a>
+            </a><a 
+  href="https://techedge.brainovision.in/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md font-medium transition-colors duration-200"
+>
+  ESTP
+</a>
+
+
           </nav>
           
           {/* Mobile Menu Button */}
@@ -165,6 +174,16 @@ const Header: React.FC = () => {
               >
                 Register Now
               </a>
+              <a 
+  href="https://techedge.brainovision.in/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md font-medium transition-colors duration-200 text-center"
+  onClick={() => setIsOpen(false)}
+>
+  ESTP
+</a>
+
             </div>
           </nav>
         )}
