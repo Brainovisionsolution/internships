@@ -15,10 +15,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
-         { date: "2nd June 2025", seats: 0 },
+          { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -29,10 +29,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
-        { date: "2nd June 2025", seats: 0 },
+       { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -43,10 +43,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
      icon: <Code2 size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-with-mern",
       dates: [
-        { date: "2nd June 2025", seats: 0 },
+         { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -57,10 +57,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/aiwithpython-ds-ml",
       dates: [
-       { date: "2nd June 2025", seats: 0 },
+        { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -71,10 +71,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <Shield size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-internships-cybersecurity",
       dates: [
-       { date: "2nd June 2025", seats: 0 },
+       { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
       
     },
@@ -86,10 +86,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <Cloud size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-with-aws",
       dates: [
-       { date: "2nd June 2025", seats: 0 },
+       { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -100,10 +100,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
      icon: <Code2 size={32} className="text-white" />,
       syllabus: "https://brainovision.in/ai-iot",
       dates: [
-        { date: "2nd June 2025", seats: 0 },
+        { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
     },
     {
@@ -114,10 +114,10 @@ const TechnologyCards: React.FC<TechnologyCardsProps> = ({ isOnline }) => {
       icon: <BrainCircuit size={32} className="text-white" />,
       syllabus: "https://brainovision.in/python-full-stack-with-ai",
        dates: [
-        { date: "2nd June 2025", seats: 0 },
+         { date: "26th May 2025", seats: 15 },
+         { date: "2nd June 2025", seats: 40 },
         { date: "9th June 2025", seats: 40 },
         { date: "16th June 2025", seats: 40 },
-        { date: "23rd June 2025", seats: 40 }
       ]
       
     }
