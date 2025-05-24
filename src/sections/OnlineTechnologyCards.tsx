@@ -18,8 +18,8 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       dates: [
         
         { date: "2nd June 2025", seats: 30 },
-        { date: "16th June 2025", seats: 40 },
-       { date: "1st July 2025", seats: 40 }
+        { date: "16th June 2025", seats: 30 },
+       { date: "1st July 2025", seats: 30 }
 
         
       ]
@@ -33,10 +33,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "2nd June 2025", seats: 15 },
-        { date: "9th June 2025", seats: 28 },
-        { date: "16th June 2025", seats: 39 },
-        { date: "23th June 2025", seats: 40 }
+        { date: "2nd June 2025", seats: 30 },
+        { date: "9th June 2025", seats: 30 },
+        { date: "16th June 2025", seats: 30 },
+        { date: "23th June 2025", seats: 30 }
       ]
     },
     {
@@ -48,10 +48,10 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
-        { date: "2nd June 2025", seats: 20 },
-        { date: "9th June 2025", seats: 16 },
-        { date: "16th June 2025", seats: 34 },
-        { date: "23th June 2025", seats: 40 }
+        { date: "2nd June 2025", seats: 30 },
+        { date: "9th June 2025", seats: 30 },
+        { date: "16th June 2025", seats: 30 },
+        { date: "23th June 2025", seats: 30 }
       ]
     },
     {
@@ -64,8 +64,8 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
           { date: "2nd June 2025", seats: 30 },
-        { date: "16th June 2025", seats: 40 },
-       { date: "1st July 2025", seats: 40 }
+        { date: "16th June 2025", seats: 30 },
+       { date: "1st July 2025", seats: 30 }
 
       ]
     },
@@ -79,8 +79,8 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
       registration: "https://brainovision.in/online-internship-registration",
       dates: [
           { date: "2nd June 2025", seats: 30 },
-        { date: "16th June 2025", seats: 40 },
-       { date: "1st July 2025", seats: 40 }
+        { date: "16th June 2025", seats: 30 },
+       { date: "1st July 2025", seats: 30 }
 
       ]
     }
