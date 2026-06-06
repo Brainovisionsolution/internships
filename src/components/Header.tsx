@@ -206,6 +206,19 @@ const Header: React.FC = () => {
                 >
                   Self-placed Mode
                 </button>
+                <button
+                  onClick={() => {
+                    handleModeChange('project-based');
+                    setIsOpen(false);
+                  }}
+                  className={`w-full px-4 py-2 rounded-md transition-colors ${
+                    location.pathname === '/project-based' 
+                      ? 'bg-indigo-600 text-white' 
+                      : 'text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  Project-based Mode
+                </button>
               </div>
               {navLinks.map((link) => (
                 <a 
