@@ -1,80 +1,95 @@
 import React from 'react';
-import { Clock, Calendar, Users, FileText, Timer, Code2, BrainCircuit, Cloud, Zap, ChevronDown, Cpu } from 'lucide-react';
+import { Clock, Calendar, Users, FileText, Timer, Code2, BrainCircuit, Cloud, Zap, ChevronDown, Cpu, Video, TrendingUp, Sparkles } from 'lucide-react';
 
 interface OnlineTechnologyCardsProps {
   isOnline: boolean;
 }
 
 const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline }) => {
-  // Updated batch dates starting from April 20th, 2026
+  // Batch dates starting from November 1st, new batch every 15 days
   const batchDates = [
-    { date: "June 1st, 2026", seats: 90 },
-    { date: "June 15th, 2026", seats: 85 },
-    { date: "July 1st, 2026", seats: 78 },
-    { date: "July 15th, 2026", seats: 90 }
+    { date: "Nov 1st, 2026", seats: 90 },
+    { date: "Nov 15th, 2026", seats: 85 },
+    { date: "Dec 1st, 2026", seats: 90 },
+    { date: "Dec 15th, 2026", seats: 88 }
   ];
 
-  // Only four specific technologies
+  // The 5 requested online technologies
   const technologies = [
     {
-      title: "AI with Python",
-      subtitle: "Machine Learning • Deep Learning • AI",
-      time: "Daily 1.5 Hour",
-      fee: "₹799/-",
-      actualFee: "₹9999",
-      discount: "92% OFF",
-      gradient: "from-blue-600 to-cyan-500",
-      icon: <BrainCircuit size={24} className="text-white" />,
-      syllabus: "#",
-      duration: "2 Months",
-      seats: 90,
-      dates: batchDates,
-      features: ["Python", "Machine Learning", "Deep Learning", "AI Models"]
-    },
-    {
-      title: "MERN STACK",
-      subtitle: "MongoDB • Express • React • Node.js",
-      time: "Daily 1.5 Hour",
-      fee: "₹1499/-",
-      actualFee: "₹9999",
-      discount: "85% OFF",
-      gradient: "from-green-600 to-emerald-500",
-      icon: <Code2 size={24} className="text-white" />,
-      syllabus: "#",
-      duration: "2 Months",
-      seats: 90,
-      dates: batchDates,
-      features: ["MongoDB", "Express js", "React js", "Node js"]
-    },
-    {
-      title: "Gen AI & Agentic AI",
-      subtitle: "LLMs • RAG • AI Agents",
-      time: "Daily 1.5 Hour",
+      title: "Generative AI & Agentic AI",
+      subtitle: "LLMs • RAG Pipelines • Autonomous Agents",
+      time: "Daily 1.5 Hours",
       fee: "₹999/-",
-      actualFee: "₹9999",
-      discount: "90% OFF",
-      gradient: "from-purple-600 to-pink-500",
+      actualFee: "₹1,999",
+      discount: "50% OFF",
+      gradient: "from-purple-600 to-indigo-600",
       icon: <BrainCircuit size={24} className="text-white" />,
-      syllabus: "#",
-      duration: "2 Months",
+      syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
+      duration: "15 Days",
       seats: 90,
       dates: batchDates,
-      features: ["Transformers", "Prompting", "Agents", "LangChain"]
+      features: ["Prompt Engineering", "Transformers & LLMs", "RAG & Vector DBs", "AI Agents & LangChain"]
     },
     {
-      title: "Cloud Computing (AWS & DevOps)",
-      subtitle: "AWS Infrastructure • CI/CD",
-      time: "Daily 1.5 Hour",
-      fee: "₹1999/-",
-      actualFee: "₹9999",
-      discount: "80% OFF",
-      gradient: "from-orange-500 to-yellow-500",
-      icon: <Cloud size={24} className="text-white" />,
-      syllabus: "#",
-      duration: "2 Months",
+      title: "MERN Stack",
+      subtitle: "MongoDB • Express • React • Node.js",
+      time: "Daily 1.5 Hours",
+      fee: "₹999/-",
+      actualFee: "₹1,999",
+      discount: "50% OFF",
+      gradient: "from-emerald-600 to-teal-500",
+      icon: <Code2 size={24} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
+      duration: "15 Days",
       seats: 90,
       dates: batchDates,
-      features: ["AWS Services", "Docker", "Kubernetes", "Jenkins"]
+      features: ["MongoDB Database", "Express.js REST APIs", "React.js Dynamic UI", "Node.js Backend"]
+    },
+    {
+      title: "Python with Data Science, ML, DL etc.",
+      subtitle: "Python • Data Analysis • ML Models • Deep Learning",
+      time: "Daily 1.5 Hours",
+      fee: "₹999/-",
+      actualFee: "₹1,999",
+      discount: "50% OFF",
+      gradient: "from-blue-600 to-cyan-500",
+      icon: <Cpu size={24} className="text-white" />,
+      syllabus: "#",
+      duration: "15 Days",
+      seats: 90,
+      dates: batchDates,
+      features: ["Python Programming", "NumPy & Pandas", "Machine Learning", "Neural Networks & DL"]
+    },
+    {
+      title: "AI Film Making",
+      subtitle: "Generative Cinema • AI Scripting • Visuals & Sound",
+      time: "Daily 1.5 Hours",
+      fee: "₹999/-",
+      actualFee: "₹1,999",
+      discount: "50% OFF",
+      gradient: "from-rose-600 to-pink-500",
+      icon: <Video size={24} className="text-white" />,
+      syllabus: "#",
+      duration: "15 Days",
+      seats: 90,
+      dates: batchDates,
+      features: ["AI Storyboarding", "Midjourney Imagery", "Runway Video Gen", "ElevenLabs Voiceover"]
+    },
+    {
+      title: "Digital Marketing",
+      subtitle: "Performance Marketing • SEO • Social Media • Ads",
+      time: "Daily 1.5 Hours",
+      fee: "₹999/-",
+      actualFee: "₹1,999",
+      discount: "50% OFF",
+      gradient: "from-amber-500 to-orange-500",
+      icon: <TrendingUp size={24} className="text-white" />,
+      syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus",
+      duration: "15 Days",
+      seats: 90,
+      dates: batchDates,
+      features: ["Search Engine Optimization", "Meta & Google Ads", "Social Media Strategy", "AI Content Marketing"]
     }
   ];
 
@@ -89,13 +104,16 @@ const OnlineTechnologyCards: React.FC<OnlineTechnologyCardsProps> = ({ isOnline 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Online Internship Programs
           </h2>
-          <p className="text-lg text-gray-700">
-              Limited seats per batch
+          <p className="text-lg text-gray-700 font-medium">
+            15 Days Intensive Practical Tracks • Starting Nov 1st • New Batch Every 15 Days
+          </p>
+          <p className="text-sm text-purple-700 font-semibold mt-2">
+            Special Offer: All Courses at ₹999/- Only (Actual ₹1,999 • 50% OFF)
           </p>
         </div>
 
-        {/* Four cards in a single row using grid-cols-1 md:grid-cols-2 lg:grid-cols-4 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        {/* Five cards layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {technologies.map((tech, index) => (
             <div
               key={index}

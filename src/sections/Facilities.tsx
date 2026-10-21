@@ -76,11 +76,11 @@ const Facilities: React.FC = () => {
           ))}
         </div>
         
-        {/* AIGA Modern Classroom Venue Section */}
+        {/* Brainovision Modern Classroom Venue Section */}
         <div className="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm mt-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left gap-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">AIGA – Modern Classroom Internship Venue</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Brainovision – Modern Classroom Workshop Venue</h3>
               <p className="text-gray-600 text-lg max-w-2xl">
                 Experience our state-of-the-art facilities designed to provide you with a comfortable and highly productive learning environment.
               </p>
@@ -100,53 +100,53 @@ const Facilities: React.FC = () => {
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo1.jpg" 
-                alt="AIGA Modern Classroom View 1" 
+                alt="Modern Classroom View 1" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo2.jpg" 
-                alt="AIGA Modern Classroom View 2" 
+                alt="Modern Classroom View 2" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo3.jpg" 
-                alt="AIGA Modern Classroom View 3" 
+                alt="Modern Classroom View 3" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo4.jpg" 
-                alt="AIGA Modern Classroom View 4" 
+                alt="Modern Classroom View 4" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo5.jpg" 
-                alt="AIGA Modern Classroom View 5" 
+                alt="Modern Classroom View 5" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/venue/photo6.jpg" 
-                alt="AIGA Modern Classroom View 6" 
+                alt="Modern Classroom View 6" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
         </div>
 
-        {/* AIGA Corporate Workspace Section */}
+        {/* Corporate Workspace Section */}
         <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm mt-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left gap-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">AIGA – Corporate Workspace</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Brainovision – Corporate Workspace & Labs</h3>
               <p className="text-gray-600 text-lg max-w-2xl">
                 Beyond just classrooms, experience a vibrant corporate environment complete with recreation areas, collaborative spaces, and a thriving community.
               </p>
@@ -157,42 +157,42 @@ const Facilities: React.FC = () => {
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo1.jpg" 
-                alt="AIGA Corporate Workspace View 1" 
+                alt="Corporate Workspace View 1" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo2.jpg" 
-                alt="AIGA Corporate Workspace View 2" 
+                alt="Corporate Workspace View 2" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo3.jpg" 
-                alt="AIGA Corporate Workspace View 3" 
+                alt="Corporate Workspace View 3" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo4.jpg" 
-                alt="AIGA Corporate Workspace View 4" 
+                alt="Corporate Workspace View 4" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo5.jpg" 
-                alt="AIGA Corporate Workspace View 5" 
+                alt="Corporate Workspace View 5" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-sm group">
               <img 
                 src="/workspace/photo6.jpg" 
-                alt="AIGA Corporate Workspace View 6" 
+                alt="Corporate Workspace View 6" 
                 className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
             </div>

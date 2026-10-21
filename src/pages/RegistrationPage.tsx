@@ -26,11 +26,13 @@ const RegistrationPage: React.FC = () => {
   });
 
   const technologies = [
-    { value: 'ai', label: 'AI & Machine Learning' },
-    { value: 'mern', label: 'MERN Stack' },
-    { value: 'java', label: 'Java Full Stack' },
-    { value: 'digital', label: 'Digital Marketing' },
-    { value: 'servicenow', label: 'ServiceNow' }
+    { value: 'genai', label: 'Generative AI & Agentic AI (Online - ₹999)' },
+    { value: 'mern', label: 'MERN Stack (Online - ₹999)' },
+    { value: 'python', label: 'Python with Data Science, ML, DL etc. (Online - ₹999)' },
+    { value: 'aifilm_online', label: 'AI Film Making (Online - ₹999)' },
+    { value: 'digital', label: 'Digital Marketing (Online - ₹999)' },
+    { value: 'aifilm_offline', label: 'AI Film Making Workshop (2 Days Offline - ₹5,000)' },
+    { value: 'robotics_offline', label: 'Robotics Workshop (1 Day Offline - ₹5,000)' }
   ];
 
   const batchTimings = {

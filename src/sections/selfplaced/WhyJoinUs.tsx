@@ -125,10 +125,10 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
             <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide bg-purple-50 px-3 py-1 rounded-full border border-purple-100">Competitive Advantage</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {isOnline ? 'Why Choose Our Online Programs?' : 'Why Choose AIGA Over Other Programs?'}
+            {isOnline ? 'Why Choose Our Online Programs?' : 'Why Choose Brainovision Programs?'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {isOnline ? 'See how our virtual internship programs stand out from the rest.' : 'See how our intensive program compares to typical alternatives in the market.'}
+            {isOnline ? 'See how our virtual internship programs stand out from the rest.' : 'See how our intensive curriculum compares to typical alternatives in the market.'}
           </p>
         </div>
 
@@ -139,7 +139,7 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
               <div className="col-span-4"></div>
               <div className="col-span-4">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-t-lg p-4 text-center">
-                  <h3 className="text-lg md:text-xl font-bold">{isOnline ? 'Online Virtual Programs' : 'AIGA - AI for Generation & Automation'}</h3>
+                  <h3 className="text-lg md:text-xl font-bold">{isOnline ? 'Online Virtual Programs' : 'Brainovision Specialized Programs'}</h3>
                   <p className="text-xs mt-1 opacity-90">Brainovision Program</p>
                 </div>
               </div>
@@ -186,9 +186,9 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
         <div className="max-w-4xl mx-auto mt-10 text-center">
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-100">
             <p className="text-sm text-gray-700">
-              <span className="font-bold text-purple-600">Note:</span> Our AIGA program is specifically designed for B.Tech students 
-              aiming for industry roles in Generative AI and Automation. The curriculum is updated every 6 months to stay current 
-              with industry trends. Limited to 35 seats per batch.
+              <span className="font-bold text-purple-600">Note:</span> Our programs are specifically designed for B.Tech students 
+              aiming for industry roles in AI and cutting-edge technologies. The curriculum is updated regularly to stay current 
+              with industry trends.
             </p>
           </div>
         </div>

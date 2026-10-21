@@ -45,12 +45,12 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
     }, 
     { 
       name: 'Program Fees', 
-      intensive: '₹7,499 (Madhapur) or ₹8,499 (Kondapur) with ₹999 upfront (included in total fee)', 
-      others: 'Often charge ₹15,000-₹50,000 without justified value' 
+      intensive: isOnline ? '₹999 Only (50% OFF from ₹1,999)' : '₹5,000 Only (50% OFF from ₹10,000) including full hardware kit & studio tools', 
+      others: 'Often charge ₹15,000-₹50,000 without practical kits or hands-on labs' 
     },
     { 
       name: 'Learning Format', 
-      intensive: isHybrid ? '50-60h Offline + 30-40h Online over 8 weeks | Live sessions + Hands-on labs' : '90 hours over 8 weeks | 1.5 hours/day | Live sessions + Hands-on labs', 
+      intensive: isOnline ? '15 Days intensive live track | Daily 1.5 hours + live mentor support' : '1-2 Days Full-Day Workshop (9:30 AM – 5:30 PM) | 100% Practical lab training', 
       others: 'Inconsistent schedule with minimal practical exposure' 
     }, 
     { 
@@ -138,10 +138,10 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
             <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide bg-purple-50 px-3 py-1 rounded-full border border-purple-100">Competitive Advantage</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {isOnline ? 'Why Choose Our Online Programs?' : 'Why Choose AIGA Over Other Programs?'}
+            {isOnline ? 'Why Choose Our Online Programs?' : 'Why Choose Brainovision Workshops?'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {isOnline ? 'See how our virtual internship programs stand out from the rest.' : 'See how our intensive program compares to typical alternatives in the market.'}
+            {isOnline ? 'See how our virtual 15-day internship programs stand out from the rest.' : 'See how our intensive practical workshops compare to typical training alternatives.'}
           </p>
         </div>
 
@@ -152,14 +152,14 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
               <div className="col-span-4"></div>
               <div className="col-span-4">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-t-lg p-4 text-center">
-                  <h3 className="text-lg md:text-xl font-bold">{isOnline ? 'Online Virtual Programs' : 'AIGA - AI for Generation & Automation'}</h3>
-                  <p className="text-xs mt-1 opacity-90">Brainovision Program</p>
+                  <h3 className="text-lg md:text-xl font-bold">{isOnline ? 'Online Virtual Programs' : 'Brainovision Practical Workshops'}</h3>
+                  <p className="text-xs mt-1 opacity-90">Brainovision Certified Track</p>
                 </div>
               </div>
               <div className="col-span-4">
                 <div className="bg-gray-200 rounded-t-lg p-4 text-center">
-                  <h3 className="text-lg md:text-xl font-bold text-gray-700">{isOnline ? 'Other Institute Programs' : 'Other AI Programs'}</h3>
-                  <p className="text-xs mt-1 text-gray-600">Typical Institute Curriculum</p>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-700">{isOnline ? 'Other Online Programs' : 'Other Institute Workshops'}</h3>
+                  <p className="text-xs mt-1 text-gray-600">Typical Generic Curriculum</p>
                 </div>
               </div>
 
@@ -199,9 +199,8 @@ const WhyJoinUs: React.FC<WhyJoinUsProps> = ({ isOnline = false, isHybrid = fals
         <div className="max-w-4xl mx-auto mt-10 text-center">
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-100">
             <p className="text-sm text-gray-700">
-              <span className="font-bold text-purple-600">Note:</span> Our AIGA program is specifically designed for B.Tech students 
-              aiming for industry roles in Generative AI and Automation. The curriculum is updated every 6 months to stay current 
-              with industry trends. Limited to 35 seats per batch.
+              <span className="font-bold text-purple-600">Note:</span> Our workshops and online programs are specifically structured for students and professionals 
+              aiming for practical, industry-grade skills. Batches start from November 1st, 2026 with new batches every 15 days. Limited seats per batch.
             </p>
           </div>
         </div>

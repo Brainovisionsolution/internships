@@ -3,69 +3,71 @@ import { Calendar, Clock, CreditCard, Mail, Phone, MapPin, ExternalLink } from '
 
 const OnlineRegistration: React.FC = () => {
   const registrationLinks = {
-    java: {
-      registration: "https://brainovision.in/online-internship-jfs-registration",
-      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
+    genai: {
+      name: "Generative AI & Agentic AI",
+      registration: "https://rzp.io/rzp/ze2KGkb",
+      syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
+      fee: "₹999"
+    },
+    mern: {
+      name: "MERN Stack",
+      registration: "https://rzp.io/rzp/ze2KGkb",
+      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
+      fee: "₹999"
+    },
+    python: {
+      name: "Python with Data Science, ML, DL etc.",
+      registration: "https://rzp.io/rzp/ze2KGkb",
+      syllabus: "#",
+      fee: "₹999"
+    },
+    aifilm: {
+      name: "AI Film Making",
+      registration: "https://rzp.io/rzp/ze2KGkb",
+      syllabus: "#",
       fee: "₹999"
     },
     digital: {
-      registration: "https://brainovision.in/online-internship-registration",
+      name: "Digital Marketing",
+      registration: "https://rzp.io/rzp/ze2KGkb",
       syllabus: "https://brainovision.in/ai-internship-digital-marketing-syllabus",
-      fee: "₹1,999"
-    },
-    mern: {
-      registration: "https://brainovision.in/online-internship-registration",
-      syllabus: "https://brainovision.in/ai-internship-mern-syllabus",
-      fee: "₹1,999"
-    },
-    genai: {
-      registration: "https://brainovision.in/online-internship-registration",
-      syllabus: "https://brainovision.in/ai-internship-gen-ai-syllabus",
-      fee: "₹1,999"
-    },
-   java1: {
-      registration: "https://brainovision.in/online-internship-registration",
-      syllabus: "https://brainovision.in/ai-internship-java-fullstack-syllabus",
-      fee: "₹1,999"
+      fee: "₹999"
     }
   };
 
   return (
     <section id="register" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Register for Online Internship
             </h2>
             <p className="text-lg text-gray-700">
-              Choose your preferred technology track and secure your spot today
+              15 Days Intensive Tracks • Starting Nov 1st • Batches Every 15 Days • ₹999 Only
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {Object.entries(registrationLinks).map(([key, value]) => (
-              <div key={key} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-                <div className="p-6">
+              <div key={key} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    {key === 'java' && 'Java Full Stack'}
-                    {key === 'digital' && 'Digital Marketing'}
-                    {key === 'mern' && 'MERN Stack'}
-                    {key === 'genai' && 'Generative AI'}
-                    {key === 'java1' && 'Java Full Stack'}
+                    {value.name}
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-4 mb-6">
                     <div className="flex items-center text-gray-600">
-                      <CreditCard className="w-5 h-5 mr-2" />
-                      <span>Registration Fee: {value.fee}</span>
+                      <CreditCard className="w-5 h-5 mr-2 text-purple-600" />
+                      <span className="font-semibold text-gray-900">Fee: {value.fee}</span>
+                      <span className="text-xs text-gray-400 line-through ml-2">₹1,999</span>
                     </div>
                     <div className="flex items-center text-gray-600">
-                      <Clock className="w-5 h-5 mr-2" />
-                      <span>2 Months Duration</span>
+                      <Clock className="w-5 h-5 mr-2 text-purple-600" />
+                      <span>15 Days Duration (Daily 1.5 Hrs)</span>
                     </div>
                     <div className="flex items-center text-gray-600">
-                      <Calendar className="w-5 h-5 mr-2" />
-                      <span>Multiple Batches Available</span>
+                      <Calendar className="w-5 h-5 mr-2 text-purple-600" />
+                      <span>Starting Nov 1st • Every 15 Days</span>
                     </div>
                   </div>
                   <div className="mt-6 space-y-3">

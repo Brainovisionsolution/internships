@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cpu, ChevronLeft, ChevronRight, Rocket, Globe, Brain, Database, Cloud, Shield, Code, LineChart, Zap, Bot, MessageSquare, Search, FileText, Sparkles, Workflow } from 'lucide-react';
+import { Cpu, ChevronLeft, ChevronRight, Rocket, Globe, Brain, Database, Cloud, Shield, Code, LineChart, Zap, Bot, MessageSquare, Search, FileText, Sparkles, Workflow, Film } from 'lucide-react';
 
 interface ProjectsProps {
   isOnline: boolean;
@@ -62,70 +62,70 @@ const Projects: React.FC<ProjectsProps> = ({ isOnline }) => {
     }
   ];
 
-  const aigaProjects = [
+  const workshopProjects = [
+    {
+      title: "Cinematic AI Short Film Production",
+      description: "From concept to final screening: Write an AI screenplay, generate consistent photorealistic characters in Midjourney/FLUX, create dynamic camera motion in Runway Gen-3, clone voices with ElevenLabs, and assemble the full film in Premiere Pro.",
+      image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1260",
+      skills: ["Runway Gen-3", "Midjourney v6", "ElevenLabs", "AI Storyboarding", "Premiere Pro", "Sound Design"],
+      icon: <Film className="text-white" size={32} />,
+      scope: "AI Film Making (2 Days)",
+      duration: "2 Days Intensive",
+      impact: "Festival-ready short film"
+    },
+    {
+      title: "Autonomous Obstacle-Avoiding Robot",
+      description: "Assemble a 2WD robotic vehicle with microcontroller, dual BO motors, L298N driver, and ultrasonic distance sensor. Code an autonomous navigation algorithm to detect obstacles and map escape trajectories in real-time.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1260",
+      skills: ["Microcontrollers", "Embedded C", "HC-SR04 Sonar", "Motor Drivers", "Autonomous Logic", "Hardware Kit"],
+      icon: <Bot className="text-white" size={32} />,
+      scope: "Robotics Workshop (1 Day)",
+      duration: "1 Day Intensive",
+      impact: "Take-home physical robot"
+    },
+    {
+      title: "Smartphone Bluetooth Controlled Rover",
+      description: "Interface an HC-05 Bluetooth module with an embedded controller. Build an interactive mobile dashboard app to steer the robot wirelessly, trigger telemetry alerts, and compete in the live obstacle arena race.",
+      image: "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1260",
+      skills: ["Bluetooth HC-05", "UART Serial Comms", "Wireless Control", "Live Arena Racing"],
+      icon: <Cpu className="text-white" size={32} />,
+      scope: "Robotics Workshop (1 Day)",
+      duration: "1 Day Intensive",
+      impact: "Real-time wireless telemetry"
+    },
     {
       title: "Domain-Specific RAG Chatbot",
-      description: "Build a production-ready RAG (Retrieval-Augmented Generation) chatbot for medical FAQs or financial reports. Implement document chunking strategies, embedding generation with Sentence-BERT, vector search using FAISS, and LLM response generation. Includes evaluation using BLEU/ROUGE/BERTScore metrics.",
+      description: "Build a production-ready RAG (Retrieval-Augmented Generation) chatbot for enterprise documentation. Implement document chunking, embedding generation, vector search using FAISS, and LLM response generation with streaming.",
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1260",
-      skills: ["RAG Pipelines", "LangChain", "FAISS", "Sentence-BERT", "LLM APIs", "Streaming", "Evaluation Metrics"],
+      skills: ["RAG Pipelines", "LangChain", "FAISS", "Sentence-BERT", "LLM APIs", "Evaluation Metrics"],
       icon: <MessageSquare className="text-white" size={32} />,
       scope: "Enterprise Chatbot",
-      duration: "3 Weeks",
+      duration: "Production Capstone",
       impact: "90% context retrieval accuracy"
     },
     {
-      title: "Small Language Model (SLM) Fine-Tuning",
-      description: "Fine-tune an open-source SLM (Phi-2, Mistral, or TinyLlama) using LoRA/QLoRA techniques on domain-specific data (100-500 examples). Train the model to adopt a specific persona or domain expertise. Compare base model vs fine-tuned outputs and analyze performance improvements.",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1260",
-      skills: ["LoRA/QLoRA", "HuggingFace", "PyTorch", "Model Fine-tuning", "GPU Optimization", "Inference"],
-      icon: <Brain className="text-white" size={32} />,
-      scope: "Custom AI Model",
-      duration: "2 Weeks",
-      impact: "40% better domain accuracy"
-    },
-    {
       title: "AI Agent with Tool Integration",
-      description: "Create an autonomous AI agent using LangChain or ReACT framework that can use multiple tools (web search, calculator, APIs) to complete complex tasks. Implement planning, execution, and feedback loops. Example: A budget chatbot that searches flight/hotel prices and calculates total costs.",
+      description: "Create an autonomous AI agent using LangChain or CrewAI framework that can use multiple tools (web search, calculator, APIs) to complete multi-step tasks with planning, execution, and feedback loops.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1260",
-      skills: ["LangChain", "AI Agents", "Tool Integration", "Function Calling", "LLM Orchestration", "ReACT"],
+      skills: ["LangChain", "AI Agents", "Tool Integration", "Function Calling", "LLM Orchestration"],
       icon: <Bot className="text-white" size={32} />,
       scope: "Autonomous System",
-      duration: "2 Weeks",
+      duration: "Production Capstone",
       impact: "Multi-step task automation"
     },
     {
-      title: "LLM Evaluation & Red-Teaming Suite",
-      description: "Build an evaluation framework for LLM outputs using BLEU, ROUGE, BERTScore, and LLM-as-judge techniques. Perform red-teaming exercises to identify biases, hallucinations, and vulnerabilities. Implement guardrails and content filters for responsible AI deployment.",
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1260",
-      skills: ["BLEU/ROUGE", "BERTScore", "LLM-as-Judge", "Red-Teaming", "Responsible AI", "Guardrails"],
-      icon: <Shield className="text-white" size={32} />,
-      scope: "Quality Assurance",
-      duration: "2 Weeks",
-      impact: "95% hallucination detection"
-    },
-    {
-      title: "Code Assistant Agent",
-      description: "Build an AI agent that reads problem descriptions and automatically writes, tests, and debugs code. Integrate with GitHub Copilot or similar tools, implement code execution sandboxes, and create a feedback loop for iterative improvement.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1260",
-      skills: ["Code Generation", "GitHub Copilot", "Antigravity", "Sandbox Execution", "Agentic Workflows"],
-      icon: <Code className="text-white" size={32} />,
-      scope: "Developer Tool",
-      duration: "2 Weeks",
-      impact: "50% faster coding"
-    },
-    {
-      title: "Multi-Modal AI Application",
-      description: "Create an application that combines text, image, and video generation using Google Gemini API. Implement prompt engineering for consistent outputs, cost tracking with token counting, and a unified interface for multi-modal content creation.",
-      image: "https://images.unsplash.com/photo-1547954575-855750c57bd3?auto=format&fit=crop&w=1260",
-      skills: ["Gemini API", "Multi-Modal AI", "Prompt Engineering", "Token Optimization", "Google AI Studio"],
-      icon: <Globe className="text-white" size={32} />,
-      scope: "Creative Suite",
-      duration: "1.5 Weeks",
-      impact: "Multi-format content generation"
+      title: "Small Language Model (SLM) Fine-Tuning",
+      description: "Fine-tune an open-source SLM (Phi-3, Mistral, or Llama) using LoRA/QLoRA techniques on domain-specific datasets. Train the model to adopt a specialized persona and evaluate inference speed on edge devices.",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1260",
+      skills: ["LoRA/QLoRA", "HuggingFace", "PyTorch", "Model Fine-tuning", "GPU Optimization"],
+      icon: <Brain className="text-white" size={32} />,
+      scope: "Custom AI Model",
+      duration: "Production Capstone",
+      impact: "40% better domain accuracy"
     }
   ];
 
-  const projects = isOnline ? onlineProjects : aigaProjects;
+  const projects = isOnline ? onlineProjects : workshopProjects;
   const themeColor = isOnline ? 'purple' : 'purple';
 
   const nextProject = () => {
@@ -145,11 +145,11 @@ const Projects: React.FC<ProjectsProps> = ({ isOnline }) => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              {isOnline ? 'Industry Capstone Projects' : 'AIGA Capstone Projects'}
+              {isOnline ? 'Industry Capstone Projects' : 'Hands-on Workshop & Industry Projects'}
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            {isOnline ? 'Build full-fledged, real-world portfolio projects focused on your chosen technology track to prepare for modern careers.' : 'Build production-ready Generative AI applications including RAG chatbots, fine-tuned SLMs, AI agents, and real-time streaming systems.'}
+            {isOnline ? 'Build full-fledged, real-world portfolio projects focused on your chosen technology track to prepare for modern careers.' : 'From producing your own cinematic AI short film to building a take-home autonomous robot, our projects give you tangible, real-world proof of capability.'}
           </p>
         </div>
         

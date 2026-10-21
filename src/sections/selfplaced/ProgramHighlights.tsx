@@ -86,7 +86,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
             <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide bg-purple-50 px-3 py-1 rounded-full">Key Highlights</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            AIGA Self-Paced Program Highlights
+            Self-Paced AI Program Highlights
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Complete flexibility with structured learning - Master Generative AI on your own schedule with lifetime access to all content

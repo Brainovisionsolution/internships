@@ -148,10 +148,10 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
             <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide bg-purple-50 px-3 py-1 rounded-full">Key Highlights</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {isOnline ? 'Program Highlights' : 'AIGA Program Highlights'}
+            {isOnline ? 'Online Program Highlights' : 'Workshop Program Highlights'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {isOnline ? 'Our intensive virtual internship program is designed to make you industry-ready in the most in-demand technologies.' : 'Our 8-week intensive internship program is designed to make you industry-ready in Generative AI and LLM Engineering'}
+            {isOnline ? 'Our intensive virtual internship tracks are designed to make you industry-ready in in-demand technologies.' : 'Hands-on practical bootcamps in AI Film Making and Robotics designed for immediate production and hardware capability.'}
           </p>
         </div>
 

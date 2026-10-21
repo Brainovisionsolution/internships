@@ -29,13 +29,14 @@ const Header: React.FC = () => {
       navigate('/online');
     } else if (mode === 'offline') {
       navigate('/');
+    } else if (mode === 'robotics') {
+      navigate('/robotics');
     } else if (mode === 'hybrid') {
       navigate('/hybrid');
     } else if (mode === 'self-placed') {
       navigate('/self-placed');
-    }else if (mode === 'project-based')
-    {
-      navigate('/project-based')
+    } else if (mode === 'project-based') {
+      navigate('/project-based');
     }
   };
 
@@ -66,17 +67,17 @@ const Header: React.FC = () => {
             <div className="bg-gray-100 rounded-lg p-1 flex space-x-1">
               <button
                 onClick={() => handleModeChange('offline')}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/' 
                     ? 'bg-indigo-600 text-white' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Offline
+                Offline Workshops
               </button>
               <button
                 onClick={() => handleModeChange('online')}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/online' 
                     ? 'bg-indigo-600 text-white' 
                     : 'text-gray-700 hover:bg-gray-200'
@@ -85,8 +86,18 @@ const Header: React.FC = () => {
                 Online
               </button>
               <button
+                onClick={() => handleModeChange('robotics')}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center ${
+                  location.pathname === '/robotics' 
+                    ? 'bg-indigo-600 text-white shadow-sm' 
+                    : 'text-indigo-700 font-bold bg-indigo-50 hover:bg-indigo-100'
+                }`}
+              >
+                🤖 Robotics (1-Day)
+              </button>
+              <button
                 onClick={() => handleModeChange('hybrid')}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/hybrid' 
                     ? 'bg-indigo-600 text-white' 
                     : 'text-gray-700 hover:bg-gray-200'
@@ -96,23 +107,23 @@ const Header: React.FC = () => {
               </button>
               <button
                 onClick={() => handleModeChange('self-placed')}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/self-placed' 
                     ? 'bg-indigo-600 text-white' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Self-placed
+                Self-paced
               </button>
               <button
                 onClick={() => handleModeChange('project-based')}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/project-based' 
                     ? 'bg-indigo-600 text-white' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               > 
-              Project-based
+                Project-based
               </button>
             </div>
           </div>
@@ -179,6 +190,19 @@ const Header: React.FC = () => {
                   }`}
                 >
                   Online Mode
+                </button>
+                <button
+                  onClick={() => {
+                    handleModeChange('robotics');
+                    setIsOpen(false);
+                  }}
+                  className={`w-full px-4 py-2 rounded-md transition-colors font-bold ${
+                    location.pathname === '/robotics' 
+                      ? 'bg-indigo-600 text-white' 
+                      : 'text-indigo-700 bg-indigo-50 hover:bg-indigo-100'
+                  }`}
+                >
+                  🤖 Robotics Workshop (1-Day)
                 </button>
                 <button
                   onClick={() => {

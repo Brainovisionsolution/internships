@@ -32,30 +32,30 @@ const OnlineHeroSection: React.FC = () => {
           {/* Text content */}
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="inline-block bg-purple-500 bg-opacity-20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-400 border-opacity-30">
-              <span className="text-sm font-medium">Virtual 2026 Internship Program</span>
+              <span className="text-sm font-medium">✨ Online Internship Programs 2026 • Starts Nov 1st</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              VIRTUAL INDUSTRY 
+              ONLINE INDUSTRY 
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300">
-                INTERNSHIP PROGRAM
+                INTERNSHIP PROGRAMS
               </span>
             </h1>
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-xl">
-              Experience World-Class Technology Training from Anywhere — Live Virtual Classes with Industry Experts!
+              15 Days intensive hands-on live training in Generative AI, MERN Stack, Python DS/ML/DL, AI Film Making & Digital Marketing. New batch starts every 15 days!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
                 <a
                 href="https://rzp.io/rzp/ze2KGkb"    
-                className="bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center"
+                className="bg-purple-500 hover:bg-purple-600 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center shadow-lg"
               >
-                Register Now
+                Enroll Now @ ₹999
                 <ChevronRight size={20} className="ml-2" />
               </a>
               <a 
-                href="#program" 
+                href="#technologies" 
                 className="bg-transparent hover:bg-white/10 border border-purple-400 text-white font-medium rounded-lg px-6 py-3 transition-all duration-300 flex items-center justify-center"
               >
-                View Program Details
+                View 5 Programs
               </a>
             </div>
             <div className="mt-8 flex flex-wrap gap-6 items-center">
@@ -88,27 +88,28 @@ const OnlineHeroSection: React.FC = () => {
 
               <h3 className="text-xl font-bold mb-4">Why Students Choose This Program</h3>
 <ul className="space-y-3 text-sm text-indigo-100">
-  <li>✔ Industry-ready skill roadmap (not academic syllabus)</li>
+  <li>✔ Industry-ready 15-day skill sprint</li>
   <li>✔ Real company-style projects & workflows</li>
-  <li>✔ Interview-oriented training & mock evaluations</li>
-  <li>✔ Resume, GitHub & LinkedIn profile guidance</li>
+  <li>✔ Starting Nov 1st • New batch every 15 days</li>
+  <li>✔ Resume, GitHub & LinkedIn guidance</li>
   <li>✔ Direct mentorship from working professionals</li>
 </ul>
 
                 <div className="mt-6 pt-6 border-t border-indigo-200 border-opacity-20">
-                  <div className="text-sm mb-2">Starting from just</div>
+                  <div className="text-sm mb-2 text-purple-200">Special Launch Price</div>
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">₹799</span>
-                    <span className="ml-2 text-sm line-through opacity-70">₹9999</span>
-                    <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded">92% OFF</span>
+                    <span className="text-3xl font-bold">₹999</span>
+                    <span className="ml-2 text-sm line-through opacity-70">₹1,999</span>
+                    <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded">50% OFF</span>
                   </div>
+                  <div className="text-xs text-purple-200 mt-1">Starting Nov 1st • Every new batch 15 days</div>
                   <a
                     href="https://rzp.io/rzp/ze2KGkb"
-                    className="mt-3 block w-full bg-white text-indigo-800 text-center font-medium rounded-lg px-6 py-3 transition-all duration-300 hover:bg-opacity-90"
+                    className="mt-3 block w-full bg-white text-indigo-800 text-center font-bold rounded-lg px-6 py-3 transition-all duration-300 hover:bg-opacity-90"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Enroll Now
+                    Enroll Now @ ₹999
                   </a>
                 </div>
 

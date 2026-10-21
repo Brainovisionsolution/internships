@@ -9,12 +9,12 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
   const [activeTab, setActiveTab] = useState<'overview' | 'technologies' | 'career'>('overview');
 
   const tabs = [
-    { id: 'overview', label: 'What is AIGA?', icon: <BrainCircuit size={20} /> },
-    { id: 'technologies', label: 'Technologies', icon: <Code2 size={20} /> },
-    { id: 'career', label: 'Career Path', icon: <Briefcase size={20} /> },
+    { id: 'overview', label: 'Ecosystem Overview', icon: <BrainCircuit size={20} /> },
+    { id: 'technologies', label: 'Technologies & Tools', icon: <Code2 size={20} /> },
+    { id: 'career', label: 'Career Paths', icon: <Briefcase size={20} /> },
   ];
 
-  // What is AIGA - Detailed Overview
+  // Ecosystem - Detailed Overview
   const overviewFeatures = [
     { name: "Generative AI", icon: <Sparkles className="text-purple-500" />, desc: "Create original content - text, images, code" },
     { name: "LLM Engineering", icon: <BrainCircuit className="text-pink-500" />, desc: "Master Large Language Models & Transformers" },
@@ -75,29 +75,29 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
       case 'technologies':
         return {
           title: "Technologies You'll Master",
-          description: "Our AIGA program covers the most in-demand Generative AI tools, frameworks, and platforms used by industry leaders like Google, OpenAI, Microsoft, and Anthropic.",
+          description: "Our practical programs cover the most in-demand AI and robotics tools, frameworks, and platforms used by leading tech organizations.",
           items: technologiesList,
           color: "purple",
           image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-          ctaText: "Join AIGA to gain hands-on experience with LangChain, HuggingFace, Vector Databases, and cutting-edge LLM frameworks."
+          ctaText: "Gain hands-on experience with LangChain, HuggingFace, Hardware Kits, and cutting-edge GenAI frameworks."
         };
       case 'career':
         return {
-          title: "Career Opportunities After AIGA",
-          description: "The Generative AI field is experiencing explosive growth with 40% YoY job growth. Graduates of our program are prepared for high-demand roles in AI engineering, LLM development, and automation.",
+          title: "High-Growth Career Opportunities",
+          description: "The AI and Robotics fields are experiencing explosive growth with unprecedented demand for skilled practitioners in engineering, automation, and creative media.",
           items: careerOpportunities,
           color: "purple",
           image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-          ctaText: "Start your journey toward an exciting career in Generative AI and LLM Engineering with salaries ranging from ₹10-30 LPA."
+          ctaText: "Start your journey toward high-demand roles with industry-aligned certifications and hands-on portfolio proof."
         };
       default:
         return {
-          title: "What is AIGA?",
-          description: `AIGA (AI for Generation & Automation) is a 8-week intensive internship program approved by AICTE & APSCHE that prepares B.Tech students for industry roles in Generative AI and automation. The program covers 12 comprehensive modules over ${isHybrid ? '50-60 hours offline and 30-40 hours online' : '90+ hours of hands-on training'}.`,
+          title: "What You Will Master",
+          description: `Our intensive programs approved by AICTE & APSCHE prepare students for modern roles in Generative AI, Robotics, and Full-Stack Engineering with hands-on project creation.`,
           items: overviewFeatures,
           color: "purple",
           image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-          ctaText: "Join AIGA to master Transformers, LLMs, RAG pipelines, prompt engineering, SLM fine-tuning, AI agents, and responsible AI practices."
+          ctaText: "Master Transformers, LLMs, Robotics Hardware, Prompt Engineering, and Autonomous Systems with expert mentors."
         };
     }
   };
@@ -127,11 +127,11 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
             <BrainCircuit size={28} className="text-purple-600" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            AIGA: AI for Generation & Automation
+            Next-Gen AI, Cinema & Robotics
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            8-week AICTE-approved intensive internship program mastering Generative AI, LLMs, RAG pipelines, and Agentic AI 
-            <br/><span className="mt-2 inline-block font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">{isHybrid ? 'Hybrid Format: 50-60h Offline + 30-40h Online' : 'Complete 90 Hours Offline'}</span>
+            AICTE-approved practical bootcamps and internship programs mastering Generative AI, AI Cinema, Autonomous Robotics, and Full-Stack Engineering.
+            <br/><span className="mt-2 inline-block font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Interactive Hands-on Training • Hyderabad & Online</span>
           </p>
         </div>
 
@@ -196,10 +196,10 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  AIGA Program
+                  Brainovision Programs
                 </h3>
                 <p className="text-gray-200 text-sm max-w-xs">
-                  90+ hours • 12 weeks • 8+ Industry Projects
+                  Hands-on Labs • Live Industry Mentors • Real-world Projects
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   <span className="bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-xs text-white">AICTE Approved</span>

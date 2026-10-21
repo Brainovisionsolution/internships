@@ -477,11 +477,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isHybrid = false }) => {
           {/* Text Section */}
           <div style={styles.textSection}>
             <div style={styles.badge}>
-              <span style={styles.badgeText}>🎓 AIGA Self-Paced Program 2026</span>
+              <span style={styles.badgeText}>🎓 Self-Paced AI Program 2026</span>
             </div>
 
             <h1 style={responsiveStyles.title}>
-              AIGA – AI for Generation & Automation
+              Generative AI & Agentic AI Masterclass
               <span style={styles.gradientText}>Self-Paced Learning</span>
             </h1>
 

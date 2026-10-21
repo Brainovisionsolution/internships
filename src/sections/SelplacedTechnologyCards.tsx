@@ -10,8 +10,8 @@ const SelfPlacedTechnologyCards: React.FC = () => {
     );
   };
 
-  const aigaCourse = {
-    title: "AIGA – AI for Generation & Automation",
+  const genAiCourse = {
+    title: "Generative AI & Agentic AI Masterclass",
     subtitle: "Generative AI • LLMs • RAG • AI Agents • Self-Paced Learning",
     fee: "₹1,999/-",
     actualFee: "₹14,999",
@@ -186,7 +186,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
             <span className="text-sm font-medium text-purple-700">Self-Paced Internship Program</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            AIGA – AI for Generation & Automation
+            Generative AI & Agentic AI Masterclass
           </h2>
           <p className="text-lg text-gray-700">
             Complete learning journey with video content, quizzes, assignments, and real-world capstone projects
@@ -197,18 +197,18 @@ const SelfPlacedTechnologyCards: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-gray-100">
             {/* Header */}
-            <div className={`bg-gradient-to-r ${aigaCourse.gradient} p-8 relative`}>
+            <div className={`bg-gradient-to-r ${genAiCourse.gradient} p-8 relative`}>
               <div className="absolute top-6 right-6 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
                 <span className="text-xs font-semibold text-white">Self-Paced</span>
               </div>
               
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mr-4">
-                  {aigaCourse.icon}
+                  {genAiCourse.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white leading-tight">{aigaCourse.title}</h3>
-                  <p className="text-white/80 text-sm mt-1">{aigaCourse.subtitle}</p>
+                  <h3 className="text-xl font-bold text-white leading-tight">{genAiCourse.title}</h3>
+                  <p className="text-white/80 text-sm mt-1">{genAiCourse.subtitle}</p>
                 </div>
               </div>
 
@@ -241,7 +241,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                   What You'll Learn:
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {aigaCourse.features.map((feature, idx) => (
+                  {genAiCourse.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center">
                       <div className="w-8 h-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg flex items-center justify-center mr-2">
                         <CheckCircle size={14} className="text-purple-600" />
@@ -281,7 +281,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                   12 Comprehensive Modules:
                 </div>
                 <div className="space-y-3">
-                  {aigaCourse.modules.map((module, idx) => (
+                  {genAiCourse.modules.map((module, idx) => (
                     <div key={idx} className="bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 overflow-hidden">
                       <button
                         onClick={() => toggleModule(idx)}
@@ -333,7 +333,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                   Capstone Projects:
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {aigaCourse.capstoneProjects.map((project, idx) => (
+                  {genAiCourse.capstoneProjects.map((project, idx) => (
                     <div key={idx} className="flex items-center">
                       <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center mr-2">
                         <span className="text-xs font-bold text-purple-600">{idx + 1}</span>
@@ -378,11 +378,11 @@ const SelfPlacedTechnologyCards: React.FC = () => {
               <div className="mb-8 p-6 bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 shadow-sm">
                 <div className="flex items-baseline justify-between mb-2 flex-wrap gap-2">
                   <div>
-                    <div className="text-3xl font-bold text-gray-900">{aigaCourse.fee}</div>
-                    <div className="text-sm text-gray-500 line-through mt-1">{aigaCourse.actualFee}</div>
+                    <div className="text-3xl font-bold text-gray-900">{genAiCourse.fee}</div>
+                    <div className="text-sm text-gray-500 line-through mt-1">{genAiCourse.actualFee}</div>
                   </div>
                   <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
-                    {aigaCourse.discount}
+                    {genAiCourse.discount}
                   </div>
                 </div>
                 <div className="flex items-center text-gray-600 text-sm mt-3">
@@ -391,7 +391,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                 </div>
                 <div className="flex items-center text-gray-600 text-sm mt-2">
                   <Timer size={16} className="mr-2" />
-                  <span>{aigaCourse.duration} • Lifetime Content Access</span>
+                  <span>{genAiCourse.duration} • Lifetime Content Access</span>
                 </div>
                 <div className="flex items-center text-green-600 text-sm mt-2">
                   <CheckCircle size={16} className="mr-2" />
@@ -402,7 +402,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
               {/* Action Buttons */}
               <div className="space-y-4">
                 <a
-                  href={aigaCourse.syllabus}
+                  href={genAiCourse.syllabus}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full bg-gray-50 hover:bg-gray-100 text-gray-700 py-3.5 rounded-xl transition-all duration-300 font-medium border border-gray-200 hover:border-gray-300"
@@ -414,7 +414,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                   href="https://rzp.io/rzp/JCoC0fof"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full bg-gradient-to-r ${aigaCourse.gradient} hover:opacity-90 text-white py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center font-bold shadow-lg hover:shadow-xl`}
+                  className={`w-full bg-gradient-to-r ${genAiCourse.gradient} hover:opacity-90 text-white py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center font-bold shadow-lg hover:shadow-xl`}
                 >
                   <PlayCircle size={18} className="mr-3" />
                   Start Learning at ₹1,999
@@ -467,7 +467,7 @@ const SelfPlacedTechnologyCards: React.FC = () => {
                 className="inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-xl font-bold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <PlayCircle size={20} className="mr-2" />
-                Start Your AIGA Self-Paced Journey Today
+                Start Your Self-Paced Journey Today
               </a>
               <p className="text-xs text-gray-500 mt-4">
                 ✓ Instant access • ✓ Learn from anywhere • ✓ Lifetime support • ✓ Certificate on completion
