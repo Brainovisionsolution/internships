@@ -1,37 +1,35 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
-import InternshipFlow from '../sections/InternshipFlow';
 import HybridHeroSection from '../sections/HybridHeroSection';
-import ProgramHighlights from '../sections/ProgramHighlights';
-import AboutAI from '../sections/AboutAI';
-import BatchDates from '../sections/BatchDates';
-import BatchTimings from '../sections/BatchTimings';
-import Curriculum from '../sections/Curriculum';
-import Projects from '../sections/Projects';
-import Trainers from '../sections/Trainers';
+import HybridProgramHighlights from '../sections/HybridProgramHighlights';
+import HybridInternshipFlow from '../sections/HybridInternshipFlow';
+import HybridTechnologyCards from '../sections/HybridTechnologyCards';
+import HybridWhyJoinUs from '../sections/HybridWhyJoinUs';
+import HybridBatchDates from '../sections/HybridBatchDates';
+import HybridBatchTimings from '../sections/HybridBatchTimings';
+import HybridCurriculum from '../sections/HybridCurriculum';
+import HybridProjects from '../sections/HybridProjects';
+import HybridTrainers from '../sections/HybridTrainers';
+import RealTimeProjects from '../sections/RealTimeProjects';
 import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
-import WhyJoinUs from '../sections/WhyJoinUs';
-import HybridTechnologyCards from '../sections/HybridTechnologyCards';
-import RealTimeProjects from '../sections/RealTimeProjects';
 
 const HybridInternship: React.FC = () => {
   return (
     <Layout>
       <HybridHeroSection />
-      <ProgramHighlights isOnline={false} isHybrid={true} />
-      <InternshipFlow />
+      <HybridProgramHighlights />
+      <HybridInternshipFlow />
       <AboutUs />
       <HybridTechnologyCards />
-      <WhyJoinUs isOnline={false} isHybrid={true} />
-      <AboutAI isHybrid={true} />
-      <BatchDates isOnline={false} />
-      <BatchTimings isOnline={false} />
-      <Curriculum />
-      <Projects isOnline={false} />
+      <HybridWhyJoinUs />
+      <HybridBatchDates />
+      <HybridBatchTimings />
+      <HybridCurriculum />
+      <HybridProjects />
       <RealTimeProjects />
       <Certificates />
-      <Trainers isOnline={false} />
+      <HybridTrainers />
     </Layout>
   );
 };
