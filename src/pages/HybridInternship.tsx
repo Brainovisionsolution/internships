@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
 import InternshipFlow from '../sections/InternshipFlow';
-import HeroSection from '../sections/HeroSection';
+import HybridHeroSection from '../sections/HybridHeroSection';
 import ProgramHighlights from '../sections/ProgramHighlights';
 import AboutAI from '../sections/AboutAI';
 import BatchDates from '../sections/BatchDates';
@@ -12,17 +12,17 @@ import Trainers from '../sections/Trainers';
 import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
 import WhyJoinUs from '../sections/WhyJoinUs';
-import TechnologyCards from '../sections/TechnologyCards';
+import HybridTechnologyCards from '../sections/HybridTechnologyCards';
 import RealTimeProjects from '../sections/RealTimeProjects';
 
 const HybridInternship: React.FC = () => {
   return (
     <Layout>
-      <HeroSection isHybrid={true} />
+      <HybridHeroSection />
       <ProgramHighlights isOnline={false} isHybrid={true} />
       <InternshipFlow />
       <AboutUs />
-      <TechnologyCards isOnline={false} isHybrid={true} />
+      <HybridTechnologyCards />
       <WhyJoinUs isOnline={false} isHybrid={true} />
       <AboutAI isHybrid={true} />
       <BatchDates isOnline={false} />

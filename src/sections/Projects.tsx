@@ -62,56 +62,26 @@ const Projects: React.FC<ProjectsProps> = ({ isOnline }) => {
     }
   ];
 
-  const workshopProjects = [
+  const offlineProjects = [
     {
-      title: "Cinematic AI Short Film Production",
-      description: "From concept to final screening: Write an AI screenplay, generate consistent photorealistic characters in Midjourney/FLUX, create dynamic camera motion in Runway Gen-3, clone voices with ElevenLabs, and assemble the full film in Premiere Pro.",
-      image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1260",
-      skills: ["Runway Gen-3", "Midjourney v6", "ElevenLabs", "AI Storyboarding", "Premiere Pro", "Sound Design"],
-      icon: <Film className="text-white" size={32} />,
-      scope: "AI Film Making (2 Days)",
-      duration: "2 Days Intensive",
-      impact: "Festival-ready short film"
-    },
-    {
-      title: "Autonomous Obstacle-Avoiding Robot",
-      description: "Assemble a 2WD robotic vehicle with microcontroller, dual BO motors, L298N driver, and ultrasonic distance sensor. Code an autonomous navigation algorithm to detect obstacles and map escape trajectories in real-time.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1260",
-      skills: ["Microcontrollers", "Embedded C", "HC-SR04 Sonar", "Motor Drivers", "Autonomous Logic", "Hardware Kit"],
+      title: "Autonomous Multi-Agent Research System",
+      description: "Assemble a coordinated team of autonomous specialized AI agents using CrewAI and LangGraph. The agents autonomously research topics, formulate hypotheses, browse live web tools, verify facts, and produce publication-ready technical reports.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1260",
+      skills: ["CrewAI", "LangGraph", "Multi-Agent Systems", "Tool Calling", "Memory Architecture"],
       icon: <Bot className="text-white" size={32} />,
-      scope: "Robotics Workshop (1 Day)",
-      duration: "1 Day Intensive",
-      impact: "Take-home physical robot"
+      scope: "Agentic AI Capstone",
+      duration: "2 & 3 Months",
+      impact: "Automated multi-step task execution"
     },
     {
-      title: "Smartphone Bluetooth Controlled Rover",
-      description: "Interface an HC-05 Bluetooth module with an embedded controller. Build an interactive mobile dashboard app to steer the robot wirelessly, trigger telemetry alerts, and compete in the live obstacle arena race.",
-      image: "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1260",
-      skills: ["Bluetooth HC-05", "UART Serial Comms", "Wireless Control", "Live Arena Racing"],
-      icon: <Cpu className="text-white" size={32} />,
-      scope: "Robotics Workshop (1 Day)",
-      duration: "1 Day Intensive",
-      impact: "Real-time wireless telemetry"
-    },
-    {
-      title: "Domain-Specific RAG Chatbot",
-      description: "Build a production-ready RAG (Retrieval-Augmented Generation) chatbot for enterprise documentation. Implement document chunking, embedding generation, vector search using FAISS, and LLM response generation with streaming.",
+      title: "Domain-Specific Enterprise RAG Assistant",
+      description: "Build a production-ready RAG (Retrieval-Augmented Generation) chatbot for enterprise documentation. Implement document chunking, embedding generation, vector search using FAISS, and streaming LLM responses with zero hallucination.",
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1260",
       skills: ["RAG Pipelines", "LangChain", "FAISS", "Sentence-BERT", "LLM APIs", "Evaluation Metrics"],
       icon: <MessageSquare className="text-white" size={32} />,
-      scope: "Enterprise Chatbot",
-      duration: "Production Capstone",
-      impact: "90% context retrieval accuracy"
-    },
-    {
-      title: "AI Agent with Tool Integration",
-      description: "Create an autonomous AI agent using LangChain or CrewAI framework that can use multiple tools (web search, calculator, APIs) to complete multi-step tasks with planning, execution, and feedback loops.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1260",
-      skills: ["LangChain", "AI Agents", "Tool Integration", "Function Calling", "LLM Orchestration"],
-      icon: <Bot className="text-white" size={32} />,
-      scope: "Autonomous System",
-      duration: "Production Capstone",
-      impact: "Multi-step task automation"
+      scope: "Agentic AI Capstone",
+      duration: "2 & 3 Months",
+      impact: "95% context retrieval precision"
     },
     {
       title: "Small Language Model (SLM) Fine-Tuning",
@@ -119,13 +89,43 @@ const Projects: React.FC<ProjectsProps> = ({ isOnline }) => {
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1260",
       skills: ["LoRA/QLoRA", "HuggingFace", "PyTorch", "Model Fine-tuning", "GPU Optimization"],
       icon: <Brain className="text-white" size={32} />,
-      scope: "Custom AI Model",
-      duration: "Production Capstone",
+      scope: "Agentic AI Capstone",
+      duration: "2 & 3 Months",
       impact: "40% better domain accuracy"
+    },
+    {
+      title: "Full-Stack Enterprise SaaS Platform with Python & React",
+      description: "Develop a full-featured multi-tenant SaaS application from scratch. Build robust RESTful APIs with FastAPI/Django, modern interactive dashboard with React.js & Tailwind, and deploy via Docker containers.",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1260",
+      skills: ["Python", "FastAPI", "React.js", "PostgreSQL", "Docker", "Tailwind CSS"],
+      icon: <Code className="text-white" size={32} />,
+      scope: "Python Full Stack Capstone",
+      duration: "2 & 3 Months",
+      impact: "Scalable microservices architecture"
+    },
+    {
+      title: "Automated AI Code Reviewer & Bug-Fixing Agent",
+      description: "Build a developer assistant agent in Python that parses abstract syntax trees (AST), reviews pull requests, detects vulnerabilities, suggests optimizations, and generates automated unit tests.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1260",
+      skills: ["Python AST", "Django REST", "LLM Code Agent", "GitHub Actions CI/CD"],
+      icon: <Workflow className="text-white" size={32} />,
+      scope: "Python & AI Integration",
+      duration: "2 & 3 Months",
+      impact: "Automated test & code security audits"
+    },
+    {
+      title: "E-Commerce Microservices Engine with PostgreSQL & Redis",
+      description: "Architect high-performance backend microservices with Django REST Framework, relational data modeling in PostgreSQL, in-memory caching with Redis, and payment gateway webhooks.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1260",
+      skills: ["Django", "PostgreSQL", "Redis Caching", "Payment Gateway", "Docker Compose"],
+      icon: <Database className="text-white" size={32} />,
+      scope: "Python Full Stack Capstone",
+      duration: "2 & 3 Months",
+      impact: "Handles 10,000+ simulated requests/sec"
     }
   ];
 
-  const projects = isOnline ? onlineProjects : workshopProjects;
+  const projects = isOnline ? onlineProjects : offlineProjects;
   const themeColor = isOnline ? 'purple' : 'purple';
 
   const nextProject = () => {
@@ -145,11 +145,13 @@ const Projects: React.FC<ProjectsProps> = ({ isOnline }) => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              {isOnline ? 'Industry Capstone Projects' : 'Hands-on Workshop & Industry Projects'}
+              {isOnline ? 'Industry Capstone Projects' : 'Offline Internship Capstone Projects'}
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            {isOnline ? 'Build full-fledged, real-world portfolio projects focused on your chosen technology track to prepare for modern careers.' : 'From producing your own cinematic AI short film to building a take-home autonomous robot, our projects give you tangible, real-world proof of capability.'}
+            {isOnline 
+              ? 'Build full-fledged, real-world portfolio projects focused on your chosen technology track to prepare for modern careers.' 
+              : 'Build tangible, production-grade applications in Agentic AI and Python Full Stack to prove your capability to top employers.'}
           </p>
         </div>
         

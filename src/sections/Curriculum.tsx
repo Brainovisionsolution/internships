@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, ChevronDown, ChevronUp, Download, Video, Bot, Sparkles, Cpu, Film } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { BookOpen, ChevronDown, Bot, Code, Sparkles, CheckCircle, Terminal } from 'lucide-react';
 
 interface Module {
   title: string;
@@ -11,136 +10,136 @@ interface Module {
 }
 
 const Curriculum: React.FC = () => {
-  const [activeTrack, setActiveTrack] = useState<'aifilm' | 'robotics'>('aifilm');
+  const [activeTrack, setActiveTrack] = useState<'agentic_ai' | 'python_fullstack'>('agentic_ai');
   const [openModule, setOpenModule] = useState<number | null>(0);
 
-  const aiFilmModules: Module[] = [
+  const agenticAiModules: Module[] = [
     {
-      title: "Module 1: AI Prompting, Concept Art & Worldbuilding",
-      duration: "Day 1 (Morning)",
-      description: "Master cinema prompt engineering, creating photorealistic characters, lighting styles, camera lens simulations, and maintaining consistent character faces.",
+      title: "Module 1: Foundations of Generative AI, LLMs & Prompt Engineering",
+      duration: "Week 1 - 2",
+      description: "Understand Transformer architecture, Attention mechanisms, tokenization, temperature parameters, and enterprise prompt engineering strategies for production.",
       topics: [
-        "Prompt structure for cinematic realism",
-        "Midjourney v6 & FLUX character face-locking",
-        "Cinematic framing (Close-up, Wide, Dutch angle, Drone)",
-        "Style referencing and multi-prompt compositions"
+        "Transformers & Self-Attention mechanics in modern LLMs",
+        "Few-shot, Chain-of-Thought (CoT), and ReAct prompting",
+        "OpenAI API, Google Gemini API & Anthropic Claude integrations",
+        "Cost optimization, context window management, and rate limiting"
       ],
-      tools: ["Midjourney", "FLUX", "Magnific AI"]
+      tools: ["Gemini 1.5 Pro", "GPT-4o", "Claude 3.5 Sonnet", "Tiktoken"]
     },
     {
-      title: "Module 2: AI Screenwriting & Dynamic Storyboarding",
-      duration: "Day 1 (Afternoon)",
-      description: "Generate structured film screenplays, three-act drama pacing, dialog scripting, and visual shot-by-shot storyboard generation.",
+      title: "Module 2: Enterprise RAG Pipelines & Vector Databases",
+      duration: "Week 3 - 4",
+      description: "Build robust Retrieval-Augmented Generation architectures. Learn document chunking strategies, embedding generation, semantic similarity search, and hybrid retrieval.",
       topics: [
-        "Scriptwriting using ChatGPT & Claude for cinema",
-        "Beat sheets, dialog punch-up & scene pacing",
-        "Automated shot-list generation",
-        "Visual storyboard alignment with soundtrack cues"
+        "Document ingestion, chunking algorithms & metadata tagging",
+        "Dense vs sparse embeddings (Sentence-BERT, BGE, BM25)",
+        "Vector databases: FAISS, ChromaDB, and Pinecone",
+        "Re-ranking models & mitigating LLM hallucinations"
       ],
-      tools: ["Claude 3.5 Sonnet", "ChatGPT Plus", "StoryToolkit AI"]
+      tools: ["LangChain", "FAISS", "ChromaDB", "Sentence-Transformers"]
     },
     {
-      title: "Module 3: Generative AI Video & Camera Motion Dynamics",
-      duration: "Day 2 (Morning)",
-      description: "Transform still storyboard frames into breathtaking cinematic motion with camera zooms, pans, tracking shots, and slow motion.",
+      title: "Module 3: Autonomous AI Agent Architectures & Tool Calling",
+      duration: "Week 5 - 6",
+      description: "Design autonomous single-agent systems capable of reasoning, planning multi-step tasks, invoking external APIs, and persisting memory across conversation turns.",
       topics: [
-        "Runway Gen-3 Alpha text-to-video and image-to-video",
-        "Controlling camera motion vectors (Pan, Tilt, Zoom, Roll)",
-        "Pika Labs & Luma Dream Machine cinematic physics",
-        "Motion brush & selective element animation"
+        "ReAct loop: Thought, Action, Observation, and Reflection",
+        "Function calling & structured JSON outputs from LLMs",
+        "Integrating web search, database querying, and code execution tools",
+        "Short-term buffer memory vs persistent vector memory"
       ],
-      tools: ["Runway Gen-3", "Luma Dream Machine", "Pika Labs"]
+      tools: ["LangChain Agents", "Function Calling", "DuckDuckGo API", "Python REPL"]
     },
     {
-      title: "Module 4: AI Audio, Voice Cloning & Soundscapes",
-      duration: "Day 2 (Mid-Day)",
-      description: "Synthesize lifelike voice acting, multi-lingual dubbing, emotional speech delivery, and orchestral cinematic music scores.",
+      title: "Module 4: Multi-Agent Orchestration with CrewAI & LangGraph",
+      duration: "Week 7 - 8",
+      description: "Assemble coordinated teams of autonomous specialized agents with distinct personas, delegating tasks, reviewing code, and resolving conflicts automatically.",
       topics: [
-        "ElevenLabs realistic voice cloning & emotional inflection",
-        "Automatic lip-sync generation with character video",
-        "Suno AI & Udio cinematic score and sound effect generation",
-        "Spatial audio mastering and noise cleanup"
+        "CrewAI framework: Agents, Tasks, Tools, and Process flows",
+        "Graph-based stateful agent workflows using LangGraph",
+        "Hierarchical vs sequential agent collaboration patterns",
+        "Human-in-the-loop validation and error recovery loops"
       ],
-      tools: ["ElevenLabs", "Suno AI", "SyncLabs"]
+      tools: ["CrewAI", "LangGraph", "AutoGen", "Pydantic"]
     },
     {
-      title: "Module 5: Final Post-Production, AI Editing & Film Screening",
-      duration: "Day 2 (Evening)",
-      description: "Assemble clips in Premiere Pro / DaVinci Resolve, apply AI color grading, upscaling to 4K, and premiere your short film on the big screen.",
+      title: "Module 5: SLM Fine-Tuning, Evaluation & Production Deployment",
+      duration: "Week 9 - 12 (3-Month Track)",
+      description: "Fine-tune open-source Small Language Models using LoRA/QLoRA on specialized datasets, benchmark with BLEU/ROUGE/BERTScore, and deploy production endpoints.",
       topics: [
-        "Timeline assembly and AI cut transitions",
-        "Topaz Video AI upscaling to 4K resolution",
-        "Sound effects layering & dialogue mixing",
-        "Final film premiere, critique & certificate distribution"
+        "Parameter-Efficient Fine-Tuning (PEFT) with LoRA & QLoRA",
+        "Fine-tuning Llama-3 / Phi-3 / Mistral on custom datasets",
+        "Quantitative LLM evaluation with Ragas, ROUGE & BERTScore",
+        "Deploying scalable agent endpoints using FastAPI and Docker"
       ],
-      tools: ["Premiere Pro", "Topaz Video AI", "DaVinci Resolve"]
+      tools: ["HuggingFace", "PyTorch", "LoRA/QLoRA", "Ragas", "FastAPI"]
     }
   ];
 
-  const roboticsModules: Module[] = [
+  const pythonFullstackModules: Module[] = [
     {
-      title: "Session 1: Embedded Systems Architecture & Microcontroller Setup",
-      duration: "09:30 AM – 11:00 AM",
-      description: "Introduction to robotics hardware, microcontroller architecture, GPIO pinouts, and setting up the embedded development environment.",
+      title: "Module 1: Advanced Python, OOP & Algorithm Architecture",
+      duration: "Week 1 - 2",
+      description: "Master modern Python idioms, object-oriented design patterns, functional programming, memory management, and data structures essential for scalable systems.",
       topics: [
-        "Embedded computing vs general programming",
-        "Microcontroller pin configuration & power distribution",
-        "Flashing firmware & debugging over serial monitor",
-        "Breadboard prototyping & circuit safety rules"
+        "Advanced OOP: Inheritance, Polymorphism, Abstract Base Classes",
+        "Generators, Iterators, Decorators, and Context Managers",
+        "Concurrency: Asyncio, Multithreading vs Multiprocessing",
+        "Clean code standards, Type hinting, and Pytest unit testing"
       ],
-      tools: ["Arduino IDE", "Microcontroller Board", "Serial Monitor"]
+      tools: ["Python 3.12", "Pytest", "Asyncio", "Pylint"]
     },
     {
-      title: "Session 2: Robot Chassis Mechanical Assembly & Motor Control",
-      duration: "11:15 AM – 01:00 PM",
-      description: "Hands-on assembly of the 2WD robot chassis, mounting dual gear motors, wiring the L298N motor driver, and writing speed & direction control code.",
+      title: "Module 2: High-Performance Backend APIs with Django & FastAPI",
+      duration: "Week 3 - 4",
+      description: "Build robust, secure, and production-ready RESTful microservices and API gateways using Django REST Framework and asynchronous FastAPI.",
       topics: [
-        "Chassis assembly & motor bracket mounting",
-        "H-Bridge motor driver circuitry & PWM speed control",
-        "Writing locomotion algorithms (Forward, Reverse, Pivot, Spin)",
-        "Differential drive steering mechanics"
+        "Django MVC/MVT architecture, migrations & middleware",
+        "Django REST Framework (DRF) serializers & viewsets",
+        "FastAPI asynchronous routes, Pydantic data validation",
+        "JWT authentication, role-based access control (RBAC), CORS"
       ],
-      tools: ["L298N Motor Driver", "Dual BO Motors", "Chassis Hardware"]
+      tools: ["Django", "FastAPI", "DRF", "Pydantic", "JWT"]
     },
     {
-      title: "Session 3: Ultrasonic Sensor Integration & Obstacle Avoidance",
-      duration: "02:00 PM – 03:45 PM",
-      description: "Connect the HC-SR04 sonar sensor, calculate time-of-flight distance in centimeters, and implement autonomous obstacle avoidance logic.",
+      title: "Module 3: Modern Interactive Frontend with React.js & Tailwind",
+      duration: "Week 5 - 6",
+      description: "Craft sleek, responsive user interfaces and single-page applications (SPAs) integrated seamlessly with backend REST APIs.",
       topics: [
-        "Ultrasonic trigger & echo signal timing equations",
-        "Calibrating obstacle threshold distances (safe vs danger zones)",
-        "State machine programming for autonomous avoidance decisions",
-        "Testing wall-detection and maze escape behaviors"
+        "React hooks (useState, useEffect, useMemo, custom hooks)",
+        "Component architecture, state management & React Router",
+        "Tailwind CSS responsive design and glassmorphic styling",
+        "Axios API client, error boundaries, and form handling"
       ],
-      tools: ["HC-SR04 Ultrasonic Sensor", "Autonomous Logic", "Embedded C"]
+      tools: ["React.js", "TypeScript", "Tailwind CSS", "Axios", "Vite"]
     },
     {
-      title: "Session 4: Smartphone Bluetooth Wireless Control & Telemetry",
-      duration: "04:00 PM – 05:00 PM",
-      description: "Pair the HC-05 Bluetooth module with an Android/iOS smartphone app to manually pilot the robot wirelessly with joystick & buttons.",
+      title: "Module 4: Relational Databases, PostgreSQL & Query Optimization",
+      duration: "Week 7 - 8",
+      description: "Design normalized database schemas, handle complex transactions with ACID guarantees, optimize indexing, and integrate Redis caching.",
       topics: [
-        "UART serial communication between phone and microcontroller",
-        "Configuring Bluetooth baud rates and pairing commands",
-        "Developing real-time directional remote control",
-        "Preparing the bot for the live arena obstacle race"
+        "PostgreSQL relational modeling, foreign keys, and indexes",
+        "Django ORM / SQLAlchemy advanced queries and aggregations",
+        "Preventing N+1 queries, database connection pooling",
+        "In-memory Redis caching for high-traffic endpoints"
       ],
-      tools: ["HC-05 Bluetooth Module", "Robotics Controller App"]
+      tools: ["PostgreSQL", "SQLAlchemy", "Redis", "pgAdmin"]
     },
     {
-      title: "Session 5: Live Arena Competition, Project Review & Certification",
-      duration: "05:00 PM – 05:30 PM",
-      description: "Compete against fellow workshop attendees on the obstacle race track, receive project review feedback, and receive official certificates.",
+      title: "Module 5: Docker Containerization, CI/CD & Cloud Deployment",
+      duration: "Week 9 - 12 (3-Month Track)",
+      description: "Containerize the full stack application, write GitHub Actions CI/CD automation pipelines, and deploy live production workloads on AWS cloud infrastructure.",
       topics: [
-        "Obstacle arena time trial challenge",
-        "Hardware optimization tips & take-home packaging",
-        "Career pathways in Robotics & Embedded AI",
-        "AICTE & APSCHE approved certificate presentation"
+        "Multi-stage Docker builds for React and Python backend",
+        "Docker Compose orchestration for frontend, backend & database",
+        "Automated testing & linting with GitHub Actions CI/CD",
+        "Deploying to AWS EC2, S3, Nginx reverse proxy & SSL setup"
       ],
-      tools: ["Arena Track", "AICTE & APSCHE Certificate"]
+      tools: ["Docker", "Docker Compose", "GitHub Actions", "AWS EC2", "Nginx"]
     }
   ];
 
-  const currentModules = activeTrack === 'aifilm' ? aiFilmModules : roboticsModules;
+  const currentModules = activeTrack === 'agentic_ai' ? agenticAiModules : pythonFullstackModules;
 
   return (
     <section id="curriculum" className="py-16 md:py-24 bg-white relative overflow-hidden">
@@ -148,14 +147,14 @@ const Curriculum: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center mb-3">
             <span className="text-xs font-bold text-purple-700 uppercase tracking-wider bg-purple-50 border border-purple-100 px-3.5 py-1 rounded-full">
-              Workshop Syllabus
+              Internship Syllabus
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-            Practical Workshop Curriculum
+            Offline Internship Curriculum
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            100% project-driven curriculum designed for complete mastery within 1 to 2 days of intensive hands-on lab practice.
+            Comprehensive <strong>2 Months & 3 Months</strong> project-driven curriculum designed for deep engineering mastery and corporate readiness.
           </p>
 
           {/* Track Switcher */}
@@ -163,31 +162,31 @@ const Curriculum: React.FC = () => {
             <div className="bg-gray-100 p-1.5 rounded-2xl inline-flex space-x-2">
               <button
                 onClick={() => {
-                  setActiveTrack('aifilm');
+                  setActiveTrack('agentic_ai');
                   setOpenModule(0);
                 }}
                 className={`flex items-center px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                  activeTrack === 'aifilm'
-                    ? 'bg-gradient-to-r from-rose-600 to-purple-600 text-white shadow-md'
-                    : 'text-gray-700 hover:text-gray-900'
-                }`}
-              >
-                <Video size={18} className="mr-2" />
-                AI Film Making (2 Days)
-              </button>
-              <button
-                onClick={() => {
-                  setActiveTrack('robotics');
-                  setOpenModule(0);
-                }}
-                className={`flex items-center px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                  activeTrack === 'robotics'
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
+                  activeTrack === 'agentic_ai'
+                    ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md'
                     : 'text-gray-700 hover:text-gray-900'
                 }`}
               >
                 <Bot size={18} className="mr-2" />
-                Robotics Workshop (1 Day)
+                Agentic AI (2 & 3 Months)
+              </button>
+              <button
+                onClick={() => {
+                  setActiveTrack('python_fullstack');
+                  setOpenModule(0);
+                }}
+                className={`flex items-center px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
+                  activeTrack === 'python_fullstack'
+                    ? 'bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-md'
+                    : 'text-gray-700 hover:text-gray-900'
+                }`}
+              >
+                <Code size={18} className="mr-2" />
+                Python Full Stack (2 & 3 Months)
               </button>
             </div>
           </div>
@@ -210,15 +209,15 @@ const Curriculum: React.FC = () => {
                   <div className="flex items-center space-x-4">
                     <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${
                       openModule === index 
-                        ? activeTrack === 'aifilm' ? 'bg-rose-600 text-white shadow-md' : 'bg-blue-600 text-white shadow-md'
+                        ? activeTrack === 'agentic_ai' ? 'bg-purple-600 text-white shadow-md' : 'bg-blue-600 text-white shadow-md'
                         : 'bg-gray-100 text-gray-500'
                     }`}>
-                      {activeTrack === 'aifilm' ? <Film size={18} /> : <Bot size={18} />}
+                      {activeTrack === 'agentic_ai' ? <Bot size={18} /> : <Code size={18} />}
                     </div>
                     <div>
                       <h3 className={`font-bold text-base md:text-lg transition-colors duration-300 ${
                         openModule === index 
-                          ? activeTrack === 'aifilm' ? 'text-rose-700' : 'text-blue-700'
+                          ? activeTrack === 'agentic_ai' ? 'text-purple-700' : 'text-blue-700'
                           : 'text-gray-900'
                       }`}>
                         {module.title}
@@ -270,17 +269,15 @@ const Curriculum: React.FC = () => {
             ))}
           </div>
 
-          {activeTrack === 'robotics' && (
-            <div className="mt-6 text-center">
-              <Link
-                to="/robotics"
-                className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-bold text-sm bg-indigo-50 px-5 py-2.5 rounded-xl border border-indigo-100 transition-colors"
-              >
-                <Bot size={16} className="mr-2" />
-                Want more robotics details? Visit Dedicated Robotics Page →
-              </Link>
-            </div>
-          )}
+          <div className="mt-8 text-center">
+            <a
+              href="#technologies"
+              className="inline-flex items-center text-purple-700 hover:text-purple-900 font-bold text-sm bg-purple-50 px-6 py-3 rounded-xl border border-purple-200 transition-colors shadow-sm"
+            >
+              <Sparkles size={16} className="mr-2 text-purple-600" />
+              Enroll for 2 Months or 3 Months Track @ ₹7,500
+            </a>
+          </div>
         </div>
       </div>
     </section>

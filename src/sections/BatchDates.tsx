@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Check, Clock, Users, Zap, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Calendar, Clock, Zap } from 'lucide-react';
 
 interface BatchDatesProps {
   isOnline: boolean;
@@ -17,10 +16,11 @@ const BatchDates: React.FC<BatchDatesProps> = ({ isOnline }) => {
   ];
 
   const offlineBatches = [
-    { date: "1st Nov 2026", day: "Weekend Batch", seats: "30 Seats", status: "Filling Fast", timing: "09:30 AM – 05:30 PM" },
-    { date: "15th Nov 2026", day: "Weekend Batch", seats: "30 Seats", status: "Open", timing: "09:30 AM – 05:30 PM" },
-    { date: "1st Dec 2026", day: "Weekday Batch", seats: "30 Seats", status: "Open", timing: "09:30 AM – 05:30 PM" },
-    { date: "15th Dec 2026", day: "Weekday Batch", seats: "30 Seats", status: "Open", timing: "09:30 AM – 05:30 PM" }
+    { date: "1st Nov 2026", day: "Sunday", seats: "30 Seats", status: "Filling Fast", timing: "Daily 2 Hours + Lab" },
+    { date: "15th Nov 2026", day: "Sunday", seats: "30 Seats", status: "Open", timing: "Daily 2 Hours + Lab" },
+    { date: "1st Dec 2026", day: "Tuesday", seats: "30 Seats", status: "Open", timing: "Daily 2 Hours + Lab" },
+    { date: "15th Dec 2026", day: "Tuesday", seats: "30 Seats", status: "Open", timing: "Daily 2 Hours + Lab" },
+    { date: "1st Jan 2027", day: "Friday", seats: "30 Seats", status: "Open", timing: "Daily 2 Hours + Lab" }
   ];
 
   const batches = isOnline ? onlineBatches : offlineBatches;
@@ -34,16 +34,16 @@ const BatchDates: React.FC<BatchDatesProps> = ({ isOnline }) => {
             Upcoming Batch Calendar
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            {isOnline ? 'Online Internship Batch Dates' : 'Offline Workshop Batch Dates'}
+            {isOnline ? 'Online Internship Batch Dates' : 'Offline Internship Batch Dates'}
           </h2>
           <p className="text-base md:text-lg text-gray-600">
             {isOnline 
               ? 'Starting November 1st • New 15-Day Batch Every 15 Days • All 5 Technologies @ ₹999 Only'
-              : 'Starting November 1st • Batches Every 15 Days • AI Film Making (2 Days) & Robotics (1 Day) @ ₹5,000 Only'}
+              : 'Starting November 1st • Slots: Nov 1, Nov 15, Dec 1, Dec 15, Jan 1 • Agentic AI & Python Full Stack @ ₹7,500 Only'}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-10">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 ${isOnline ? 'lg:grid-cols-4' : 'lg:grid-cols-5'} gap-5 max-w-6xl mx-auto mb-10`}>
           {batches.map((batch, index) => (
             <div
               key={index}
@@ -60,7 +60,7 @@ const BatchDates: React.FC<BatchDatesProps> = ({ isOnline }) => {
                   {batch.status}
                 </span>
               </div>
-              <div className="text-2xl font-extrabold text-gray-900 mb-1">{batch.date}</div>
+              <div className="text-xl font-extrabold text-gray-900 mb-1">{batch.date}</div>
               <div className="text-xs text-purple-700 font-semibold mb-3 flex items-center justify-center">
                 <Clock size={13} className="mr-1" />
                 {batch.timing}
@@ -69,14 +69,14 @@ const BatchDates: React.FC<BatchDatesProps> = ({ isOnline }) => {
                 {batch.seats} Available
               </div>
               <div className="text-sm font-bold text-gray-900">
-                {isOnline ? '₹999/- Only' : '₹5,000/- Only'}
+                {isOnline ? '₹999/- Only' : '₹7,500/- Only'}
               </div>
             </div>
           ))}
         </div>
 
         <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-3">
+          <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href={isOnline ? "https://rzp.io/rzp/ze2KGkb" : "https://rzp.io/rzp/8KPMtnd"}
               target="_blank"
@@ -84,17 +84,8 @@ const BatchDates: React.FC<BatchDatesProps> = ({ isOnline }) => {
               className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition-all flex items-center text-sm"
             >
               <Zap size={16} className="mr-2" />
-              Book Batch on {batches[selectedBatch].date}
+              Book Batch for {batches[selectedBatch]?.date || 'Upcoming Batch'}
             </a>
-            {!isOnline && (
-              <Link
-                to="/robotics"
-                className="bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold px-6 py-3.5 rounded-xl border border-blue-200 transition-all text-sm flex items-center"
-              >
-                Go to Dedicated Robotics Page
-                <ArrowRight size={15} className="ml-1.5" />
-              </Link>
-            )}
           </div>
         </div>
       </div>

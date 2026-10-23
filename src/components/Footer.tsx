@@ -60,12 +60,12 @@ const Footer: React.FC = () => {
           <div className="col-span-1">
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/robotics" className="text-cyan-400 font-semibold hover:text-white transition-colors">🤖 Robotics Workshop (1-Day)</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Offline Internships (₹7,500)</Link></li>
               <li><Link to="/online" className="text-gray-400 hover:text-white transition-colors">Online Internships (₹999)</Link></li>
-              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Offline Workshops (₹5,000)</Link></li>
+              <li><Link to="/hybrid" className="text-gray-400 hover:text-white transition-colors">Hybrid Internships</Link></li>
               <li><a href="#curriculum" className="text-gray-400 hover:text-white transition-colors">Curriculum</a></li>
               <li><a href="#trainers" className="text-gray-400 hover:text-white transition-colors">Trainers</a></li>
-              <li><a href="#technologies" className="text-gray-400 hover:text-white transition-colors">Technologies & Workshops</a></li>
+              <li><a href="#technologies" className="text-gray-400 hover:text-white transition-colors">Technologies</a></li>
               <li><a href="https://brainovision.in" className="text-gray-400 hover:text-white transition-colors">Main Website</a></li>
             </ul>
           </div>

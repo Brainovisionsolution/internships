@@ -148,10 +148,12 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
             <span className="text-sm font-semibold text-purple-600 uppercase tracking-wide bg-purple-50 px-3 py-1 rounded-full">Key Highlights</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {isOnline ? 'Online Program Highlights' : 'Workshop Program Highlights'}
+            {isOnline ? 'Online Program Highlights' : 'Offline Internship Highlights'}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {isOnline ? 'Our intensive virtual internship tracks are designed to make you industry-ready in in-demand technologies.' : 'Hands-on practical bootcamps in AI Film Making and Robotics designed for immediate production and hardware capability.'}
+            {isOnline 
+              ? 'Our intensive virtual internship tracks are designed to make you industry-ready in in-demand technologies.' 
+              : 'Comprehensive classroom internship programs in Agentic AI and Python Full Stack designed for immediate corporate readiness.'}
           </p>
         </div>
 
@@ -200,19 +202,19 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-            <div className="text-3xl font-bold text-purple-600">{isOnline ? '90' : (isHybrid ? '50/40' : '90')}</div>
-            <div className="text-sm text-gray-600 mt-1">{isOnline ? 'Batch Slots Available' : (isHybrid ? 'Offline/Online' : 'Training Hours')}</div>
+            <div className="text-3xl font-bold text-purple-600">{isOnline ? '90' : (isHybrid ? '50/40' : '90+')}</div>
+            <div className="text-sm text-gray-600 mt-1">{isOnline ? 'Batch Slots Available' : (isHybrid ? 'Offline/Online' : 'Training & Lab Hours')}</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-            <div className="text-3xl font-bold text-purple-600">8</div>
-            <div className="text-sm text-gray-600 mt-1">Weeks Program</div>
+            <div className="text-3xl font-bold text-purple-600">{isOnline ? '2-4' : '2 & 3'}</div>
+            <div className="text-sm text-gray-600 mt-1">{isOnline ? 'Weeks Duration' : 'Months Duration'}</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-            <div className="text-3xl font-bold text-purple-600">8+</div>
-            <div className="text-sm text-gray-600 mt-1">Industry Projects</div>
+            <div className="text-3xl font-bold text-purple-600">6+</div>
+            <div className="text-sm text-gray-600 mt-1">Industry Capstone Projects</div>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-            <div className="text-3xl font-bold text-purple-600">{isOnline ? '90 ' : '35'}</div>
+            <div className="text-3xl font-bold text-purple-600">{isOnline ? '90' : '30'}</div>
             <div className="text-sm text-gray-600 mt-1">Seats / Batch</div>
           </div>
         </div>
@@ -224,7 +226,9 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
               {isOnline ? 'Limited Slots Available - Enroll Now!' : 'Limited Seats Available - Enroll Now!'}
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              {isOnline ? 'Secure your spot today and kickstart your career with our specialized tech tracks.' : 'Only 35 seats per batch for focused mentorship. Secure your spot today with just ₹999 and kickstart your career in Generative AI.'}
+              {isOnline 
+                ? 'Secure your spot today and kickstart your career with our specialized tech tracks.' 
+                : 'Limited to 30 seats per batch for personalized mentorship. Secure your spot in Agentic AI or Python Full Stack today.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
@@ -233,7 +237,7 @@ const ProgramHighlights: React.FC<ProgramHighlightsProps> = ({ isOnline = false,
                 rel="noopener noreferrer"
                 className="bg-white text-purple-600 hover:bg-gray-100 rounded-lg px-8 py-4 font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                {isOnline ? 'Enroll Now - Pay ₹799' : 'Enroll Now - Pay ₹999'}
+                {isOnline ? 'Enroll Now - Pay ₹999' : 'Enroll Now @ ₹7,500'}
               </a>
               <a
                 href={isOnline ? "tel:7416422509" : "tel:7207775039"}

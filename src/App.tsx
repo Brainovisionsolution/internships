@@ -5,9 +5,6 @@ import OnlineInternship from './pages/OnlineInternship';
 import HybridInternship from './pages/HybridInternship';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppChat from './components/WhatsAppChat';
-import SelfplacedInternship from './pages/Selfplaced';
-import Projectbased from './pages/Peojectbased';
-import RoboticsPage from './pages/RoboticsPage';
 
 function App() {
   return (
@@ -17,11 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/online" element={<OnlineInternship />} />
-        <Route path="/robotics" element={<RoboticsPage />} />
         <Route path="/hybrid" element={<HybridInternship />} />
-        <Route path="/self-placed" element={<SelfplacedInternship/>}/>
-        <Route path="/project-based" element={<Projectbased/>}/>
-
+        <Route path="/robotics" element={<Navigate to="/" replace />} />
+        <Route path="/self-placed" element={<Navigate to="/" replace />} />
+        <Route path="/project-based" element={<Navigate to="/" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Sparkles, Clock, Trophy, Users, Zap, Bot, Video, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ChevronRight, Sparkles, Clock, Users, Zap, Bot, Code, ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
   isHybrid?: boolean;
@@ -42,23 +41,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isHybrid = false }) => {
           >
             <div className="inline-block bg-purple-500/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-400/30">
               <span className="text-xs md:text-sm font-semibold text-purple-200">
-                🚀 Offline Practical Workshops • Hyderabad
+                🚀 Offline Classroom Internships • Hyderabad
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              OFFLINE HANDS-ON
+              OFFLINE INDUSTRY
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-cyan-300">
-                WORKSHOPS
+                INTERNSHIP PROGRAM
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-xl leading-relaxed">
-              Master next-generation technologies with full hands-on immersion in Hyderabad: 
+              Master next-generation technologies with classroom lab immersion and live project mentoring in Hyderabad: 
               <br className="hidden sm:block" />
-              <strong>• 2 Days for AI Film Making</strong> (Runway Gen-3, Midjourney, AI Editing)
+              <strong>• Agentic AI</strong> (Autonomous Agents, Multi-Agent Workflows, CrewAI, LangChain, RAG)
               <br />
-              <strong>• 1 Day for Robotics</strong> (Complete Hardware Kit, Autonomous Bots)
+              <strong>• Python Full Stack</strong> (Python, Django, FastAPI, React, PostgreSQL & Deployment)
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -66,33 +65,33 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isHybrid = false }) => {
                 href="#technologies"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold rounded-xl px-7 py-3.5 transition-all duration-300 flex items-center justify-center shadow-lg transform hover:-translate-y-0.5"
               >
-                Enroll for ₹5,000 Only
+                Enroll for ₹7,500 Only
                 <ChevronRight size={20} className="ml-2" />
               </a>
-              <Link
-                to="/robotics"
+              <a
+                href="#curriculum"
                 className="bg-white/10 hover:bg-white/20 border border-purple-400 text-white font-semibold rounded-xl px-6 py-3.5 transition-all duration-300 flex items-center justify-center"
               >
-                <Bot size={18} className="mr-2 text-cyan-300" />
-                Dedicated Robotics Page
+                <Code size={18} className="mr-2 text-cyan-300" />
+                View 2 Months & 3 Months Curriculum
                 <ArrowRight size={16} className="ml-1.5" />
-              </Link>
+              </a>
             </div>
 
             {/* Stats Row */}
             <div className="mt-8 flex flex-wrap sm:flex-nowrap items-center gap-6 sm:gap-8">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-purple-300">2 Days</div>
-                <div className="text-xs text-purple-200">AI Film Making</div>
+                <div className="text-2xl md:text-3xl font-bold text-purple-300">2 & 3 Months</div>
+                <div className="text-xs text-purple-200">Internship Duration</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-cyan-300">1 Day</div>
-                <div className="text-xs text-purple-200">Robotics Workshop</div>
+                <div className="text-2xl md:text-3xl font-bold text-cyan-300">2 Tracks</div>
+                <div className="text-xs text-purple-200">Agentic AI & Python Full Stack</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-purple-700"></div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-pink-300">Nov 1st</div>
-                <div className="text-xs text-purple-200">Batches Every 15 Days</div>
+                <div className="text-xs text-purple-200">Slots: Nov 1, 15 | Dec 1, 15 | Jan 1</div>
               </div>
             </div>
 
@@ -130,52 +129,52 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isHybrid = false }) => {
               <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-75 blur-xl animate-pulse"></div>
               <div className="relative bg-white/10 backdrop-blur-md border border-purple-200/20 rounded-2xl p-6 overflow-hidden">
                 <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full absolute right-6 top-6">
-                  🔥 50% Launch Offer
+                  🔥 Special Offer
                 </div>
 
                 <h3 className="text-xl font-bold mb-4 flex items-center">
                   <Sparkles size={20} className="mr-2 text-purple-300" />
-                  Workshop Tracks Overview
+                  Offline Internship Tracks
                 </h3>
 
                 <ul className="space-y-3 text-sm text-purple-100">
                   <li className="flex items-start">
-                    <span className="text-pink-400 mr-2 font-bold">🎬</span>
-                    <span><strong>AI Film Making (2 Days):</strong> Concept to Cinema, Midjourney characters, Runway Gen-3 AI video, ElevenLabs audio</span>
-                  </li>
-                  <li className="flex items-start">
                     <span className="text-cyan-400 mr-2 font-bold">🤖</span>
-                    <span><strong>Robotics Workshop (1 Day):</strong> 100% Hardware Kit included, assemble & code autonomous obstacle-avoiding bot</span>
+                    <span><strong>Agentic AI (2 & 3 Months):</strong> Autonomous Agents, Multi-Agent Systems, LangChain, CrewAI & RAG pipelines</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-pink-400 mr-2 font-bold">🐍</span>
+                    <span><strong>Python Full Stack (2 & 3 Months):</strong> Python OOP, Django, FastAPI, React UI, PostgreSQL & Cloud Deployment</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-300 mr-2">✓</span>
-                    <span>100% Practical Studio & Hardware Lab Training</span>
+                    <span>100% Practical In-Person Lab Training in Hyderabad</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-300 mr-2">✓</span>
-                    <span>AICTE & APSCHE Recognized Certifications</span>
+                    <span>AICTE & APSCHE Recognized Government Certifications</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-300 mr-2">✓</span>
-                    <span>Direct Mentorship from Industry Creative & Robotics Leads</span>
+                    <span>Direct Mentorship, Code Reviews & Placement Assistance</span>
                   </li>
                 </ul>
 
                 <div className="mt-6 pt-5 border-t border-purple-200/20">
                   <div className="flex items-center justify-between mb-2">
-                    <div className="text-xs text-purple-200 uppercase font-semibold">Special Workshop Fee</div>
-                    <div className="bg-green-500 text-white text-xs px-2.5 py-0.5 rounded-full font-bold">50% OFF</div>
+                    <div className="text-xs text-purple-200 uppercase font-semibold">Special Internship Fee</div>
+                    <div className="bg-green-500 text-white text-xs px-2.5 py-0.5 rounded-full font-bold">25% OFF</div>
                   </div>
                   <div className="flex items-baseline mb-2">
-                    <span className="text-3xl font-extrabold text-white">₹5,000</span>
+                    <span className="text-3xl font-extrabold text-white">₹7,500</span>
                     <span className="ml-3 text-base line-through opacity-70">₹10,000</span>
-                    <span className="ml-3 text-green-300 text-xs font-semibold">Save ₹5,000</span>
+                    <span className="ml-3 text-green-300 text-xs font-semibold">Save ₹2,500</span>
                   </div>
 
                   <div className="bg-purple-900/40 rounded-xl p-3 mb-4 text-xs space-y-1">
                     <div className="flex items-center text-purple-200">
                       <Clock size={13} className="mr-2 text-cyan-300" />
-                      <span>Starts <strong>1st Nov 2026</strong> • New batch every 15 days</span>
+                      <span>Starts <strong>Nov 1st</strong> • Slots: Nov 1, Nov 15, Dec 1, Dec 15, Jan 1</span>
                     </div>
                     <div className="flex items-center text-purple-200">
                       <Users size={13} className="mr-2 text-pink-300" />
@@ -185,20 +184,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isHybrid = false }) => {
 
                   <div className="space-y-2">
                     <a
-                      href="https://rzp.io/rzp/8KPMtnd"
+                      href="#technologies"
                       className="block w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center font-bold rounded-xl py-3 transition-all duration-300 hover:from-purple-600 hover:to-pink-600 shadow-lg text-sm flex items-center justify-center"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <Zap size={16} className="mr-2" />
-                      Enroll for Workshop @ ₹5,000
+                      Enroll for Offline Internship @ ₹7,500
                     </a>
-                    <Link
-                      to="/robotics"
-                      className="block w-full bg-white/10 hover:bg-white/20 text-cyan-200 text-center font-semibold rounded-xl py-2.5 transition-all text-xs border border-cyan-400/30"
-                    >
-                      View Dedicated Robotics Webpage →
-                    </Link>
                   </div>
                 </div>
               </div>

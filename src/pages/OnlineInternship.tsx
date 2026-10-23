@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout } from '../components/Layout';
 import OnlineHeroSection from '../sections/OnlineHeroSection';
 import ProgramHighlights from '../sections/ProgramHighlights';
-import TechnologyOverview from '../sections/TechnologyOverview';
 import BatchDates from '../sections/BatchDates';
 import BatchTimings from '../sections/BatchTimings';
 import Projects from '../sections/Projects';
@@ -10,7 +9,6 @@ import Trainers from '../sections/Trainers';
 import PlacementAssistance from '../sections/PlacementAssistance';
 import Certificates from '../sections/Certificates';
 import AboutUs from '../sections/AboutUs';
-import OnlineRegistration from '../sections/OnlineRegistration';
 import WhyJoinUs from '../sections/WhyJoinUs';
 import OnlineTechnologyCards from '../sections/OnlineTechnologyCards';
 

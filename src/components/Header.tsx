@@ -29,14 +29,8 @@ const Header: React.FC = () => {
       navigate('/online');
     } else if (mode === 'offline') {
       navigate('/');
-    } else if (mode === 'robotics') {
-      navigate('/robotics');
     } else if (mode === 'hybrid') {
       navigate('/hybrid');
-    } else if (mode === 'self-placed') {
-      navigate('/self-placed');
-    } else if (mode === 'project-based') {
-      navigate('/project-based');
     }
   };
 
@@ -67,63 +61,33 @@ const Header: React.FC = () => {
             <div className="bg-gray-100 rounded-lg p-1 flex space-x-1">
               <button
                 onClick={() => handleModeChange('offline')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/' 
-                    ? 'bg-indigo-600 text-white' 
+                    ? 'bg-indigo-600 text-white shadow-sm' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Offline Workshops
+                Offline Internships
               </button>
               <button
                 onClick={() => handleModeChange('online')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/online' 
-                    ? 'bg-indigo-600 text-white' 
+                    ? 'bg-indigo-600 text-white shadow-sm' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Online
-              </button>
-              <button
-                onClick={() => handleModeChange('robotics')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors flex items-center ${
-                  location.pathname === '/robotics' 
-                    ? 'bg-indigo-600 text-white shadow-sm' 
-                    : 'text-indigo-700 font-bold bg-indigo-50 hover:bg-indigo-100'
-                }`}
-              >
-                🤖 Robotics (1-Day)
+                Online Internships
               </button>
               <button
                 onClick={() => handleModeChange('hybrid')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   location.pathname === '/hybrid' 
-                    ? 'bg-indigo-600 text-white' 
+                    ? 'bg-indigo-600 text-white shadow-sm' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Hybrid
-              </button>
-              <button
-                onClick={() => handleModeChange('self-placed')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === '/self-placed' 
-                    ? 'bg-indigo-600 text-white' 
-                    : 'text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                Self-paced
-              </button>
-              <button
-                onClick={() => handleModeChange('project-based')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === '/project-based' 
-                    ? 'bg-indigo-600 text-white' 
-                    : 'text-gray-700 hover:bg-gray-200'
-                }`}
-              > 
-                Project-based
+                Hybrid Internships
               </button>
             </div>
           </div>
@@ -170,78 +134,39 @@ const Header: React.FC = () => {
                     handleModeChange('offline');
                     setIsOpen(false);
                   }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors ${
+                  className={`w-full px-4 py-2.5 rounded-md text-sm font-medium transition-colors text-left ${
                     location.pathname === '/' 
                       ? 'bg-indigo-600 text-white' 
                       : 'text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  Offline Mode
+                  Offline Internships
                 </button>
                 <button
                   onClick={() => {
                     handleModeChange('online');
                     setIsOpen(false);
                   }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors ${
+                  className={`w-full px-4 py-2.5 rounded-md text-sm font-medium transition-colors text-left ${
                     location.pathname === '/online' 
                       ? 'bg-indigo-600 text-white' 
                       : 'text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  Online Mode
-                </button>
-                <button
-                  onClick={() => {
-                    handleModeChange('robotics');
-                    setIsOpen(false);
-                  }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors font-bold ${
-                    location.pathname === '/robotics' 
-                      ? 'bg-indigo-600 text-white' 
-                      : 'text-indigo-700 bg-indigo-50 hover:bg-indigo-100'
-                  }`}
-                >
-                  🤖 Robotics Workshop (1-Day)
+                  Online Internships
                 </button>
                 <button
                   onClick={() => {
                     handleModeChange('hybrid');
                     setIsOpen(false);
                   }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors ${
+                  className={`w-full px-4 py-2.5 rounded-md text-sm font-medium transition-colors text-left ${
                     location.pathname === '/hybrid' 
                       ? 'bg-indigo-600 text-white' 
                       : 'text-gray-700 hover:bg-gray-200'
                   }`}
                 >
-                  Hybrid Mode
-                </button>
-                <button
-                  onClick={() => {
-                    handleModeChange('self-placed');
-                    setIsOpen(false);
-                  }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors ${
-                    location.pathname === '/self-placed' 
-                      ? 'bg-indigo-600 text-white' 
-                      : 'text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Self-placed Mode
-                </button>
-                <button
-                  onClick={() => {
-                    handleModeChange('project-based');
-                    setIsOpen(false);
-                  }}
-                  className={`w-full px-4 py-2 rounded-md transition-colors ${
-                    location.pathname === '/project-based' 
-                      ? 'bg-indigo-600 text-white' 
-                      : 'text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Project-based Mode
+                  Hybrid Internships
                 </button>
               </div>
               {navLinks.map((link) => (

@@ -75,16 +75,16 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
       case 'technologies':
         return {
           title: "Technologies You'll Master",
-          description: "Our practical programs cover the most in-demand AI and robotics tools, frameworks, and platforms used by leading tech organizations.",
+          description: "Our practical programs cover the most in-demand Agentic AI, LLM frameworks, and Full-Stack tools used by leading tech organizations.",
           items: technologiesList,
           color: "purple",
           image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-          ctaText: "Gain hands-on experience with LangChain, HuggingFace, Hardware Kits, and cutting-edge GenAI frameworks."
+          ctaText: "Gain hands-on experience with LangChain, CrewAI, PyTorch, Django, and cutting-edge GenAI frameworks."
         };
       case 'career':
         return {
           title: "High-Growth Career Opportunities",
-          description: "The AI and Robotics fields are experiencing explosive growth with unprecedented demand for skilled practitioners in engineering, automation, and creative media.",
+          description: "The Agentic AI and Full-Stack development fields are experiencing explosive growth with unprecedented demand for skilled engineers.",
           items: careerOpportunities,
           color: "purple",
           image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
@@ -93,11 +93,11 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
       default:
         return {
           title: "What You Will Master",
-          description: `Our intensive programs approved by AICTE & APSCHE prepare students for modern roles in Generative AI, Robotics, and Full-Stack Engineering with hands-on project creation.`,
+          description: `Our intensive programs approved by AICTE & APSCHE prepare students for modern roles in Agentic AI, Generative AI, and Python Full-Stack Engineering with hands-on project creation.`,
           items: overviewFeatures,
           color: "purple",
           image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-          ctaText: "Master Transformers, LLMs, Robotics Hardware, Prompt Engineering, and Autonomous Systems with expert mentors."
+          ctaText: "Master Transformers, LLMs, Multi-Agent Systems, Prompt Engineering, and Full-Stack Architecture with expert mentors."
         };
     }
   };
@@ -127,10 +127,10 @@ const AboutAI: React.FC<AboutAIProps> = ({ isHybrid = false }) => {
             <BrainCircuit size={28} className="text-purple-600" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Next-Gen AI, Cinema & Robotics
+            Agentic AI & Next-Gen Technologies
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            AICTE-approved practical bootcamps and internship programs mastering Generative AI, AI Cinema, Autonomous Robotics, and Full-Stack Engineering.
+            AICTE-approved practical internship programs mastering Agentic AI, Autonomous Multi-Agent Systems, and Full-Stack Engineering.
             <br/><span className="mt-2 inline-block font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full">Interactive Hands-on Training • Hyderabad & Online</span>
           </p>
         </div>

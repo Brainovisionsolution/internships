@@ -80,7 +80,7 @@ const Facilities: React.FC = () => {
         <div className="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm mt-10">
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 text-center md:text-left gap-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Brainovision – Modern Classroom Workshop Venue</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Brainovision – Modern Classroom Internship Venue</h3>
               <p className="text-gray-600 text-lg max-w-2xl">
                 Experience our state-of-the-art facilities designed to provide you with a comfortable and highly productive learning environment.
               </p>

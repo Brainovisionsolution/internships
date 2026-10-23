@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, CheckCircle, Zap, Calendar, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Clock } from 'lucide-react';
 
 interface BatchTimingProps {
   isOnline: boolean;
@@ -54,20 +53,20 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
 
   const offlineTimings = [
     {
-      time: "09:30 AM – 05:30 PM",
-      track: "AI Film Making Workshop",
-      slot: "2 Days Full Immersion",
-      fee: "₹5,000",
+      time: "09:30 AM – 11:30 AM",
+      track: "Agentic AI",
+      slot: "Morning Intensive Batch",
+      fee: "₹7,500",
       actualFee: "₹10,000",
-      duration: "2 Days"
+      duration: "2 & 3 Months"
     },
     {
-      time: "09:30 AM – 05:30 PM",
-      track: "Robotics Workshop",
-      slot: "1 Day Hardware Bootcamp",
-      fee: "₹5,000",
+      time: "02:00 PM – 04:00 PM",
+      track: "Python Full Stack",
+      slot: "Afternoon Intensive Batch",
+      fee: "₹7,500",
       actualFee: "₹10,000",
-      duration: "1 Day"
+      duration: "2 & 3 Months"
     }
   ];
 
@@ -82,16 +81,16 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
             Flexible Timings
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            {isOnline ? 'Online Daily Schedule & Time Slots' : 'Offline Workshop Daily Timings'}
+            {isOnline ? 'Online Daily Schedule & Time Slots' : 'Offline Internship Daily Timings'}
           </h2>
           <p className="text-base md:text-lg text-gray-600">
             {isOnline 
               ? 'Convenient 1.5-hour live interactive sessions with lifetime class recordings provided.'
-              : 'Comprehensive full-day bootcamp with hardware kits, lab practice, and interactive mentorship.'}
+              : 'Comprehensive daily classroom training with dedicated lab practice, live projects, and 1-on-1 mentorship.'}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${isOnline ? 'lg:grid-cols-3' : 'max-w-3xl mx-auto'} gap-6 max-w-6xl mx-auto mb-10`}>
           {timings.map((item, index) => (
             <div
               key={index}
@@ -122,7 +121,7 @@ const BatchTimings: React.FC<BatchTimingProps> = ({ isOnline }) => {
                   <span className="text-xs text-gray-400 line-through ml-2">{item.actualFee}</span>
                 </div>
                 <span className="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-full">
-                  50% OFF
+                  {isOnline ? '50% OFF' : '25% OFF'}
                 </span>
               </div>
             </div>

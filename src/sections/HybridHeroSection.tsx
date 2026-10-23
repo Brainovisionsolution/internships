@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 
-const SelfPacedHeroSection: React.FC = () => {
+const HybridHeroSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -147,4 +147,4 @@ const SelfPacedHeroSection: React.FC = () => {
   );
 };
 
-export default SelfPacedHeroSection;
+export default HybridHeroSection;
